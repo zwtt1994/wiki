@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/baby/hello-simiki.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/baby/hello-simiki.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/baby/hello-simiki.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +30,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="75">
-                <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+                <caret line="5" selection-start-line="5" selection-end-line="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -42,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/content/intro/gettingstarted.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
+              <first_editor relative-caret-position="-72">
                 <caret selection-end-line="5" />
               </first_editor>
               <second_editor />
@@ -54,8 +53,8 @@
         <entry file="file://$PROJECT_DIR$/content/baby/hello-simiki.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <first_editor relative-caret-position="105">
+                <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -102,12 +101,6 @@
               <item name="wiki" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
               <item name="baby" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="first-catetory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wiki" type="b2602c69:ProjectViewProjectNode" />
@@ -171,15 +164,16 @@
       <option name="presentableId" value="Default" />
       <updated>1571399615206</updated>
       <workItem from="1571399616509" duration="2498000" />
-      <workItem from="1571457566017" duration="116000" />
+      <workItem from="1571457566017" duration="406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2614000" />
+    <option name="totallyTimeSpent" value="2904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -258,7 +252,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="75">
-            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <caret line="5" selection-start-line="5" selection-end-line="5" />
           </first_editor>
           <second_editor />
         </state>
@@ -267,7 +261,7 @@
     <entry file="file://$PROJECT_DIR$/content/intro/gettingstarted.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
+          <first_editor relative-caret-position="-72">
             <caret selection-end-line="5" />
           </first_editor>
           <second_editor />
@@ -277,8 +271,8 @@
     <entry file="file://$PROJECT_DIR$/content/baby/hello-simiki.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
