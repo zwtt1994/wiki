@@ -18,7 +18,12 @@ else
     git push origin master
 
     simiki g
-    fab deploy
+    cd output
+    git add . --all
+    git commit -am "$1"
+    git pull origin gh-pages
+    git push origin gh-pages
+    cd ..
     
     
 
