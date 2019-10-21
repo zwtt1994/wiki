@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="" />
+    <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/content/gnn/spectral-clustering.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/gnn/spectral-clustering.md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +26,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/content/deep-learning/spectral-clustering.md">
+        <entry file="file://$PROJECT_DIR$/content/gnn/spectral-clustering.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="180">
-                <caret line="12" selection-start-line="12" selection-end-line="12" />
+                <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -97,6 +99,7 @@
         <option value="$PROJECT_DIR$/content/深度学习/GNN/Spectral clustering.md" />
         <option value="$PROJECT_DIR$/deploy.sh" />
         <option value="$PROJECT_DIR$/content/deep-learning/gnn/spectral_clustering2.md" />
+        <option value="$PROJECT_DIR$/content/gnn/spectral-clustering.md" />
       </list>
     </option>
   </component>
@@ -117,34 +120,6 @@
             <path>
               <item name="wiki" type="b2602c69:ProjectViewProjectNode" />
               <item name="wiki" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="deep-learning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="first-catetory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="intro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -209,12 +184,12 @@
       <workItem from="1571457566017" duration="2248000" />
       <workItem from="1571557208298" duration="100000" />
       <workItem from="1571637776423" duration="380000" />
-      <workItem from="1571641088280" duration="3324000" />
+      <workItem from="1571641088280" duration="4057000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8550000" />
+    <option name="totallyTimeSpent" value="9283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -374,11 +349,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/deep-learning/spectral-clustering.md">
+    <entry file="file://$PROJECT_DIR$/Deep learning/GNN/Spectral clustering.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first-catetory/hello-simiki.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/gnn/spectral-clustering.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="180">
-            <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           </first_editor>
           <second_editor />
         </state>
