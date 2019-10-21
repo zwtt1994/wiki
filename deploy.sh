@@ -18,6 +18,7 @@ else
     git push origin master
 
     simiki g
+    conda init
     conda activate py2
     fab deploy
     conda activate base
