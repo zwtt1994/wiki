@@ -2,7 +2,7 @@ if [ "$1" = "-i" ]
 then
     mkdir output
     cd output
-    git clone -b gh-pages git@github.com:zwtt1994/wiki.git ./
+    git clone -b gh-pages https://github.com/zwtt1994/wiki.git ./
     cd ..
     exit 0
 elif [ "$1" = "" ]
