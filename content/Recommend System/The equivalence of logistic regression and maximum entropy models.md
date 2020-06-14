@@ -1,5 +1,5 @@
 ---
-title: "Recommending What Video to Watch Next: A Multitask Ranking System"
+title: "The equivalence of logistic regression and maximum entropy models"
 layout: page
 date: 2020-06-14
 ---

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/Recommend System/The equivalence of logistic regression and maximum entropy models.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Recommend System/The equivalence of logistic regression and maximum entropy models.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Recommend System/The equivalence of logistic regression and maximum entropy models.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/output/Recommend System/Recommending What Video to Watch Next: A Multitask Ranking System.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="83">
+              <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -50,8 +50,8 @@
         <entry file="file://$PROJECT_DIR$/content/Recommend System/The equivalence of logistic regression and maximum entropy models.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+              <first_editor relative-caret-position="135">
+                <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               </first_editor>
               <second_editor />
             </state>
@@ -146,6 +146,12 @@
               <item name="wiki" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="output" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+            <path>
+              <item name="wiki" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="wiki" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="output" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Recommend System" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -231,12 +237,12 @@
       <workItem from="1572574385984" duration="310000" />
       <workItem from="1572834675123" duration="175000" />
       <workItem from="1572921835820" duration="367000" />
-      <workItem from="1592117164293" duration="10939000" />
+      <workItem from="1592117164293" duration="10986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37392000" />
+    <option name="totallyTimeSpent" value="37439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -497,8 +503,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/output/Recommend System/Recommending What Video to Watch Next: A Multitask Ranking System.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="83">
+          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -515,8 +521,8 @@
     <entry file="file://$PROJECT_DIR$/content/Recommend System/The equivalence of logistic regression and maximum entropy models.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           </first_editor>
           <second_editor />
         </state>
