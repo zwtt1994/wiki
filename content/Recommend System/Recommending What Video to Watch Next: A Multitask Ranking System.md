@@ -4,6 +4,13 @@ layout: page
 date: 2020-06-14
 ---
 
+## 总结
+
+- 本文提的比较多的一点是推荐系统中的"选择偏差"，人为用户反馈和用户实际意图之间存在差异，因为所有的训练样本都是基于目前的推荐系统；但文中详细介绍和实验提及的只是众所周知的"位置偏差"。
+- 本文通过利用用户的各种行为（多目标优化）并引入"选择偏差"模块，近似的去解决上述的"选择偏差"问题，整体结构有一定的参考意义。
+- 利用YouTube做了实验，证明了多目标优化与"位置偏差"模块的效果。
+
+
 ## 主要内容
 
 - 目标是根据目前所观看的视频，预测下一个观看的视频；使用召回-排序的常规模式；特征一笔带过，主要包括视频的各种embedding，用户的常规特征。
@@ -19,13 +26,8 @@ date: 2020-06-14
 <img src="/wiki/attach/images/next-watch-03.png" style="max-width:500px">
 - 实验中由于分布式训练的原因，导致gate网络中20%的Relu值为0，所以加了10%的dropout。
 - 以"位置偏差"为例，验证了本文解决偏差方法的有效性。
-<img src="/wiki/attach/images/next-watch-04.png" style="max-width:500px">
-<img src="/wiki/attach/images/next-watch-05.png" style="max-width:500px">
+<img src="/wiki/attach/images/next-watch-04.png" style="max-width:400px">
+<img src="/wiki/attach/images/next-watch-05.png" style="max-width:400px">
     
-## 总结
-
-- 本文提的比较多的一点是推荐系统中的"选择偏差"，人为用户反馈和用户实际意图之间存在差异，因为所有的训练样本都是基于目前的推荐系统；但文中详细介绍和实验提及的只是众所周知的"位置偏差"。
-- 本文通过利用用户的各种行为（多目标优化）并引入"选择偏差"模块，近似的去解决上述的"选择偏差"问题，整体结构有一定的参考意义。
-- 利用YouTube做了实验，证明了多目标优化与"位置偏差"模块的效果。
 
 
