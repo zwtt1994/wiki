@@ -31,14 +31,18 @@
 <li>利用MMOE做多目标优化，并将label分为用户"交互行为"与"兴趣行为"；其中"交互行为"包括点击，观看等常规行为；"兴趣行为"包括收藏，反感等表达兴趣的行为；类别label用二分类，数值label用回归。</li>
 <li>特别的是，本文将MoE结构搭建在底层共享部分的最后一个隐层之上，目的是为了简化模型，并在实验中证明了和直接在输入层上搭建基本没有区别。</li>
 <li>为了解决"选择偏差"问题，本文将"选择偏差"相关的特征（如视频位置特征，设备信息等，文中只提到这两个）经过一个dnn结构预测输出一个logit，并和"交互行为"的label求和，这边文中并没有提及模型结构/特征的细节，但应该可以根据具体推荐场景来设计。<br />
-<img src="/wiki/attach/images/next-watch-01.png" style="max-width:300px"></li>
+<img src="/wiki/attach/images/next-watch-01.png" style="max-width:500px"></li>
 </ul>
 <h2 id="_2">具体实验</h2>
 <ul>
-<li>在YouTube上做了实验，给出了实验结果。</li>
-<li>实验证明了将MoE结构搭建在隐层上和输入层上的结果是差不多的，并分析了gate输出的分布。"交互行为"往往依赖多个expert，"兴趣行为"则只依赖单个expert。</li>
+<li>在YouTube上做了实验，给出了实验结果。<br />
+<img src="/wiki/attach/images/next-watch-02.png" style="max-width:500px"></li>
+<li>实验证明了将MoE结构搭建在隐层上和输入层上的结果是差不多的，并分析了gate输出的分布。"交互行为"往往依赖多个expert，"兴趣行为"则只依赖单个expert。<br />
+<img src="/wiki/attach/images/next-watch-03.png" style="max-width:500px"></li>
 <li>实验中由于分布式训练的原因，导致gate网络中20%的Relu值为0，所以加了10%的dropout。</li>
-<li>以"位置偏差"为例，验证了本文解决偏差方法的有效性。</li>
+<li>以"位置偏差"为例，验证了本文解决偏差方法的有效性。<br />
+<img src="/wiki/attach/images/next-watch-04.png" style="max-width:500px"><br />
+<img src="/wiki/attach/images/next-watch-05.png" style="max-width:500px"></li>
 </ul>
 <h2 id="_3">总结</h2>
 <ul>
@@ -51,7 +55,7 @@
       <span>
         <p>Copyright © 2020 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2020-06-14 18:07:31</p>
+        <p>Site Generated 2020-06-14 18:08:28</p>
       </span>
     </div>
 
