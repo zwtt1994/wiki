@@ -1,5 +1,5 @@
 ---
-title: "Recommending What Video to Watch Next: A Multitask Ranking System"
+title: "2019-Recommending What Video to Watch Next: A Multitask Ranking System"
 layout: page
 date: 2020-06-14
 ---
@@ -18,7 +18,7 @@ Google发表的一篇预测用户下一个观看视频的文章，用YouTube做�
 - 目标是根据目前所观看的视频，预测下一个观看的视频；使用召回-排序的常规模式；特征一笔带过，主要包括视频的各种embedding，用户的常规特征。
 - 利用MMOE做多目标优化，并将label分为用户"交互行为"与"兴趣行为"；其中"交互行为"包括点击，观看等常规行为；"兴趣行为"包括收藏，反感等表达兴趣的行为；类别label用二分类，数值label用回归。
 - 特别的是，本文将MoE结构搭建在底层共享部分的最后一个隐层之上，目的是为了简化模型，并在实验中证明了和直接在输入层上搭建基本没有区别。
-- 为了解决"选择偏差"问题，本文将"选择偏差"相关的特征（如视频位置特征，设备信息等，文中只提到这两个）经过一个dnn结构预测输出一个logit，并和"交互行为"的label求和，这边文中并没有提及模型结构/特征的细节，但应该可以根据具体推荐场景来设计。
+- 为了解决"选择偏差"问题，本文将"选择偏差"相关的特征（如视频位置特征，设备信息等，文中只提到这两个）经过一个浅层dnn结构预测输出一个logit，并和"交互行为"的label求和，这边文中并没有提及模型结构/特征的细节，但应该可以根据具体推荐场景来设计。
 <img src="/wiki/attach/images/next-watch-01.png" style="max-width:500px">
 ## 具体实验
 
