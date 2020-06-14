@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attach/path/to/file/next-watch.png" beforeDir="false" afterPath="$PROJECT_DIR$/attach/next-watch.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/Recommend System/Recommending What Video to Watch Next: A Multitask Ranking System.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Recommend System/Recommending What Video to Watch Next: A Multitask Ranking System.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/Recommend System/Recommending What Video to Watch Next: A Multitask Ranking System.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/Recommend System/Recommending What Video to Watch Next: A Multitask Ranking System.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/picture/next-watch.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,14 +29,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/Recommend System/Recommending What Video to Watch Next: A Multitask Ranking System.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="270">
-                <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <first_editor relative-caret-position="285">
+                <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/output/Recommend System/Recommending What Video to Watch Next: A Multitask Ranking System.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="40" column="19" lean-forward="true" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,7 +70,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/output" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -73,6 +95,7 @@
         <option value="$PROJECT_DIR$/content/Recommend System/test.md" />
         <option value="$PROJECT_DIR$/deploy.sh" />
         <option value="$PROJECT_DIR$/content/Recommend System/Recommending What Video to Watch Next: A Multitask Ranking System.md" />
+        <option value="$PROJECT_DIR$/output/Recommend System/Recommending What Video to Watch Next: A Multitask Ranking System.html" />
       </list>
     </option>
   </component>
@@ -108,23 +131,13 @@
             <path>
               <item name="wiki" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="wiki" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="attach" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="path" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="output" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="wiki" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="wiki" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="attach" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="path" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="to" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="wiki" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="wiki" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="attach" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="path" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="to" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="file" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="output" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Recommend System" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -147,16 +160,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content/Deep learning" />
-      <recent name="$PROJECT_DIR$/content/深度学习/GNN" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/recsys" />
       <recent name="$PROJECT_DIR$/content/math" />
       <recent name="$PROJECT_DIR$/content/gnn" />
       <recent name="$PROJECT_DIR$/content/deep-learning/gnn/test" />
       <recent name="$PROJECT_DIR$/content/Deep learning" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/attach" />
+      <recent name="$PROJECT_DIR$/content/Deep learning" />
+      <recent name="$PROJECT_DIR$/content/深度学习/GNN" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -209,12 +223,12 @@
       <workItem from="1572574385984" duration="310000" />
       <workItem from="1572834675123" duration="175000" />
       <workItem from="1572921835820" duration="367000" />
-      <workItem from="1592117164293" duration="3280000" />
+      <workItem from="1592117164293" duration="3705000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29733000" />
+    <option name="totallyTimeSpent" value="30158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -446,9 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/gnn/spectral-clustering.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -469,10 +480,27 @@
     <entry file="file://$PROJECT_DIR$/content/Recommend System/Recommending What Video to Watch Next: A Multitask Ranking System.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="270">
-            <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <first_editor relative-caret-position="285">
+            <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/Recommend System/Recommending What Video to Watch Next: A Multitask Ranking System.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="40" column="19" lean-forward="true" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

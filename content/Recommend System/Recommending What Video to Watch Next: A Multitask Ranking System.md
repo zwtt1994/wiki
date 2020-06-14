@@ -13,7 +13,8 @@ date: 2020-06-14
 ## 定义
 
 - 拉普拉斯矩阵
-![](..attach/next-watch.png)
+
+![](../attach/next-watch.png)
 
 ## 步骤
 
