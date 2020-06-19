@@ -13,10 +13,10 @@ date: 2020-06-17
 ## 主要内容
 
 - 提出了DeepFM结构，在模型主体是常规FM部分和Deep部分。在输入部分对特征进行了处理，离散特征onehot，连续特征离散后onehot或者直接为dense特征，并将每个特征作为一个field，每一个field embedding成相同维度的向量。
-<div style="text-align: center"><img src="/wiki/attach/images/deepFM-01.png" style="max-width:800px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/deepFM-01.png" style="max-width:600px"></div>
 
 - 和其他类似的网络结构做了对比，deepFM同时满足1.无预训练，2.同时包含高低阶特征，3.无特殊的特征工程。
-<div style="text-align: center"><img src="/wiki/attach/images/deepFM-02.png" style="max-width:800px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/deepFM-02.png" style="max-width:500px"></div>
 
 - 实验比对了各模型之间的效果，并对超参的选取进行了实验。
-<div style="text-align: center"><img src="/wiki/attach/images/deepFM-03.png" style="max-width:800px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/deepFM-03.png" style="max-width:500px"></div>
