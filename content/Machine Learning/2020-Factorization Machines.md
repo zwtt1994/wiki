@@ -16,7 +16,7 @@ date: 2020-06-18
 - FM的模型定义，以二维交叉为例（一般来说二维就够了，多维计算量剧增，性价比低）。他的本质是对每个输入定义一个可训练的向量，并通过向量内积来表示特征之间的相关性。
 <div style="text-align: center"><img src="/wiki/attach/images/FM-01.png" style="max-width:500px"></div>
 
-- 从下式可以看到计算复杂度是O(n2)，但由于对称性，可以将上式简化为O(n)的计算复杂度。这个简化本质上就是利用了先求和再平方来代替挨个计算。
+- 从上式可以看到计算复杂度是O(n2)，但由于对称性，可以将上式简化为O(n)的计算复杂度。这个简化本质上就是利用了先求和再平方来代替挨个计算。
 <div style="text-align: center"><img src="/wiki/attach/images/FM-02.png" style="max-width:500px"></div>
 
 - FM的训练，从上述简化后的式子即可简单的计算出各个参数的导数。
