@@ -1,5 +1,5 @@
 ---
-title: "2014-2014-Online Optimization "
+title: "2014-Online Optimization "
 layout: page
 date: 2020-06-20
 ---
@@ -19,12 +19,11 @@ date: 2020-06-20
     - Truncated Gradient（TG），与简单截断类似，是指在其中加上了对参数的微调。
     <div style="text-align: center"><img src="/wiki/attach/images/onlinTrain-01.png" style="max-width:500px"></div>
 
-    - Forward-Backward Splitting（FOBOS），前向后向切分，本质上是指当样本训练中某次更新后的参数绝对值不够大时令其为0，和TG其实是差不多的。
+    - Forward-Backward Splitting（FOBOS），前向后向切分，本质上是指当样本训练中某次更新后的参数绝对值不够大时令其为0，和TG其实是差不多的，区别是在全域上对参数做微调。
     <div style="text-align: center"><img src="/wiki/attach/images/onlinTrain-02.png" style="max-width:500px"></div>
     
     - Regularized Dual Averaging（RDA），正则对偶平均，本质上是当某个参数维度累计梯度小某个值时令其为0。
     <div style="text-align: center"><img src="/wiki/attach/images/onlinTrain-03.png" style="max-width:500px"></div>
     
     - FOBOS是batch维度做调整，训练精度较高，RDA则更容易产生稀疏性，所以结合上述两者提出了Follow the Regularized Leader（FTRL）。
-    
-    - 
+    <div style="text-align: center"><img src="/wiki/attach/images/onlinTrain-04.png" style="max-width:500px"></div>
