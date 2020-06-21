@@ -27,3 +27,9 @@ date: 2020-06-20
     
     - FOBOS是batch维度做调整，训练精度较高，RDA则更容易产生稀疏性，所以结合上述两者提出了Follow the Regularized Leader（FTRL）。
     <div style="text-align: center"><img src="/wiki/attach/images/onlinTrain-04.png" style="max-width:500px"></div>
+
+    - FTRL和FPOBOS/RDA的型式基本一致，区别就是在于zi为历史梯度与权值差的累计，同时考虑了"历史累计"和"梯度与权值的差"。
+    <div style="text-align: center"><img src="/wiki/attach/images/onlinTrain-05.png" style="max-width:300px"></div>
+    
+    - 此外，上述涉及到的学习率一般是随时间下降的序列，在FTRL中定义如下。
+    <div style="text-align: center"><img src="/wiki/attach/images/onlinTrain-06.png" style="max-width:400px"></div>
