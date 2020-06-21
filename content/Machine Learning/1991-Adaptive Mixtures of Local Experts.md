@@ -17,10 +17,12 @@ date: 2020-06-21
 <div style="text-align: center"><img src="/wiki/attach/images/MoE-01.png" style="max-width:500px"></div>
 - 其损失函数就可以转化成下式，使得Experts之间的参数不再直接耦合，但其实通过gate还存在比较弱的间接关系。
 <div style="text-align: center"><img src="/wiki/attach/images/MoE-02.png" style="max-width:350px"></div>
-<div style="text-align: center"><img src="/wiki/attach/images/MoE-03.png" style="max-width:330px"></div>
-<div style="text-align: center"><img src="/wiki/attach/images/MoE-04.png" style="max-width:300px"></div>
 
-- 利用上式进行SGD训练时，对于某个样本误差较小的Expert选择的概率会被增强，反之则会减小。为了加速模型训练，将误差函数改为下式，本质上是提高了误差较小的Expert的权重。
+
+- 利用上式进行SGD训练时，对于某个样本误差较小的Expert选择的概率会被增强，反之则会减小。为了加速模型训练，将误差函数改为下式。
+<div style="text-align: center"><img src="/wiki/attach/images/MoE-03.png" style="max-width:330px"></div>
+- 对比两个梯度可以发现，这么修改本质上是提高了误差较小的Expert的权重。
+<div style="text-align: center"><img src="/wiki/attach/images/MoE-04.png" style="max-width:300px"></div>
 <div style="text-align: center"><img src="/wiki/attach/images/MoE-05.png" style="max-width:330px"></div>
 
 - 在多人说话的人声识别场景中进行了实验，证明了上述模型的效果。
