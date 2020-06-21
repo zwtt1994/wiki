@@ -17,13 +17,13 @@ date: 2020-06-20
 - 为了在在线学习中引入稀疏，提出了下面几个方法
     - 简单截断，每训练T次才做一次截断（避免随机性导致的错误截断）,在训练中对参数小于某个阈值的直接截断为0，简单粗暴。
     - Truncated Gradient（TG），与简单截断类似，是指在其中加上了对参数的微调。
-    <div style="text-align: center"><img src="/wiki/attach/images/olinTrain-01.png" style="max-width:500px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/onlinTrain-01.png" style="max-width:500px"></div>
 
     - Forward-Backward Splitting（FOBOS），前向后向切分，本质上是指当样本训练中某次更新后的参数绝对值不够大时令其为0，和TG其实是差不多的。
-    <div style="text-align: center"><img src="/wiki/attach/images/olinTrain-02.png" style="max-width:500px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/onlinTrain-02.png" style="max-width:500px"></div>
     
     - Regularized Dual Averaging（RDA），正则对偶平均，本质上是当某个参数维度累计梯度小某个值时令其为0。
-    <div style="text-align: center"><img src="/wiki/attach/images/olinTrain-03.png" style="max-width:500px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/onlinTrain-03.png" style="max-width:500px"></div>
     
     - FOBOS是batch维度做调整，训练精度较高，RDA则更容易产生稀疏性，所以结合上述两者提出了Follow the Regularized Leader（FTRL）。
     
