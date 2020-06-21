@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2010-Factorization Machines - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#Machine Learning">Machine Learning</a>&nbsp;&#187;&nbsp;2010-Factorization Machines
+    <span class="updated">Page Updated&nbsp;
+      2020-06-18
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2010-Factorization Machines</div>
+
+  <p>本文提出了Factorization Machines（因子分解机）方法来学习特征（特别是稀疏特征）之间的交叉信息。</p>
+<h2 id="_1">总结</h2>
+<ul>
+<li>本文提出了FM模型，能够在特征及其稀疏的情况下学习特征的交叉信息，并能够在线性时间进行serving，整个模型结构简单易学。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>FM的模型定义，以二维交叉为例（一般来说二维就够了，多维计算量剧增，性价比低）。他的本质是对每个输入定义一个可训练的向量，并通过向量内积来表示特征之间的相关性。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/FM-01.png" style="max-width:500px"></div></p>
+</li>
+<li>
+<p>从上式可以看到计算复杂度是O(n2)，但由于对称性，可以将上式简化为O(n)的计算复杂度。这个简化本质上就是利用了先求和再平方来代替挨个计算。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/FM-02.png" style="max-width:500px"></div></p>
+</li>
+<li>
+<p>FM的训练，从上述简化后的式子即可简单的计算出各个参数的导数。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/FM-03.png" style="max-width:400px"></div></p>
+</li>
+<li>
+<p>与SVM进行了对比，并实验证明了在数据比较稀疏的情况下，FM的效果优于SVM；FM可以直接学习，而非线性核SVM需要转换为对偶形式；FM模型型式与样本无关，而SVM则与支持向量相关。</p>
+</li>
+<li>
+<p>与其他因子分解模型进行对比，结论是FM模型通用且有效。</p>
+<ul>
+<li>常规的MF是直接对用户/item构建向量，这等价于单特征（是否共现1/0）的FM。</li>
+<li>SVD++引入了隐式的信息（评分是显式的，隐式的包括点击/收藏等），但交叉信息没有FM完备。</li>
+<li>还对比了PITF（对用户+item打Tag的场景，三个向量相互交叉），FPMC（基于用户+上一个购买，预测物品得分，也是三个向量交叉，只是物品向量在同一个特征空间），结论是利用FM都能模拟出近似的效果。</li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2020 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2020-06-21 10:03:40</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
