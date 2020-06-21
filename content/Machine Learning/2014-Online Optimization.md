@@ -1,5 +1,5 @@
 ---
-title: "2011-the equivalence of logistic regression and maximum entropymodels "
+title: "2014-2014-Online Optimization "
 layout: page
 date: 2020-06-20
 ---
