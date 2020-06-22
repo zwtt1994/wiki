@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/content/Machine Learning/2017-LightGBM.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Machine Learning/2017-LightGBM.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Machine Learning/2011-the equivalence of logistic regression and maximum entropymodels.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Machine Learning/2011-the equivalence of logistic regression and maximum entropymodels.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,7 +100,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/Machine Learning/2017-LightGBM.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
@@ -124,12 +124,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content/Machine Learning/2011-the equivalence of logistic regression and maximum entropymodels.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="120">
-                <caret line="8" selection-end-line="23" />
+              <first_editor relative-caret-position="75">
+                <caret line="5" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -199,12 +199,12 @@
         <option value="$PROJECT_DIR$/content/Machine Learning/2014-Online Optimization.md" />
         <option value="$PROJECT_DIR$/content/Machine Learning/1991-MoE.md" />
         <option value="$PROJECT_DIR$/content/Recommend System/2020-深度学习推荐系统.md" />
-        <option value="$PROJECT_DIR$/content/Machine Learning/2011-the equivalence of logistic regression and maximum entropymodels.md" />
         <option value="$PROJECT_DIR$/content/Machine Learning/2000-GBDT.md" />
         <option value="$PROJECT_DIR$/content/Machine Learning/1991-Adaptive Mixtures of Local Experts.md" />
         <option value="$PROJECT_DIR$/content/Machine Learning/2016-xgboost.md" />
         <option value="$PROJECT_DIR$/content/Machine Learning/2020-Soft Gradient Boosting Machine.md" />
         <option value="$PROJECT_DIR$/content/Machine Learning/2017-LightGBM.md" />
+        <option value="$PROJECT_DIR$/content/Machine Learning/2011-the equivalence of logistic regression and maximum entropymodels.md" />
       </list>
     </option>
   </component>
@@ -349,12 +349,12 @@
       <workItem from="1592535205166" duration="812000" />
       <workItem from="1592546759611" duration="633000" />
       <workItem from="1592548888351" duration="20299000" />
-      <workItem from="1592793083465" duration="10804000" />
+      <workItem from="1592793083465" duration="10826000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98311000" />
+    <option name="totallyTimeSpent" value="98333000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -646,16 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/Machine Learning/2011-the equivalence of logistic regression and maximum entropymodels.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="120">
-            <caret line="8" selection-end-line="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/Machine Learning/2014-Online Optimization.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -721,6 +711,16 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="15">
             <caret line="1" column="73" selection-start-line="1" selection-start-column="73" selection-end-line="1" selection-end-column="73" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/Machine Learning/2011-the equivalence of logistic regression and maximum entropymodels.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="75">
+            <caret line="5" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="5" />
           </first_editor>
           <second_editor />
         </state>

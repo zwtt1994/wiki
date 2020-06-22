@@ -1,5 +1,5 @@
 ---
-title: "2011-the equivalence of logistic regression and maximum entropymodels "
+title: "2011-The equivalence of logistic regression and maximum entropymodels "
 layout: page
 date: 2020-06-07
 ---
