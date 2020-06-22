@@ -22,7 +22,7 @@ date: 2020-06-15
 <div style="text-align: center"><img src="/wiki/attach/images/mmoe-03.png" style="max-width:700px"></div>
 
 - 用真实数据对比了MMoE和其他几种比较新的多目标学习方法的效果。
-    - L2-Constrained：多目标模型参数加上L2的正则限制，即在损失函数中加上两个参数矩阵的L2范数。
+    - L2-Constrained：多目标模型参数加上L2的正则限制，即在损失函数中加上两个参数矩阵差的L2范数。
     - Cross-Stitch：引入cross-unit结构，多目标模型的下一个隐层与所有的模型隐层都相关。
     <div style="text-align: center"><img src="/wiki/attach/images/mmoe-04.png" style="max-width:300px"></div>
     - Tensor-Factorization：将隐层之间的参数按多目标数量扩充，并将其分解为矩阵乘积，多目标之间的相关性由矩阵分解引入。
