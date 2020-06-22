@@ -29,5 +29,5 @@ date: 2020-06-14
 <div style="text-align: center"><img src="/wiki/attach/images/youtube-02.png" style="max-width:500px"></div>
 - 目的是预测用户对视频的观看时长，这是一个综合性选择的label，避免了由于用户因为视频标题/缩略图等点击但又不喜欢看的情况。
 - 特征工程，sparse特征做embedding（对出现次数少的做截断），dense特征做归一化（并引入平方/开放）。
-- 为了将观看时长作为label，本文采用了weighted lr（两种方法，样本重复/更新权值），所以预测值的时候exp(wx+b)近似于观看时长（其原理和采样之后预测值的矫正一致）。
+- 为了将观看时长作为label，本文采用了weighted lr（两种方法，样本重复/更新权值），所以预测值exp(wx+b)近似于观看时长（其原理和采样之后预测值的矫正一致）。
 
