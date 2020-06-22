@@ -32,7 +32,7 @@ date: 2020-06-15
     <div style="text-align: center"><img src="/wiki/attach/images/mmoe-06.png" style="max-width:500px"></div>
     - 在Google的推荐系统上进行了离线实验，包括两类label，互动型（如点击）label和满意型（如收藏）label，实验结果同样显示了MMoE结构的效果。
     <div style="text-align: center"><img src="/wiki/attach/images/mmoe-08.png" style="max-width:500px"></div>
-    - 在实验中分析了gate的分布，显示了满意型的label的expert更集中，这也说明了label给MMoE结构较强的label信息。
+    - 在实验中分析了gate的分布，显示了满意型的label的expert更集中，这也说明了label能够给Experts提供较强的目标信息。
     <div style="text-align: center"><img src="/wiki/attach/images/mmoe-07.png" style="max-width:500px"></div>
     - 给出了线上实验结果，shared-bottom相比与基线，在参与度label下表现又略微下降（这个在实际种比较重要），满意度label有较大提升；MMoE相比与shared-bottom有一定的提升，综合来看MMoE相比于基线是两种label都有提升。
     <div style="text-align: center"><img src="/wiki/attach/images/mmoe-09.png" style="max-width:500px"></div>
