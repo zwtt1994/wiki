@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2016-XGBoost: A Scalable Tree Boosting System - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#Machine Learning">Machine Learning</a>&nbsp;&#187;&nbsp;2016-XGBoost: A Scalable Tree Boosting System
+    <span class="updated">Page Updated&nbsp;
+      2020-06-21
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2016-XGBoost: A Scalable Tree Boosting System</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>GBDT在最小化损失函数中，利用CART拟合负梯度，并做boost学习。</li>
+<li>XgBoost则将损失函数二阶泰勒展开，求得解析解，并以解析解的损失函数做为标准，贪心的搜索生成子树。</li>
+<li>本质上GBDT和XgBoost在增量学习中的思路是一样的，只是一个用了梯度下降法，一个用了牛顿法。由于XgBoost中添加了L2正则，所以和普通的牛顿法有所区别。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>推导了损失函数二阶泰勒展开求解析解的过程，并以该解析解来指导子树的生成。</li>
+<li>为了防止过拟合，新子树合并时需要乘以一个缩减权值（Shrinkage），并在子树分裂时对搜索特征做随机采样（Column Subsampling），全局/按层采样。</li>
+<li>对于连续值进行分桶，只对各分位点进行搜索，包括全局近似搜索与局部近似搜索（分桶是否在分裂时改变）。</li>
+<li>对缺失值的处理（特征稀疏），在搜索分裂点时将缺失的数据全都归为左边/右边，选取得分最大的分分裂点。</li>
+<li>系统设计<ul>
+<li>树模型学习最耗时的是排序，预先对特征进行排序，后期节点分裂可以复用全局排序结果，文中成为Block结构。</li>
+<li>由于Block结构通过索引取梯度，所以会导致非连续的内存访问，影响算法效率。所以本文提出在节点分裂时，将梯度信息存入缓存，提高算法效率。</li>
+<li>有关系统设计的之后再具体研究下。</li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2020 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2020-06-22 19:03:16</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
