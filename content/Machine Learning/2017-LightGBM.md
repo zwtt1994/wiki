@@ -1,5 +1,5 @@
 ---
-title: "2016-XGBoost: A Scalable Tree Boosting System"
+title: "2017-LightGBM: A Highly Efficient Gradient Boosting Decision Tree"
 layout: page
 date: 2020-06-21
 ---
