@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2016-word2vec Parameter Learning Explained - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#03-NLP">03-NLP</a>&nbsp;&#187;&nbsp;2016-word2vec Parameter Learning Explained
+    <span class="updated">Page Updated&nbsp;
+      2020-06-24
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2016-word2vec Parameter Learning Explained</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>介绍了word2vec的细节。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>利用三层神经网络，将输入单词映射到输出单词，根据单词间的相关性来训练，隐层权值就是embedding结果。</li>
+<li>one-word模型，输入输出都是一个单词。CBOW（continuous bag of words）是多个词输入，单个词输出。Skip-Gram单个词输入，多个词输出。</li>
+<li>输入层到中间层的参数训练计算比较简单，因为输入层是one-hot编码结果，只有一个神经元是激活的。</li>
+<li>输出层由于需要计算所有单词的输出概率（softmax），如果不做处理的话计算量会很大，所以需要进行负采样（文中提到的负采样的方法，根据单词在词汇库中的出现次数的3/4次方做加权采样）。</li>
+<li>另一种减少计算量的方法是Hierarchical Softmax，他为所有单词构建霍夫曼树，并用lr作为树节点的路由，使得softmax概率计算结果为根节点到叶子节点路径上节点值的乘积，简化计算量v-&gt;log2 v。</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2020 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2020-06-24 19:20:14</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>

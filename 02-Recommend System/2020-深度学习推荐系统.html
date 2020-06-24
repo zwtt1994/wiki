@@ -16,7 +16,7 @@
   <div id="container" style = "width: 65em">
       
 <div id="header">
-  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#Recommend System">Recommend System</a>&nbsp;&#187;&nbsp;2020-深度推荐系统
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#02-Recommend System">02-Recommend System</a>&nbsp;&#187;&nbsp;2020-深度推荐系统
     <span class="updated">Page Updated&nbsp;
       2020-06-14
     </span></div>
@@ -47,7 +47,44 @@
 </ul>
 </li>
 <li>逻辑回归（Logistic Regression)<ul>
-<li>不再赘述</li>
+<li>本质上是利用线性回归学习几率。</li>
+<li>优点是结构简单，可解释性强；缺点是表达能力不强。</li>
+</ul>
+</li>
+<li>FM与FFM<ul>
+<li>FM能够学习特征的交叉信息，详见FM论文笔记。</li>
+<li>FFM引入了Filed的概念，特征被划分为多个Filed，每个特征对与不同的Field设置不同的隐向量。</li>
+</ul>
+</li>
+<li>GBDT+LR<ul>
+<li>本质上是利用GBDT来做特征工程，再用LR模型做训练。</li>
+<li>GBDT输出的是样本落入各决策树叶子节点的编号向量。</li>
+</ul>
+</li>
+<li>混合逻辑回滚（MLR）<ul>
+<li>本质上对于不同的数据利用不同LR函数来拟合。</li>
+<li>例如利用softmax函数来对所有的LR函数输出做加权求和，有点像attention机制。</li>
+</ul>
+</li>
+</ul>
+<h2 id="-_1">第三章 - 深度学习在推荐系统中的应用</h2>
+<ul>
+<li>自编码器（AutoRec）<ul>
+<li>三层神经网络，输入层是评分向量，训练使得输出层和输入层的误差最小（只考虑输入层有值的误差），输出层即是预测的评分向量。</li>
+</ul>
+</li>
+<li>Deep Cross模型<ul>
+<li>特征embedding后拼接并进入mlp，相比之前的突破点是特征embedding。</li>
+</ul>
+</li>
+<li>NeuralCF<ul>
+<li>矩阵分解其实就是使得user向量和item向量内积为评分值，NeuralCF将内积操作改成mlp。</li>
+<li>这里能联想到DSSM的结构，矩阵分解是直接内积，DSSM是先将两个向量经过mlp再内积。</li>
+<li>NeuralCF和矩阵分解是直接对id进行embedding，而DSSM考虑了其他的特征。</li>
+</ul>
+</li>
+<li>PNN（product）<ul>
+<li>特征embedding后进行交叉内积并进入mlp，相当于是在FM上加mlp。</li>
 </ul>
 </li>
 </ul>
@@ -56,7 +93,7 @@
       <span>
         <p>Copyright © 2020 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2020-06-22 19:39:16</p>
+        <p>Site Generated 2020-06-24 19:20:14</p>
       </span>
     </div>
 
