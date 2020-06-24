@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/content/Recommend System/2018-Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/Recommend System/2018-Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/03-NLP/2016-word2vec Parameter Learning Explained.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Machine Learning/1991-Adaptive Mixtures of Local Experts.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/1991-Adaptive Mixtures of Local Experts.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Machine Learning/2000-GBDT.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/2000-GBDT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Machine Learning/2011-the equivalence of logistic regression and maximum entropymodels.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/2011-the equivalence of logistic regression and maximum entropymodels.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Machine Learning/2014-Online Optimization.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/2014-Online Optimization.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Machine Learning/2016-xgboost.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/2016-xgboost.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Machine Learning/2017-LightGBM.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/2017-LightGBM.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Machine Learning/2018-MMoE(Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts).md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/2018-MMoE(Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Machine Learning/2020-Factorization Machines.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/2020-Factorization Machines.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Machine Learning/2020-Soft Gradient Boosting Machine.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/2020-Soft Gradient Boosting Machine.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Recommend System/2016-Deep Neural Networks for YouTube Recommendations.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2016-Deep Neural Networks for YouTube Recommendations.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Recommend System/2016-Wide &amp; Deep Learning for Recommender Systems.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2016-Wide &amp; Deep Learning for Recommender Systems.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Recommend System/2017-DeepFM: A Factorization-Machine based Neural Network for CTR Prediction.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2017-DeepFM: A Factorization-Machine based Neural Network for CTR Prediction.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Recommend System/2018-Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2018-Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Recommend System/2019-Recommending What Video to Watch Next: A Multitask Ranking System.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2019-Recommending What Video to Watch Next: A Multitask Ranking System.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Recommend System/2020-深度学习推荐系统.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2020-深度学习推荐系统.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +33,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/Machine Learning/2018-MMoE(Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts).md">
+        <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/2014-Online Optimization.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="510">
-                <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <first_editor relative-caret-position="150">
+                <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -29,23 +45,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/Recommend System/2016-Wide &amp; Deep Learning for Recommender Systems.md">
+        <entry file="file://$PROJECT_DIR$/content/02-Recommend System/2020-深度学习推荐系统.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="210">
-                <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="109" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/Recommend System/2016-Deep Neural Networks for YouTube Recommendations.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="240">
-                <caret line="16" column="17" lean-forward="true" selection-end-line="33" />
+              <first_editor relative-caret-position="645">
+                <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -53,11 +57,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/content/Recommend System/2018-Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate.md">
+        <entry file="file://$PROJECT_DIR$/content/03-NLP/2016-word2vec Parameter Learning Explained.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+              <first_editor relative-caret-position="240">
+                <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
               </first_editor>
               <second_editor />
             </state>
@@ -65,11 +69,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/Recommend System/2019-Recommending What Video to Watch Next: A Multitask Ranking System.md">
+        <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/2020-Factorization Machines.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="415">
-                <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+              <first_editor relative-caret-position="165">
+                <caret line="11" column="52" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="52" />
               </first_editor>
               <second_editor />
             </state>
@@ -77,11 +81,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/Recommend System/2017-DeepFM: A Factorization-Machine based Neural Network for CTR Prediction.md">
+        <entry file="file://$PROJECT_DIR$/content/02-Recommend System/2019-Recommending What Video to Watch Next: A Multitask Ranking System.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="225">
-                <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="107" />
+              <first_editor relative-caret-position="240">
+                <caret line="16" selection-end-line="35" />
               </first_editor>
               <second_editor />
             </state>
@@ -89,11 +93,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/Machine Learning/1991-Adaptive Mixtures of Local Experts.md">
+        <entry file="file://$PROJECT_DIR$/content/02-Recommend System/2017-DeepFM: A Factorization-Machine based Neural Network for CTR Prediction.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="315">
+                <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/1991-Adaptive Mixtures of Local Experts.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="180">
-                <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+                <caret line="12" selection-start-line="12" selection-end-line="12" />
               </first_editor>
               <second_editor />
             </state>
@@ -101,7 +117,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/Machine Learning/2016-xgboost.md">
+        <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/2016-xgboost.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="75">
@@ -113,7 +129,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/Machine Learning/2017-LightGBM.md">
+        <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/2017-LightGBM.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="15">
@@ -125,11 +141,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/Machine Learning/2011-the equivalence of logistic regression and maximum entropymodels.md">
+        <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/2011-the equivalence of logistic regression and maximum entropymodels.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="75">
-                <caret line="5" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="5" />
+                <caret line="5" selection-start-line="4" selection-start-column="3" selection-end-line="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -157,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/content/baby/hello-simiki.md" />
         <option value="$PROJECT_DIR$/content/深度学习/hello-simiki.md" />
@@ -207,6 +222,8 @@
         <option value="$PROJECT_DIR$/content/Machine Learning/2018-MMoE(Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts).md" />
         <option value="$PROJECT_DIR$/content/Recommend System/2016-Deep Neural Networks for YouTube Recommendations.md" />
         <option value="$PROJECT_DIR$/content/Recommend System/2018-Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate.md" />
+        <option value="$PROJECT_DIR$/content/02-Recommend System/2020-深度学习推荐系统.md" />
+        <option value="$PROJECT_DIR$/content/03-NLP/2016-word2vec Parameter Learning Explained.md" />
       </list>
     </option>
   </component>
@@ -217,9 +234,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="795" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -233,34 +249,6 @@
             <path>
               <item name="wiki" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="wiki" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="wiki" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="wiki" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="attach" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="wiki" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="wiki" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="attach" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="images" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="wiki" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="wiki" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="content" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="wiki" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="wiki" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="content" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Machine Learning" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="wiki" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="wiki" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="content" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Recommend System" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -357,18 +345,24 @@
       <workItem from="1592535205166" duration="812000" />
       <workItem from="1592546759611" duration="633000" />
       <workItem from="1592548888351" duration="20299000" />
-      <workItem from="1592793083465" duration="11971000" />
+      <workItem from="1592793083465" duration="12776000" />
+      <workItem from="1592885029140" duration="136000" />
+      <workItem from="1592895459336" duration="3438000" />
+      <workItem from="1592964866620" duration="915000" />
+      <workItem from="1592966686819" duration="67000" />
+      <workItem from="1592966787354" duration="799000" />
+      <workItem from="1592994587640" duration="133000" />
+      <workItem from="1592996599436" duration="616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99478000" />
+    <option name="totallyTimeSpent" value="106387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25250357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2846924" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -386,7 +380,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.21927711" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.21927711" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -407,7 +401,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gnn/spectral-clustering.html" />
     <entry file="file://$PROJECT_DIR$/picture/next-watch.png" />
     <entry file="file://$PROJECT_DIR$/attach/images/next-watch-03.png">
       <provider selected="true" editor-type-id="images" />
@@ -593,27 +586,7 @@
     <entry file="file://$PROJECT_DIR$/attach/images/onlinTrain-05.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/Recommend System/2020-深度学习推荐系统.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="120">
-            <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/Machine Learning/2014-Online Optimization.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="165">
-            <caret line="11" selection-start-line="11" selection-end-line="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/Machine Learning/2000-GBDT.md">
+    <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/2000-GBDT.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="270">
@@ -623,17 +596,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/Machine Learning/2020-Factorization Machines.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="240">
-            <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="103" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/Machine Learning/2020-Soft Gradient Boosting Machine.md">
+    <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/2020-Soft Gradient Boosting Machine.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="270">
@@ -643,17 +606,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/Machine Learning/1991-Adaptive Mixtures of Local Experts.md">
+    <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/2018-MMoE(Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts).md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="180">
-            <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <first_editor relative-caret-position="585">
+            <caret line="39" selection-start-line="39" selection-end-line="39" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/Machine Learning/2016-xgboost.md">
+    <entry file="file://$PROJECT_DIR$/content/02-Recommend System/2016-Wide &amp; Deep Learning for Recommender Systems.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="300">
+            <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02-Recommend System/2016-Deep Neural Networks for YouTube Recommendations.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="345">
+            <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02-Recommend System/2018-Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="270">
+            <caret line="18" selection-start-line="18" selection-end-line="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/2014-Online Optimization.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02-Recommend System/2020-深度学习推荐系统.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="645">
+            <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/2020-Factorization Machines.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="52" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="52" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02-Recommend System/2019-Recommending What Video to Watch Next: A Multitask Ranking System.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="240">
+            <caret line="16" selection-end-line="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/02-Recommend System/2017-DeepFM: A Factorization-Machine based Neural Network for CTR Prediction.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="315">
+            <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/1991-Adaptive Mixtures of Local Experts.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="180">
+            <caret line="12" selection-start-line="12" selection-end-line="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/2016-xgboost.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="75">
@@ -663,7 +716,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/Machine Learning/2017-LightGBM.md">
+    <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/2017-LightGBM.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="15">
@@ -673,71 +726,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/Machine Learning/2011-the equivalence of logistic regression and maximum entropymodels.md">
+    <entry file="file://$PROJECT_DIR$/content/01-Machine Learning/2011-the equivalence of logistic regression and maximum entropymodels.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="75">
-            <caret line="5" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="5" />
+            <caret line="5" selection-start-line="4" selection-start-column="3" selection-end-line="5" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/Machine Learning/2018-MMoE(Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts).md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="510">
-            <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/Recommend System/2016-Wide &amp; Deep Learning for Recommender Systems.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="210">
-            <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="109" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/Recommend System/2019-Recommending What Video to Watch Next: A Multitask Ranking System.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="415">
-            <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/Recommend System/2016-Deep Neural Networks for YouTube Recommendations.md">
+    <entry file="file://$PROJECT_DIR$/content/03-NLP/2016-word2vec Parameter Learning Explained.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="240">
-            <caret line="16" column="17" lean-forward="true" selection-end-line="33" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/Recommend System/2017-DeepFM: A Factorization-Machine based Neural Network for CTR Prediction.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="225">
-            <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="107" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/Recommend System/2018-Entire Space Multi-Task Model: An Effective Approach for Estimating Post-Click Conversion Rate.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
