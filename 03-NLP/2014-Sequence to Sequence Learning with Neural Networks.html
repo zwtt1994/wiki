@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
     <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
-    <title>2000-Greedy function approximation: a gradient boosting machine - zwt的个人wiki</title>
+    <title>2014-Sequence to Sequence Learning with Neural Networks - zwt的个人wiki</title>
     <meta name="keywords" content="Memory."/>
     <meta name="description" content="Wiki."/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -16,29 +16,31 @@
   <div id="container" style = "width: 65em">
       
 <div id="header">
-  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#01-Machine Learning">01-Machine Learning</a>&nbsp;&#187;&nbsp;2000-Greedy function approximation: a gradient boosting machine
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#03-NLP">03-NLP</a>&nbsp;&#187;&nbsp;2014-Sequence to Sequence Learning with Neural Networks
     <span class="updated">Page Updated&nbsp;
-      2020-06-21
+      2020-06-24
     </span></div>
 </div>
 <div class="clearfix"></div>
 
-<div class="page_title">2000-Greedy function approximation: a gradient boosting machine</div>
+<div class="page_title">2014-Sequence to Sequence Learning with Neural Networks</div>
 
   <h2 id="_1">总结</h2>
 <ul>
-<li>将数值优化的思想扩展到函数空间，利用CART（弱学习器）来拟合负梯度，并将弱学习器累加到主函数得到新的主函数。</li>
+<li>由于dnn需要足够的样本，所以不适合去学习序列映射任务（样本分布稀疏），因此提出了seq2seq的经典模型结构。</li>
 </ul>
 <h2 id="_2">主要内容</h2>
 <ul>
 <li>
-<p>梯度下降法常用来在最优化问题中求参数值，这套理论同样可以利用到函数空间。</p>
+<p>seq2seq的结构是encoder+decoder，分别用两个多层lstm来实现。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/seq2seq-01.png" style="max-width:800px"></div></p>
 </li>
 <li>
-<p>在GBDT中，利用CART去拟合当前的负梯度，并在线性搜索权值后通过加权求和得到新的函数。</p>
+<p>训练的用softmax候选集是所有语料库，预测的时候用了beam search方法，每次保留概率最高的n个候选集。</p>
 </li>
 <li>
-<p>后面就介绍了GBDT在各种场景下的应用。</p>
+<p>文中发现模型对单词输入顺序很敏感，并且倒序能提升模型效果，对长句子的效果表现出乎意料的好。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/seq2seq-02.png" style="max-width:800px"></div></p>
 </li>
 </ul>
     </div>
