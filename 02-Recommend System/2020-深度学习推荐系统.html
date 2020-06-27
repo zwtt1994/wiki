@@ -111,7 +111,39 @@
 </ul>
 </li>
 <li>强化学习和推荐系统的结合<ul>
-<li></li>
+<li>介绍的比较简略。</li>
+</ul>
+</li>
+</ul>
+<h2 id="-embedding">第四章 - embedding在推荐系统中的应用</h2>
+<ul>
+<li>Word2vec<ul>
+<li>经典的embedding技术，详见word2vec笔记。</li>
+</ul>
+</li>
+<li>Item2vec - word2vec在推荐领域的推广<ul>
+<li>word中序列信息在item中可以理解为用户的item行为序列，与word不同的点是，item在embedding的时候可以不考虑时序信息。</li>
+<li>广义的item2vec，类似与DSSM的双塔模型。</li>
+<li>item2vec的缺点是只能利用序列型的数据来建立item间的相关性。</li>
+</ul>
+</li>
+<li>Graph embedding - 引入更多的信息<ul>
+<li>DeepWalk：在物品组成的图上随机游走产生item序列，利用word2vec方法训练。</li>
+<li>Node2vec：与DeepWalk相比优化来游走方法，通过限制转移概率来权衡BFS（结构性相似）和DFS（节点内容相似）。</li>
+<li>GES：word2vec模型输入除了itemId还增加了brandId，catId等embedding，可以训练得到多个维度的embedding，最后求平均得到最后的向量，能够一定程度上解决冷启动问题。</li>
+<li>EGES：考虑到不同的类别embedding对结果贡献不同，将上述求平均替换为attention的结构。</li>
+</ul>
+</li>
+<li>embedding与推荐系统的结合<ul>
+<li>利用embedding预训练，作为特征的embedding层。</li>
+<li>利用embedding向量的相似度做召回。</li>
+</ul>
+</li>
+<li>局部敏感hash<ul>
+<li>基本思想：在高维数据空间中的两个相邻的数据被映射到低维数据空间中后，将会有很大的概率任然相邻。通过这样一映射，我们可以在低维数据空间来寻找相邻的数据点，减少搜索复杂度，有这样性质的哈希映射称为是局部敏感的。</li>
+<li>数据描述：若d(x1,x2)<r1，那么P[h(x1)=h(x2)]≥p1；若d(x1,x2)>r2，那么P[h(x1)=h(x2)]≤p2。即当x1和x2的相似度与hash之后在同一个桶里的概率成正相关。</li>
+<li>建立索引：将数据通过一组LSH函数进行降维得到"低维矩阵"，将低维矩阵的特征维度切分为若干组，每一组通过一个常规的哈希函数进行映射（相似度判断），此时如果映射的是同一个桶说明样本在这组特征上是相似的。</li>
+<li>在线检索：将数据进过LSH方法得到桶号，低维矩阵特征维度被分为若干组，只要这些组中有n个以上是在同一个桶即认为样本在同一个桶，此时取出同一桶内的数据做判断即可（为了进一步减少计算量可以随机取n个）。</li>
 </ul>
 </li>
 </ul>
@@ -120,7 +152,7 @@
       <span>
         <p>Copyright © 2020 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2020-06-27 11:49:55</p>
+        <p>Site Generated 2020-06-27 19:01:53</p>
       </span>
     </div>
 
