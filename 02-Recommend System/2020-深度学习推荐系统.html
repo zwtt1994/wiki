@@ -149,15 +149,69 @@
 </ul>
 <h2 id="-_2">第五章 - 多角度审视推荐系统</h2>
 <ul>
-<li>特征工程<br />
-    -待补充笔记</li>
+<li>特征工程<ul>
+<li>待补充笔记</li>
+</ul>
+</li>
+<li>召回层的主要策略<ul>
+<li>热门、历史行为、lbs和协同过滤等，可以理解为和用户相关的一阶（历史行为）、二阶（关注人的行为）或多阶的召回策略。</li>
+<li>基于embedding召回，将用户/item向量化，通过计算向量相似度来召回。</li>
+</ul>
+</li>
+<li>推荐系统的实时性<ul>
+<li>特征和模型都需要具备实时性。</li>
+</ul>
+</li>
+<li>合理设置推荐系统的优化目标<ul>
+<li>模型优化目标应与应用场景统一，如Youtube以用户观看时长为优化目标。</li>
+</ul>
+</li>
+<li>推荐系统中比模型结构更重要的东西<ul>
+<li>推荐系统的模型结构不是通用的，需要根据场景的先验知识来设计模型结构，如观察用户行为并在模型中加入有价值的用户信息。</li>
+<li>算法工程师需要对用户的角度思考问题，而不是只做调参侠。</li>
+</ul>
+</li>
+<li>冷启动的解决方法<ul>
+<li>待补充笔记</li>
+</ul>
+</li>
+<li>Exploit &amp; Explore<ul>
+<li>待补充笔记</li>
+</ul>
+</li>
+</ul>
+<h2 id="-_3">第六章 - 深度学习推荐系统的工程实现</h2>
+<ul>
+<li>推荐系统的数据流<ul>
+<li>批处理与流计算两种大数据架构，分别对应离线与实时两种数据处理方式。</li>
+</ul>
+</li>
+<li>分布式离线训练架构<ul>
+<li>Spark MLlib、PS、TF，待补充笔记</li>
+</ul>
+</li>
+<li>深度学习模型的上线部署<ul>
+<li>预存embedding结果+轻量级线上模型。</li>
+<li>PMML转化并部署模型。</li>
+<li>TF serving。</li>
+</ul>
+</li>
+</ul>
+<h2 id="-_4">第七章 - 推荐系统的评估</h2>
+<ul>
+<li>离线评价指标</li>
+<li>AB测试与线上评估指标</li>
+</ul>
+<h2 id="-_5">第八章 - 深度学习的前沿实践</h2>
+<ul>
+<li>介绍了Facebook DLRM，Airbnb的embedding，Youtube的视频推荐系统和阿里巴巴的推荐系统，详见笔记。</li>
 </ul>
     </div>
     <div id="footer">
       <span>
         <p>Copyright © 2020 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2020-06-27 21:12:00</p>
+        <p>Site Generated 2020-06-27 21:32:32</p>
       </span>
     </div>
 
