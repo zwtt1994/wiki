@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/content/02-Recommend System/2017-Deep Interest Network.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2017-Deep Interest Network.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/01-Machine Learning/Batch Normalization.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/Batch Normalization.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/02-Recommend System/2019-DIEN.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2019-DIEN.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
