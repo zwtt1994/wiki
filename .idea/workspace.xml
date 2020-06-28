@@ -20,18 +20,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="796" />
   </component>
   <component name="ProjectId" id="1dnE8cVx8cc2eBzUlWe9U5OqriH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -67,13 +80,6 @@
       <recent name="$PROJECT_DIR$/attach" />
       <recent name="$PROJECT_DIR$/content/Deep learning" />
     </key>
-  </component>
-  <component name="SbtLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$PROJECT_DIR$/../../ml-homework-cz/basic-scala/zhangweite" value="PREVIEW" />
-      </map>
-    </option>
   </component>
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
@@ -123,11 +129,12 @@
       <workItem from="1592994587640" duration="133000" />
       <workItem from="1592996599436" duration="879000" />
       <workItem from="1592998420416" duration="951000" />
+      <workItem from="1593312925927" duration="403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107601000" />
+    <option name="totallyTimeSpent" value="108004000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -142,16 +149,31 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="390" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593162615712">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="390" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1593162615712" />
-    <state x="421" y="82" width="598" height="735" key="find.popup" timestamp="1593265652807">
+    <state x="421" y="82" width="598" height="735" key="find.popup" timestamp="1593265731739">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="421" y="82" width="598" height="735" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1593265652807" />
+    <state x="421" y="82" width="598" height="735" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1593265731739" />
   </component>
   <component name="masterDetails">
     <states>
