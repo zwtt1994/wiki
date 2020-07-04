@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="" />
+    <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/content/02-Recommend System/2020-论文简记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,10 +165,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="390" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593162615712">
+    <state x="390" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593747082666">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="390" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1593162615712" />
+    <state x="390" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1593747082666" />
     <state x="421" y="82" width="598" height="735" key="find.popup" timestamp="1593265731739">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
