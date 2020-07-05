@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2019-Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks  - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#03-GNN">03-GNN</a>&nbsp;&#187;&nbsp;2019-Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks 
+    <span class="updated">Page Updated&nbsp;
+      2020-07-05
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2019-Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks </div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li></li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>原始GCN在落地上有下列缺点：1.占用内存大，2.耗时长，3.收敛速度慢；GraphSAGE提出了逐节点的前向计算，但增加了时间复杂度；也有论文提出过用batch的方式，但都没解决上述3个问题。</p>
+</li>
+<li>
+<p>本文将图结构先进行聚类，再分别对各个簇按batch进行训练。具体的，利用谱聚类进行图的划分，再别分进行训练。</p>
+<ul>
+<li>谱聚类：将图结构的拉普拉斯矩阵做特征分解，并取前k个特征向量作为样本向量，再做k-means聚类。（METIS：图分割的一个软件包）</li>
+</ul>
+</li>
+<li>
+<p>Cluster-GCN算法的流程如下，由于分簇进行训练，训练过程中需要做一些改变。<br />
+    <div style="text-align: center"><img src="/wiki/attach/images/Cluster-GCN-01.png" style="max-width:200px"></div></p>
+<ul>
+<li>训练方式需要改变,需要按簇的维度计算损失函数。</li>
+<li>同一个batch内标签的熵较小，影响收敛，所以每次随机选择n个簇进行训练。</li>
+<li>计算效率提高后可以加深GCN，但深度模型信息训练困难（信息很难从浅层传到深层），所以在计算时放大卷积核的对角元素的权重。</li>
+</ul>
+</li>
+<li>
+<p>实验验证了Cluster-GCN的有效性，在模型效果与性能方便都优于其他类似的方法。</p>
+<ul>
+<li>在准确率和收敛时间上的比较结果。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/Cluster-GCN-02.png" style="max-width:200px"></div></li>
+<li>在内存占用上的比较结果。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/Cluster-GCN-03.png" style="max-width:200px"></div></li>
+<li>同时本文还在卷积层更多的情况下做了实验，结论也是Cluster-GCN有着较好的效果与性能。</li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2020 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2020-07-05 22:17:03</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
