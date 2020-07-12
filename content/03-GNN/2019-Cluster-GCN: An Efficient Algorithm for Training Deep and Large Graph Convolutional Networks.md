@@ -23,7 +23,7 @@ date: 2020-07-05
   
 - 实验验证了Cluster-GCN的有效性，在模型效果与性能方便都优于其他类似的方法。
     - 在准确率和收敛时间上的比较结果。
-    <div style="text-align: center"><img src="/wiki/attach/images/Cluster-GCN-02.png" style="max-width:500px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/Cluster-GCN-02.png" style="max-width:600px"></div>
     - 在内存占用上的比较结果。
-    <div style="text-align: center"><img src="/wiki/attach/images/Cluster-GCN-03.png" style="max-width:500px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/Cluster-GCN-03.png" style="max-width:800px"></div>
     - 同时本文还在卷积层更多的情况下做了实验，结论也是Cluster-GCN有着较好的效果与性能。
