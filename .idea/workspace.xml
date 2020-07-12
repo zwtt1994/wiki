@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/03-GNN/2020-Composition-based Multi-Relational Graph Convolutional Networks.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/03-GNN/2019-A Vectorized Relational Graph Convolutional Network for Multi-Relational Network Alignment.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/03-GNN/2019-A Vectorized Relational Graph Convolutional Network for Multi-Relational Network Alignment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/03-GNN/2020-Composition-based Multi-Relational Graph Convolutional Networks.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/03-GNN/2020-Composition-based Multi-Relational Graph Convolutional Networks.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

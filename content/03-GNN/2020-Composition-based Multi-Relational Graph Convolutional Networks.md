@@ -18,4 +18,4 @@ date: 2020-07-12
     <div style="text-align: center"><img src="/wiki/attach/images/CompGCN-02.png" style="max-width:300px"></div>
     <div style="text-align: center"><img src="/wiki/attach/images/CompGCN-01.png" style="max-width:600px"></div>
     - 为了能够使得运算中节点和边的embedding在统一空间，对边的embedding进行转换处理。并且为了降低边太多而带来的计算复杂度，本文设计了一组基向量来加权表示所有的边。
-    <div style="text-align: center"><img src="/wiki/attach/images/CompGCN-03.png" style="max-width:300px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/CompGCN-03.png" style="max-width:200px"></div>
