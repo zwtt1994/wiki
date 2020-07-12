@@ -21,11 +21,11 @@ date: 2020-07-05
     - 进一步限制卷积结果关于拉普拉斯矩阵L是线性的（令K=1），得到卷积公式如下。
     <div style="text-align: center"><img src="/wiki/attach/images/GCN-04.png" style="max-width:500px"></div>
     - 进一步简化公式，将两个参数合并为一个参数，并对括号内做归一化，得到最终的近似卷积公式。
-    <div style="text-align: center"><img src="/wiki/attach/images/GCN-05.png" style="max-width:200px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/GCN-05.png" style="max-width:300px"></div>
     <div style="text-align: center"><img src="/wiki/attach/images/GCN-06.png" style="max-width:200px"></div>
     
 - 半监督分类任务
     - GCN模型结构定义如下，包括两个卷积层，损失函数为交叉熵，利用有标签的数据做训练并预测无标签数据的类别。
     <div style="text-align: center"><img src="/wiki/attach/images/GCN-07.png" style="max-width:400px"></div>
-    <div style="text-align: center"><img src="/wiki/attach/images/GCN-08.png" style="max-width:600px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/GCN-08.png" style="max-width:500px"></div>
     - 在引文网络数据集和其他几个数据集中做了验证，结果证明了该网络结构的有效性。
