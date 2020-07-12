@@ -1,7 +1,7 @@
 ---
 title: "2019-A Vectorized Relational Graph Convolutional Network for Multi-Relational Network Alignment"
 layout: page
-date: 2020-07-05
+date: 2020-07-12
 ---
 
 ## 总结

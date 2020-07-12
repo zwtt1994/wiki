@@ -1,7 +1,7 @@
 ---
 title: "2017-Inductive Representation Learning on Large Graphs"
 layout: page
-date: 2020-07-05
+date: 2020-07-12
 ---
 
 ## 总结
