@@ -13,6 +13,6 @@ date: 2020-07-15
 
 - 根据GraphSAGE的计算方式，如果每次计算卷积时需要聚合所有邻居信息，每个batch的计算时间和内存的风险是无法保证的。
 - 本文提出记录节点向量的历史向量，将卷积计算进行如下简化
-<div style="text-align: center"><img src="/wiki/attach/images/VRGCN-True-01.png" style="max-width:400px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/VRCGN-True-01.png" style="max-width:400px"></div>
 - 其中节点的历史向量可以记录下来而不需要重复计算，所以在计算卷积时能够不递归的考虑所有邻居的向量；而残差向量则依旧通过邻居采样来获得。
 - 相比于常规的邻居采样，残差的方差明显比原始向量要更小一些。
