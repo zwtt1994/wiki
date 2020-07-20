@@ -24,7 +24,7 @@ date: 2020-06-14
     <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-03.png" style="max-width:250px"></div>
 
 - 最后是将多个AttentionalAgg层中的u向量聚合，并通过一个浅层dnn得到输出。
-    <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-04.png" style="max-width:500px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-04.png" style="max-width:300px"></div>
 
 - 从模型结构中可以看出，每层的attention向量和特征都是保持着对应关系的，所以可以用其来做模型分析和解释。
 
