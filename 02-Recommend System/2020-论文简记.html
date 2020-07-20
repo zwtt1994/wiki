@@ -35,6 +35,28 @@
 </ul>
 </li>
 <li>
+<p>Feature Transformation for Neural Ranking Models - Google- 2020</p>
+<ul>
+<li>dnn对数值特征的利用不太友好，过大或过小的特征容易影响模型训练，所以往往需要进行特征缩放/归一化。</li>
+<li>本文旨在自动化学习特征的变换方式，即通过attention的方式对各种给定的变换结果进行加权，作为特征最终的输入。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/Feature-Trans-01.png" style="max-width:500px"></div></li>
+</ul>
+</li>
+<li>
+<p>GateNet:Gating-Enhanced Deep Network for Click-Through Rate Prediction - tencent - 2020</p>
+<ul>
+<li>在特征embedding和dnn部分引入gate的思想，使得特征的embedding和dnn可以更加有效的捕获信息。</li>
+<li>本质上和attention没有区别，类似于简化版的self-attention。</li>
+</ul>
+</li>
+<li>
+<p>Neural Input Search for Large Scale Recommendation Models - google - 2020</p>
+<ul>
+<li>提出不同的sparse特征应该分配不同的embedding size，使得在一定的模型复杂度下达到最好的效果。不同的size的向量再通过二次处理得到相同size的向量。</li>
+<li>本质上就是一种模型调参，对embedding层进行了改造优化。</li>
+</ul>
+</li>
+<li>
 <p>Deep Match to Rank Model for Personalized Click-Through Rate Prediction - 阿里 - 2020</p>
 <ul>
 <li>同时利用User-Item和Item-Item的相关性对历史行为序列进行建模，Item-Item处理方式与DIN基本类似。</li>
@@ -81,7 +103,7 @@
       <span>
         <p>Copyright © 2020 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2020-07-18 09:38:12</p>
+        <p>Site Generated 2020-07-20 11:17:54</p>
       </span>
     </div>
 

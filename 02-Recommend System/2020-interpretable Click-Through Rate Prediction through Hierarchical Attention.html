@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2020-Interpretable Click-Through Rate Prediction through Hierarchical Attention - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#02-Recommend System">02-Recommend System</a>&nbsp;&#187;&nbsp;2020-Interpretable Click-Through Rate Prediction through Hierarchical Attention
+    <span class="updated">Page Updated&nbsp;
+      2020-06-14
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2020-Interpretable Click-Through Rate Prediction through Hierarchical Attention</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>本文提出了InterHAt模型结构，本质上是利用Transformer和AttentionalAgg层来处理数据，来捕获特征交互中的多义性，同时使得特征在模型中传递时能够保持序列关系，从而更好的进行模型解释/分析。</li>
+<li>核心的思想是在提取高阶特征的同时保持特征的有序性，使得高阶特征分析成为可能。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>InterHAt模型结构如下。<br />
+    <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-01.png" style="max-width:500px"></div></p>
+</li>
+<li>
+<p>底层是一个embedding层，类别特征one-hot后映射到d维向量；数值特征也设置一个可训练的d维向量Vd，输入值为特征值<em>Vd；最终输入特征维度为d</em>m。</p>
+</li>
+<li>
+<p>之后是Transformer层，从文中的说明来看应该是用了transformer的encode部分，并将多个输出加权求和，重新整合成d*m的维度。<br />
+    <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-02.png" style="max-width:300px"></div></p>
+</li>
+<li>
+<p>紧接着是多个AttentionalAgg层，目的是提取高阶的交互特征，主要思路是在上一层信息上叠加和第一层信息的交互信息，思路和DCN有点像，但交互信息的提取是利用attention的方式计算的。该层输出也保持着d*m的维度。<br />
+    <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-025.png" style="max-width:250px"></div><br />
+    <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-03.png" style="max-width:250px"></div></p>
+</li>
+<li>
+<p>最后是将多个AttentionalAgg层中的u向量聚合，并通过一个浅层dnn得到输出。<br />
+    <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-04.png" style="max-width:500px"></div></p>
+</li>
+<li>
+<p>从模型结构中可以看出，每层的attention向量和特征都是保持着对应关系的，所以可以用其来做模型分析和解释。</p>
+</li>
+<li>
+<p>实验验证了模型的效率和效果都是比较好的，这个其实与具体场景和基线相关。</p>
+</li>
+<li>
+<p>用三个场景举例说明了特征可能会在不同AttentionalAgg层中表现出较强的重要性差异。<br />
+    <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-05.png" style="max-width:500px"></div><br />
+    <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-06.png" style="max-width:500px"></div></p>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2020 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2020-07-20 11:17:54</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
