@@ -22,7 +22,7 @@ date: 2020-06-14
 - 紧接着是多个AttentionalAgg层，目的是提取高阶的交互特征，主要思路是在上一层信息上叠加和第一层信息的交互信息，思路和DCN有点像，但交互信息的提取是利用attention的方式计算的。该层输出也保持着d*m的维度。
     <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-025.png" style="max-width:250px"></div>
     <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-03.png" style="max-width:250px"></div>
-
+    <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-033.png" style="max-width:250px"></div>
 - 最后是将多个AttentionalAgg层中的u向量聚合，并通过一个浅层dnn得到输出。
     <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-04.png" style="max-width:300px"></div>
 
