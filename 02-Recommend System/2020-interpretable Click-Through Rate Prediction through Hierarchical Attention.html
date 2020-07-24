@@ -46,7 +46,8 @@
 <li>
 <p>紧接着是多个AttentionalAgg层，目的是提取高阶的交互特征，主要思路是在上一层信息上叠加和第一层信息的交互信息，思路和DCN有点像，但交互信息的提取是利用attention的方式计算的。该层输出也保持着d*m的维度。<br />
     <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-025.png" style="max-width:250px"></div><br />
-    <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-03.png" style="max-width:250px"></div></p>
+    <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-03.png" style="max-width:250px"></div><br />
+    <div style="text-align: center"><img src="/wiki/attach/images/InterHAt-033.png" style="max-width:250px"></div></p>
 </li>
 <li>
 <p>最后是将多个AttentionalAgg层中的u向量聚合，并通过一个浅层dnn得到输出。<br />
@@ -69,7 +70,7 @@
       <span>
         <p>Copyright © 2020 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2020-07-20 13:13:41</p>
+        <p>Site Generated 2020-07-24 20:08:32</p>
       </span>
     </div>
 
