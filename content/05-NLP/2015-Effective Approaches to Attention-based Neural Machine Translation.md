@@ -1,5 +1,5 @@
 ---
-title: "2015-Neural Machine Translation by Jointly Learning to Align and Translate"
+title: "2015-Effective Approaches to Attention-based Neural Machine Translation"
 layout: page
 date: 2020-07-25
 ---
