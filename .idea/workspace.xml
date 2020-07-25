@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/content/05-NLP/2015-Effective Approaches to Attention-based Neural Machine Translation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/05-NLP/2015-Effective Approaches to Attention-based Neural Machine Translation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/05-NLP/2017-Attention Is All You Need.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/02-Recommend System/2020-论文简记.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2020-论文简记.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
