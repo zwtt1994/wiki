@@ -26,13 +26,3 @@ date: 2020-07-25
 - Input-feeding Approach，将t时刻decode的输出+隐层状态一起输入到t+1的decode，之前的模型只使用了decode的输出。
     <div style="text-align: center"><img src="/wiki/attach/images/AttentionV2-05.png" style="max-width:400px"></div>
     
-
-
-- 本文使用双向RNN去做encode来更好的表达输入序列，并在解码时利用attention机制捕捉所有相关的编码信息。
-
-
-- 实验结果验证了模型的有效性，新框架在长句子上表现优异。
-<div style="text-align: center"><img src="/wiki/attach/images/Attention-02.png" style="max-width:500px"></div>
-
-- 观察了attention分布，符合正常逻辑中的"对角线分布"。
-<div style="text-align: center"><img src="/wiki/attach/images/Attention-03.png" style="max-width:700px"></div>
