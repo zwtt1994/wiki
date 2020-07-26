@@ -11,7 +11,7 @@ date: 2020-07-25
 ## 主要内容
 
 - Transformer结构如下，整体框架分为encode和decode两部分，整体结构。
-<div style="text-align: center"><img src="/wiki/attach/images/Transformer-03.png" style="max-width:500px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/Transformer-03.png" style="max-width:400px"></div>
 
 - Attention的通用结构如下，他的本质是通过计算Query和Key之间的相似程度来对Value进行加权求和。文中提到的Self-attention是指上述Q=K=V（encode部分）或者是Q=K（decode部分），本质上都是attention的简化。
 <div style="text-align: center"><img src="/wiki/attach/images/Transformer-01.png" style="max-width:300px"></div>
