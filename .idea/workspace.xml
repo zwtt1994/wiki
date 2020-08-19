@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="" />
+    <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/content/02-Recommend System/2020-Embedding-based Retrieval in Facebook Search.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/02-Recommend System/2020-Ranking and Calibrating Click-Attributed Purchases in Performance Display Advertising.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,11 +40,6 @@
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="796" />
   </component>
   <component name="ProjectId" id="1dnE8cVx8cc2eBzUlWe9U5OqriH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
