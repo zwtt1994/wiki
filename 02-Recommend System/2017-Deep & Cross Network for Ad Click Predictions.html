@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2017-Deep & Cross Network for Ad Click Predictions - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#02-Recommend System">02-Recommend System</a>&nbsp;&#187;&nbsp;2017-Deep & Cross Network for Ad Click Predictions
+    <span class="updated">Page Updated&nbsp;
+      2020-08-20
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2017-Deep & Cross Network for Ad Click Predictions</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>提出了有限高阶、自动叉乘和参数共享的DCN结构，进一步深化了特征交叉。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>Embedding层，稀疏特征embedding，减少后续模型参数，提升模型鲁棒性。</p>
+</li>
+<li>
+<p>Deep部分，常规的多层全连接网络。</p>
+</li>
+<li>
+<p>DCN结构</p>
+<ul>
+<li>有限高阶，叉乘阶数由网络深度决定。</li>
+<li>自动叉乘，包含了原始特征向量从一阶到k阶所有的叉乘组合。</li>
+<li>参数共享：降低了参数数量，增强了模型的泛化性和鲁棒性。</li>
+</ul>
+</li>
+<li>
+<p>DCN结构分析</p>
+<ul>
+<li>多项式近似<ul>
+<li>根据魏尔斯特拉斯逼近定理，任意平滑连续函数可以用多项式函数逼近到一定精度。</li>
+<li>常规的d维n阶多项式系数数量为O(d的n次方)，本文证明了仅使用O(d)个参数就可以表示上述所有各不相同的系数。</li>
+<li>其实上述这点也是比较直觉的，通过设置不同的计算函数，可以实现参数的扩展表示；如完全平方公式中求和项的两个系数决定了展开后的三个系数。</li>
+<li>虽然DCN的灵活性不如原生的多项式，但在具备不俗表达能力的基础上，加强了泛化能力。</li>
+</ul>
+</li>
+<li>与FM的关系<ul>
+<li>FM是向量维度的交叉计算，DCN是单点维度的交叉计算；向量维度计算更能应对噪声，单点计算容易过拟合，并且在输入向量稀疏的时候效果较差。</li>
+<li>所以在处理dense向量，并且单点数据有一定意义的时候DCN可能会有较好的效果。</li>
+<li>FM只有二阶交叉，而DNC可以根据层数实现多阶交叉；所以之后FM的这个缺点提出了xDeepFM。</li>
+</ul>
+</li>
+<li>高效计算<ul>
+<li>利用矩阵乘法交换律，先计算向量内积提高效率。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2020 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2020-11-08 21:36:49</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>

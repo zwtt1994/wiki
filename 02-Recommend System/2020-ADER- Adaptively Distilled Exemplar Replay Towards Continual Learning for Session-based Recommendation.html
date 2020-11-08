@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2020-ADER- Adaptively Distilled Exemplar Replay Towards Continual Learning for Session-based Recommendation - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#02-Recommend System">02-Recommend System</a>&nbsp;&#187;&nbsp;2020-ADER- Adaptively Distilled Exemplar Replay Towards Continual Learning for Session-based Recommendation
+    <span class="updated">Page Updated&nbsp;
+      2020-10-09
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2020-ADER- Adaptively Distilled Exemplar Replay Towards Continual Learning for Session-based Recommendation</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>Session-based推荐系统旨在建模序列信息，在实际中较久之前的信息和最新信息的利用率难以平衡，为此本文基于continual learning提出了两种方法。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>continual learning，每次模型更新时基于t-1的模型和t的数据做fine-tune。</p>
+</li>
+<li>
+<p>筛选经典样本保留长期偏好信息，每次保留历史的一部分样本加入到最新的数据中训练，损失函数为交叉熵，t样本取真实label，老样本的label取t-1模型的预测值。</p>
+</li>
+<li>
+<p>在loss中限制模型更新幅度</p>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2020 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2020-11-08 21:36:49</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>

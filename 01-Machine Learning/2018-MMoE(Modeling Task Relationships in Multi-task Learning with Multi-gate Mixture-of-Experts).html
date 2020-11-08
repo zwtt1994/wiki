@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2018-MMoE(Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts) - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#01-Machine Learning">01-Machine Learning</a>&nbsp;&#187;&nbsp;2018-MMoE(Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts)
+    <span class="updated">Page Updated&nbsp;
+      2020-06-15
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2018-MMoE(Modeling Task Relationships in Multi-task Learning with Multi-gate Mixture-of-Experts)</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>本文提出并实验证明了MMOE结构在多目标学习中的有效性。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>介绍了多目标学习中的shared-bottom，MOE，并提出了MMoE。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/mmoe-01.png" style="max-width:600px"></div></p>
+</li>
+<li>
+<p>利用人工合成数据控制label之间的相关性，并在上述三个结构上做了实验。实验结果表明MMOE结构在不同相关性的多任务学习中表现既好又稳定。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/mmoe-02.png" style="max-width:600px"></div></p>
+</li>
+<li>
+<p>通过随机采样多组数据，随机初始化模型参数进行多次实验，进一步评估了三种结构的训练鲁棒性。<br />
+实验结果表明shared-bottom结构表现最差，结果分布方差较大；OMoE在两个任务相关性较强时和MMoE结果接近，但在任务相关性较低时性能较差；总体上也是证明了MMoE结构的在训练中的鲁棒性。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/mmoe-03.png" style="max-width:700px"></div></p>
+</li>
+<li>
+<p>用真实数据对比了MMoE和其他几种比较新的多目标学习方法的效果。</p>
+<ul>
+<li>L2-Constrained：多目标模型参数加上L2的正则限制，即在损失函数中加上两个参数矩阵差的L2范数。</li>
+<li>Cross-Stitch：引入cross-unit结构，多目标模型的下一个隐层与所有的模型隐层都相关。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/mmoe-04.png" style="max-width:300px"></div></li>
+<li>Tensor-Factorization：将隐层之间的参数按多目标数量扩充，并将其分解为矩阵乘积，多目标之间的相关性由矩阵分解引入。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/mmoe-05.png" style="max-width:400px"></div></li>
+<li>实验数据多目标label：收入/婚否（皮尔森相关系数0.1768），教育水平/婚否（皮尔森相关系数0.2373）</li>
+<li>实验结果主要体现了MMoE的效果，作者也说明了Tensor-Factorization较差的原因是在浅层隐层就限制多目标间的参数，当多目标间相关度不大时会产生负向效果。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/mmoe-06.png" style="max-width:500px"></div></li>
+<li>在Google的推荐系统上进行了离线实验，包括两类label，互动型（如点击）label和满意型（如收藏）label，实验结果同样显示了MMoE结构的效果。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/mmoe-08.png" style="max-width:500px"></div></li>
+<li>在实验中分析了gate的分布，显示了满意型的label的expert更集中，这也说明了label能够给Experts提供较强的目标信息。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/mmoe-07.png" style="max-width:500px"></div></li>
+<li>给出了线上实验结果，shared-bottom相比与基线，在参与度label下表现又略微下降（这个在实际种比较重要），满意度label有较大提升；MMoE相比与shared-bottom有一定的提升，综合来看MMoE相比于基线是两种label都有提升。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/mmoe-09.png" style="max-width:500px"></div></li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2020 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2020-11-08 21:36:49</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>

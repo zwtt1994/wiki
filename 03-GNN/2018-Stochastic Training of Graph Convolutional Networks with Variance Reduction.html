@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2018-Stochastic Training of Graph Convolutional Networks with Variance Reduction - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#03-GNN">03-GNN</a>&nbsp;&#187;&nbsp;2018-Stochastic Training of Graph Convolutional Networks with Variance Reduction
+    <span class="updated">Page Updated&nbsp;
+      2020-07-15
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2018-Stochastic Training of Graph Convolutional Networks with Variance Reduction</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>在卷积计算中，通过记录节点历史向量的方法来提高计算效率，并通过邻居采样法计算残差。</li>
+<li>常规方法是整个向量都通过采样来计算，而本文的方法是只有残差是采样计算得到的，所以不仅提升了计算效率，模型方差也更小了。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>根据GraphSAGE的计算方式，如果每次计算卷积时需要聚合所有邻居信息，每个batch的计算时间和内存的风险是无法保证的。</li>
+<li>本文提出记录节点向量的历史向量，将卷积计算进行如下简化<br />
+<div style="text-align: center"><img src="/wiki/attach/images/VRCGN-True-01.png" style="max-width:400px"></div></li>
+<li>其中节点的历史向量可以记录下来而不需要重复计算，所以在计算卷积时能够不递归的考虑所有邻居的向量；而残差向量则依旧通过邻居采样来获得。</li>
+<li>相比于常规的邻居采样，残差的方差明显比原始向量要更小一些。</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2020 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2020-11-08 21:36:49</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>

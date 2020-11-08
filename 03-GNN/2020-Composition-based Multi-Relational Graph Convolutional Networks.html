@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2020-Composition-based Multi-Relational Graph Convolutional Networks - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#03-GNN">03-GNN</a>&nbsp;&#187;&nbsp;2020-Composition-based Multi-Relational Graph Convolutional Networks
+    <span class="updated">Page Updated&nbsp;
+      2020-07-12
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2020-Composition-based Multi-Relational Graph Convolutional Networks</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>针对有向图提出了CompGCN，思路还是GraphSAGE的思路，只是在聚合的时候根据有向图的特点设计了特定的聚合函数。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>常规的GCN算法都是应用与无向图，本文针对有向图提出了CompGCN，旨在同时学习节点和边的表示。</li>
+<li>经典的有向图的聚合处理是根据不同类型的关系来选取不同的聚合参数，但如果关系种类比较多就很难学习。</li>
+<li>有向图GCN模型设计<ul>
+<li>针对一个节点设计三套聚合权值（正向边，反向边，自连边），聚合函数和聚合示意图如下。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/CompGCN-02.png" style="max-width:300px"></div><br />
+<div style="text-align: center"><img src="/wiki/attach/images/CompGCN-01.png" style="max-width:600px"></div></li>
+<li>为了能够使得运算中节点和边的embedding在统一空间，对边的embedding进行转换处理。并且为了降低边太多而带来的计算复杂度，本文设计了一组基向量来加权表示所有的边。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/CompGCN-03.png" style="max-width:200px"></div></li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2020 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2020-11-08 21:36:49</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>

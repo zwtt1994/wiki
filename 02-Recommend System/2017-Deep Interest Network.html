@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2017-Deep Interest Network - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#02-Recommend System">02-Recommend System</a>&nbsp;&#187;&nbsp;2017-Deep Interest Network
+    <span class="updated">Page Updated&nbsp;
+      2020-06-26
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2017-Deep Interest Network</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>在用户历史行为特征中加入attention结构，提取与当前预测有用的历史行为。</li>
+<li>提出了两个训练中的trick，减弱重要特征的正则力度，激活函数与数据相关。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>用户在电商场景的兴趣是多样化的，并且当前用户想看的东西只和部分历史数据相关。</p>
+</li>
+<li>
+<p>常规的历史行为是通过multi-hot的形式引入的，但这种embedding+pooling的方式很容易很难从历史行为中提取出和当前强相关的item信息。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/DIN-01.png" style="max-width:800px"></div></p>
+</li>
+<li>
+<p>本文提出将当前预测的item和历史行为item的"相关性"来作为attention的权值，更准确的利用用户历史行为中的特征。上文提到的"相关性"就是通过激活单元来获取。</p>
+</li>
+<li>
+<p>本文训练中的一些trick</p>
+<ul>
+<li>
+<p>频次正则化，思想是在一个batch中频次越高的特征惩罚越弱，即减弱重要特征的正则力度，以应对推荐场景下"头重，尾长"的特征现象。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/DIN-02.png" style="max-width:500px"></div></p>
+</li>
+<li>
+<p>Dice激活函数，全域梯度都大于0，梯度曲线随batch均值方差变化。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/DIN-03.png" style="max-width:500px"></div><br />
+<div style="text-align: center"><img src="/wiki/attach/images/DIN-04.png" style="max-width:500px"></div></p>
+</li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2020 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2020-11-08 21:36:49</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>

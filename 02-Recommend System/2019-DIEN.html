@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2019-Deep Interest Evolution Network - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#02-Recommend System">02-Recommend System</a>&nbsp;&#187;&nbsp;2019-Deep Interest Evolution Network
+    <span class="updated">Page Updated&nbsp;
+      2020-06-26
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2019-Deep Interest Evolution Network</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>相比于DIN本质上是增加了历史行为的序列信息。</li>
+<li>本文是利用GRU结构来引入序列信息，这样做的性价比不一定很高，因为在实际中用户历史行为的时序信息可能对当前预测的影响不大，或者说只要多引入一个历史行为的时间特征可能就能比较好的表示时序信息。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>在用户历史行为的处理中提出了新的结构，分为三个部分：embedding，interest extractor，interest evolving。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/DIEN-01.png" style="max-width:700px"></div></p>
+</li>
+<li>
+<p>interest extractor层利用GRU对历史行为进行处理，并利用实际item序列进行辅助学习。</p>
+</li>
+<li>
+<p>interest evolving层利用attention机制改造了GRU，将历史item和当前预测的item的相关性引入到模型中。</p>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2020 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2020-11-08 21:36:49</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>

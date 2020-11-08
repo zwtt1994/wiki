@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2019-A Vectorized Relational Graph Convolutional Network for Multi-Relational Network Alignment - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#03-GNN">03-GNN</a>&nbsp;&#187;&nbsp;2019-A Vectorized Relational Graph Convolutional Network for Multi-Relational Network Alignment
+    <span class="updated">Page Updated&nbsp;
+      2020-07-12
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2019-A Vectorized Relational Graph Convolutional Network for Multi-Relational Network Alignment</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>提出了VR（vectorized relational）-GCN来同时建模图结构中的节点（实体）与边（关系），并设计了卷积计算使得模型满足TransE的假设性质。</li>
+<li>基于VR-CGN增加网络对齐的目标，可以得到知识图谱对齐框架AVR-GCN。</li>
+<li>得系统看下知识图谱的知识，这篇文章主要也是针对知识图谱数据。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>VR-GCN框架和计算方式如下，在卷积中引入了"边"的表示，并区分头/尾实体来满足TransE的性质。<br />
+    <div style="text-align: center"><img src="/wiki/attach/images/VR-GCN-01.png" style="max-width:600px"></div><br />
+    <div style="text-align: center"><img src="/wiki/attach/images/VR-GCN-02.png" style="max-width:400px"></div></p>
+</li>
+<li>
+<p>针对知识图谱提出了对齐框架AVR-GCN<br />
+    <div style="text-align: center"><img src="/wiki/attach/images/VR-GCN-04.png" style="max-width:600px"></div></p>
+<ul>
+<li>最小化等价实体对/关系对的距离，其中还采样了负样本。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/VR-GCN-03.png" style="max-width:600px"></div></li>
+<li>构建跨网络的三元组。</li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2020 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2020-11-08 21:36:49</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
