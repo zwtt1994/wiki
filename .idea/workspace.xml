@@ -19,19 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/01-Machine Learning/2015-Deep Residual Learning for Image Recognition.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/01-Machine Learning/2019-迁移学习.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/02-Recommend System/2017-Deep &amp; Cross Network for Ad Click Predictions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/02-Recommend System/2018-xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/02-Recommend System/2020-ADER- Adaptively Distilled Exemplar Replay Towards Continual Learning for Session-based Recommendation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/02-Recommend System/2020-Compositional Embeddings Using Complementary Partitions for Memory-Efficient Recommendation Systems.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/02-Recommend System/2020-Improving Deep Learning For Airbnb Search.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/02-Recommend System/2020-Neural Collaborative Filtering vs. Matrix Factorization Revisited.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/02-Recommend System/2020-论文简记.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2020-论文简记.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/05-NLP/2017-Attention Is All You Need.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/05-NLP/2017-Attention Is All You Need.md" afterDir="false" />
-    </list>
+    <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
