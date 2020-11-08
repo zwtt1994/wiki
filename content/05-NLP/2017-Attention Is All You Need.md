@@ -16,6 +16,8 @@ date: 2020-07-25
 - Attention的通用结构如下，他的本质是通过计算Query和Key之间的相似程度来对Value进行加权求和。文中提到的Self-attention是指上述Q=K=V（encode部分）或者是Q=K（decode部分），本质上都是attention的简化。
 <div style="text-align: center"><img src="/wiki/attach/images/Transformer-01.png" style="max-width:300px"></div>
 
+- Self-attention再具体分析下。。
+
 - Multi-head attention，多个Attention结构可以得到多个输出结果，这些结果中的Attention分布往往是不同的，各有侧重。
 <div style="text-align: center"><img src="/wiki/attach/images/Transformer-02.png" style="max-width:300px"></div>
 
