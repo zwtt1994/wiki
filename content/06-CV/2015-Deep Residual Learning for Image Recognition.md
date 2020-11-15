@@ -34,3 +34,5 @@ date: 2020-11-15
     - 由于恒等变换短接的存在，基本不可能出现梯度消失的情况。
     - 实验对比了各种短接结构，结果证明了恒等变换是最好的。
     <div style="text-align: center"><img src="/wiki/attach/images/Res-05.png" style="max-width:400px"></div>
+    - 实验对比了激活函数的影响，得到了一个效果最好的结构。
+    <div style="text-align: center"><img src="/wiki/attach/images/Res-06.png" style="max-width:400px"></div>
