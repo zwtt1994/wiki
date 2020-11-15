@@ -19,14 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/02-Recommend System/2019-AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/CV/2015-Deep Residual Learning for Image Recognition.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/02-Recommend System/2016-Deep Neural Networks for YouTube Recommendations.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2016-Deep Neural Networks for YouTube Recommendations.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/02-Recommend System/2020-ADER- Adaptively Distilled Exemplar Replay Towards Continual Learning for Session-based Recommendation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2020-ADER- Adaptively Distilled Exemplar Replay Towards Continual Learning for Session-based Recommendation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/02-Recommend System/2020-Improving Deep Learning For Airbnb Search.md" beforeDir="false" />
-    </list>
+    <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
