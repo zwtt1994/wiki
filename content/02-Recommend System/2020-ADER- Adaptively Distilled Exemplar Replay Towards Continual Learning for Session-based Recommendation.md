@@ -1,5 +1,5 @@
 ---
-title: "2020-ADER- Adaptively Distilled Exemplar Replay Towards Continual Learning for Session-based Recommendation"
+title: "2020-ADER-Adaptively Distilled Exemplar Replay Towards Continual Learning for Session-based Recommendation"
 layout: page
 date: 2020-10-09
 ---
@@ -14,6 +14,6 @@ date: 2020-10-09
 
 - 筛选经典样本保留长期偏好信息，每次保留历史的一部分样本加入到最新的数据中训练，损失函数为交叉熵，t样本取真实label，老样本的label取t-1模型的预测值。
 
-- 在loss中限制模型更新幅度
+- 在loss中限制模型更新幅度，加强了模型的鲁棒性。
 
 
