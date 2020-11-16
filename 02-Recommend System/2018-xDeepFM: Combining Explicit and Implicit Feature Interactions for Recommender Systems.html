@@ -27,18 +27,24 @@
 
   <h2 id="_1">总结</h2>
 <ul>
-<li></li>
+<li>xDeepFM借鉴了DCN的思路，每层结构在特征向量维度进行二阶交叉，多层结构得到了多阶特征交叉的信息。</li>
 </ul>
 <h2 id="_2">主要内容</h2>
 <ul>
-<li></li>
+<li>
+<p>特征交叉结构如下，每对特征向量进行叉乘计算，并通过参数矩阵pooling为交叉特征向量，依次类推。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/xFeepFM-01.png" style="max-width:400px"></div></p>
+</li>
+<li>
+<p>xDeepFM在论文中的实验结果提升明显，但也极大地提升了计算复杂度。</p>
+</li>
 </ul>
     </div>
     <div id="footer">
       <span>
         <p>Copyright © 2020 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2020-11-15 21:22:03</p>
+        <p>Site Generated 2020-11-16 20:46:55</p>
       </span>
     </div>
 
