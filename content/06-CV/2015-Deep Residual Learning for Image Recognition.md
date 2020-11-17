@@ -35,4 +35,8 @@ date: 2020-11-15
     - 实验对比了各种短接结构，结果证明了恒等变换是最好的。
     <div style="text-align: center"><img src="/wiki/attach/images/Res-05.png" style="max-width:400px"></div>
     - 实验对比了激活函数的影响，得到了一个效果最好的结构。
+        - (b)改变了输出分布，阻碍了信息的传递（恒等变换的学习）。
+        - (c)F的输出非负，向前信息传递单调递增，影响表达能力。
+        - (d)和(a)效果基本一致，因为运算链路基本一致，短接链路少了relu。
+        - (d)在预激活中使用BN会提升模型正则化。
     <div style="text-align: center"><img src="/wiki/attach/images/Res-06.png" style="max-width:400px"></div>

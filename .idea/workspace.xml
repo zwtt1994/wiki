@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/01-Machine Learning/2010-Understanding the difficulty of training deep feedforward neural networks.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/01-Machine Learning/2015-Batch Normalization: Accelerating Deep Network Training b y Reducing Internal Covariate Shift.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/02-Recommend System/2018-xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2018-xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/01-Machine Learning/2015-Deep Residual Learning for Image Recognition.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/06-CV/2015-Deep Residual Learning for Image Recognition.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/06-CV/2015-Deep Residual Learning for Image Recognition.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
