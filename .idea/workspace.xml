@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/01-Machine Learning/2015-Batch Normalization: Accelerating Deep Network Training b y Reducing Internal Covariate Shift.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/01-Machine Learning/2015-Deep Residual Learning for Image Recognition.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/06-CV/2015-Deep Residual Learning for Image Recognition.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/06-CV/2015-Deep Residual Learning for Image Recognition.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/01-Machine Learning/2015-Batch Normalization: Accelerating Deep Network Training b y Reducing Internal Covariate Shift.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/2015-Batch Normalization: Accelerating Deep Network Training b y Reducing Internal Covariate Shift.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/02-Recommend System/2019-AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2019-AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
