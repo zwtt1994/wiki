@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/content/01-Machine Learning/2018-How Does Batch Normalization Help Optimization.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/01-Machine Learning/2018-Visualizing the Loss Landscape of Neural Nets.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/02-Recommend System/2019-AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2019-AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/01-Machine Learning/2015-Batch Normalization: Accelerating Deep Network Training b y Reducing Internal Covariate Shift.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/2015-Batch Normalization: Accelerating Deep Network Training b y Reducing Internal Covariate Shift.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +53,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/02-Recommend System" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/01-Machine Learning" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -60,19 +62,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content/02-Recommend System" />
-      <recent name="$PROJECT_DIR$/content/recsys" />
-      <recent name="$PROJECT_DIR$/content/math" />
-      <recent name="$PROJECT_DIR$/content/gnn" />
-      <recent name="$PROJECT_DIR$/content/deep-learning/gnn/test" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/01-Machine Learning" />
       <recent name="$PROJECT_DIR$/content/Machine Learning" />
       <recent name="$PROJECT_DIR$/content/Recommend System" />
       <recent name="$PROJECT_DIR$/attach/images" />
       <recent name="$PROJECT_DIR$/attach" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/01-Machine Learning" />
+      <recent name="$PROJECT_DIR$/content/02-Recommend System" />
+      <recent name="$PROJECT_DIR$/content/recsys" />
+      <recent name="$PROJECT_DIR$/content/math" />
+      <recent name="$PROJECT_DIR$/content/gnn" />
     </key>
   </component>
   <component name="SshConsoleOptionsProvider">
@@ -164,6 +166,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="390" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1604837152919" />
+    <state x="421" y="205" width="845" height="490" key="find.popup" timestamp="1607683698842">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="205" width="845" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1607683698842" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604837183259">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
