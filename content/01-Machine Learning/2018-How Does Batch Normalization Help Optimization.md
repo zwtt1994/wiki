@@ -1,5 +1,5 @@
 ---
-title: "2015-Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"
+title: "2018-How Does Batch Normalization Help Optimization"
 layout: page
 date: 2020-11-15
 ---

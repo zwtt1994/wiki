@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/01-Machine Learning/2018-How Does Batch Normalization Help Optimization.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/01-Machine Learning/2018-Visualizing the Loss Landscape of Neural Nets.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/01-Machine Learning/2015-Batch Normalization: Accelerating Deep Network Training b y Reducing Internal Covariate Shift.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/2015-Batch Normalization: Accelerating Deep Network Training b y Reducing Internal Covariate Shift.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/01-Machine Learning/2018-Visualizing the Loss Landscape of Neural Nets.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/2018-Visualizing the Loss Landscape of Neural Nets.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
