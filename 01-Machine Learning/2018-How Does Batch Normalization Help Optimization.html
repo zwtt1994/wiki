@@ -41,12 +41,15 @@
 <li>
 <p>论文提出了两个问题，并做了实验验证。</p>
 <ul>
-<li>Batch normalization是否与ICS有关？在BN后面人为加上了shift噪声，发现和不加的效果差不多，所以论文认为BN和ICS没有关系。</li>
-<li>Batch normalization是否会消除或者减弱ICS？通过量化隐藏层梯度在前一层更新参数的差异来近似评估ICS，发现BN并不能减少ICS，反而还有增加。</li>
+<li>Batch normalization是否与ICS有关？在BN后面人为加上了shift噪声，发现和不加的效果差不多，所以论文认为BN和ICS没有关系。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/How-BN-01.png" style="max-width:600px"></div></li>
+<li>Batch normalization是否会消除或者减弱ICS？通过量化隐藏层梯度在前一层更新参数的差异来近似评估ICS，发现BN并不能减少ICS，反而还有增加。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/How-BN-02.png" style="max-width:800px"></div></li>
 </ul>
 </li>
 <li>
-<p>论文认为BN起作用的原因是使得损失函数更加光滑，例如b-smoothness，即斜率绝对值不超过某个定值。</p>
+<p>论文认为BN起作用的原因是使得损失函数更加光滑，例如b-smoothness，即斜率绝对值不超过某个定值。<br />
+    <div style="text-align: center"><img src="/wiki/attach/images/How-BN-03.png" style="max-width:800px"></div></p>
 <ul>
 <li>更光滑的损失函数更容易训练，Visualizing the Loss Landscape of Neural Nets。</li>
 <li>附录中提到BN的作用与ResNet类似。</li>
@@ -64,13 +67,23 @@
 <li>权重初始值和最优值之间的距离也更接近。</li>
 </ul>
 </li>
+<li>
+<p>附录里的一些实验结果<br />
+    <div style="text-align: center"><img src="/wiki/attach/images/How-BN-04.png" style="max-width:800px"></div><br />
+    <div style="text-align: center"><img src="/wiki/attach/images/How-BN-05.png" style="max-width:800px"></div><br />
+    <div style="text-align: center"><img src="/wiki/attach/images/How-BN-06.png" style="max-width:800px"></div><br />
+    <div style="text-align: center"><img src="/wiki/attach/images/How-BN-07.png" style="max-width:800px"></div><br />
+    <div style="text-align: center"><img src="/wiki/attach/images/How-BN-08.png" style="max-width:800px"></div><br />
+    <div style="text-align: center"><img src="/wiki/attach/images/How-BN-09.png" style="max-width:800px"></div><br />
+    <div style="text-align: center"><img src="/wiki/attach/images/How-BN-10.png" style="max-width:800px"></div></p>
+</li>
 </ul>
     </div>
     <div id="footer">
       <span>
         <p>Copyright © 2020 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2020-12-15 17:02:12</p>
+        <p>Site Generated 2020-12-15 17:24:51</p>
       </span>
     </div>
 
