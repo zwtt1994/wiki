@@ -18,10 +18,16 @@ date: 2020-11-15
 - 为了提高参数分布的稳定性，可以尽量保持参数分布为标准正态分布；但由于每个mini-batch的数据分布不一致，且参数分布会随着训练调整，所以为了维持模型的表达能力，设置了可训练的归一化参数。
 
 - BN的转换方式如下：
-<div style="text-align: center"><img src="/wiki/attach/images/BN-01.png" style="max-width:600px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/BN-01.png" style="max-width:500px"></div>
 
 - 训练阶段，均值和方差由mini-batch中的样本计算所得，scale&shift参数参与训练。
 
 - 预测阶段，均值和方差是训练样本总的均值与方差，整个过程保持不变。
+<div style="text-align: center"><img src="/wiki/attach/images/BN-02.png" style="max-width:500px"></div>
 
+- 预测时归一化中使用的均值方差理论上是训练集所有batch期望的无偏估计，但tensorflow的更新方式如下，少了一个存储，多了一个超参，弱化了训练过的数据的影响。
+<div style="text-align: center"><img src="/wiki/attach/images/BN-03.png" style="max-width:300px"></div>
 
+- 论文讨论了BN的位置，认为放在线性层和激活层之间最好，这个也是很直观的，最大化BN自适应权衡模型表达和正则的能力。
+
+- 由于BN能够大程度地避免梯度爆炸和消失问题，可以使用较大的学习率
