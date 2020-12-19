@@ -26,8 +26,16 @@ date: 2020-11-15
 <div style="text-align: center"><img src="/wiki/attach/images/BN-02.png" style="max-width:500px"></div>
 
 - 预测时归一化中使用的均值方差理论上是训练集所有batch期望的无偏估计，但tensorflow的更新方式如下，少了一个存储，多了一个超参，弱化了训练过的数据的影响。
-<div style="text-align: center"><img src="/wiki/attach/images/BN-03.png" style="max-width:300px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/BN-03.png" style="max-width:500px"></div>
 
 - 论文讨论了BN的位置，认为放在线性层和激活层之间最好，这个也是很直观的，最大化BN自适应权衡模型表达和正则的能力。
 
-- 由于BN能够大程度地避免梯度爆炸和消失问题，可以使用较大的学习率
+- 由于BN能够大程度地避免梯度爆炸和消失问题，可以使用较大的学习率，论文用三个公式做了表述。
+    - 公式一表达了BN输出的尺度不变性，能够提升模型的稳定性；
+    <div style="text-align: center"><img src="/wiki/attach/images/BN-04.png" style="max-width:300px"></div>
+    - 公式二表达了BN对输入梯度的尺度不变性，提升模型训练的稳定性；
+    <div style="text-align: center"><img src="/wiki/attach/images/BN-05.png" style="max-width:300px"></div>
+    - 公式三表达了BN参数越大，反而输出对其梯度更小，更新越平滑。
+    <div style="text-align: center"><img src="/wiki/attach/images/BN-06.png" style="max-width:500px"></div>
+    
+- 由于BN是对整体训练样本起作用，所以论文建议弃用dropout。
