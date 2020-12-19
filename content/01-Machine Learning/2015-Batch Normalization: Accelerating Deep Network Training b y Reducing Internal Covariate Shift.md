@@ -34,8 +34,8 @@ date: 2020-11-15
     - 公式一表达了BN输出的尺度不变性，能够提升模型的稳定性；
     <div style="text-align: center"><img src="/wiki/attach/images/BN-04.png" style="max-width:500px"></div>
     - 公式二表达了BN对输入梯度的尺度不变性，提升模型训练的稳定性；
-    <div style="text-align: center"><img src="/wiki/attach/images/BN-05.png" style="max-width:450px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/BN-05.png" style="max-width:400px"></div>
     - 公式三表达了BN参数越大，反而输出对其梯度更小，更新越平滑。
-    <div style="text-align: center"><img src="/wiki/attach/images/BN-06.png" style="max-width:750px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/BN-06.png" style="max-width:700px"></div>
     
 - 由于BN是对整体训练样本起作用，所以论文建议弃用dropout。
