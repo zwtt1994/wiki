@@ -11,7 +11,7 @@ date: 2021-01-10
 ## 主要内容
 
 - 总结了目前多任务学习的网络结构模式。
-<div style="text-align: center"><img src="/wiki/attach/images/PLE-01.png" style="max-width:500px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/PLE-01.png" style="max-width:850px"></div>
     -a)Hard sharing：在多目标相关性低的情况下，模型为了同时学习到两个目标，可能因为顾此失彼而造成负向效果。
     -b)Asymmetry sharing：不同任务前向传播结构是不一致的，需要利用一些先验知识，例如ESSM。
     -c)Customized sharing：自定义的底层结构，前向传播中有各自也有共享的。
