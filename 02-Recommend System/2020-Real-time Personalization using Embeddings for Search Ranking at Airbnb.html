@@ -28,9 +28,9 @@
   <h2 id="_1">总结</h2>
 <ul>
 <li>Airbnb针对其业务，在房源的embedding中进行了独特的设计，包括:<ul>
-<li>Type embedding，针对稀疏的情况进行分桶聚合成type再进行embedding，与协同过滤的思想类似。</li>
-<li>Embedding损失函数优化：同时考虑正负反馈信息（预定与拒绝），将预定的item设置为global contex。</li>
-<li>负样本优化：随机采样的负样本（弱）和同一market的负样本（强）。</li>
+<li>Type embedding：针对稀疏的情况进行分桶聚合成type再进行embedding，与协同过滤的思想类似。</li>
+<li>Embedding损失函数优化：同时考虑正负反馈信息（预定与拒绝），将预定的item设置为global context。</li>
+<li>负样本优化：随机采样的负样本（弱负样本）和同一market的负样本（强负样本）。</li>
 </ul>
 </li>
 </ul>
@@ -72,7 +72,7 @@
 <p>在相似房源模块，利用knn来搜索最相似的12个房源进行展示，"A/B 测试显示，基于嵌入的解决方案使「相似房源」点击率增加了21％，最终通过「相似房源」产生的预订增加了 4.9％"。</p>
 </li>
 <li>
-<p>在搜索排序中，利用embedding来进行个性化推送，目的是"向用户更多展示他们喜欢的房源，更少展示他们不喜欢的房源"，具体做法：</p>
+<p>在搜索排序中，利用embedding来进行个性化推送，目的是"向用户更多展示他们喜欢的房源，更少展示他们不喜欢的房源"。</p>
 <ul>
 <li>以城市维度，对用户点击过的房源和跳过（浏览未点击）的房源embedding求均值。</li>
 <li>计算候选房源与上述两个向量的相似度作为排序模型输入特征。</li>
@@ -86,7 +86,7 @@
       <span>
         <p>Copyright © 2021 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2021-01-24 22:25:41</p>
+        <p>Site Generated 2021-01-24 22:27:07</p>
       </span>
     </div>
 
