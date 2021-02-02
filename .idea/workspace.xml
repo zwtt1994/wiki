@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/01-Machine Learning/2020-Ensembled CTR Prediction via Knowledge Distillation.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/02-Recommend System/2020-Real-time Personalization using Embeddings for Search Ranking at Airbnb.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/02-Recommend System/2018-Real-time Personalization using Embeddings for Search Ranking at Airbnb.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/01-Machine Learning/2020-Ensembled CTR Prediction via Knowledge Distillation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/01-Machine Learning/2020-Ensembled CTR Prediction via Knowledge Distillation.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,10 +164,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="390" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1604837152919" />
-    <state x="421" y="205" width="845" height="490" key="find.popup" timestamp="1611483563159">
+    <state x="421" y="205" width="845" height="490" key="find.popup" timestamp="1612097090818">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="421" y="205" width="845" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1611483563159" />
+    <state x="421" y="205" width="845" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1612097090818" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1607776619942">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
