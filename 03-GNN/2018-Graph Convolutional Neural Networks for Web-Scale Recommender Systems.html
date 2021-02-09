@@ -41,7 +41,7 @@
 <div style="text-align: center"><img src="/wiki/attach/images/GCN-RS-02.png" style="max-width:500px"></div></li>
 <li>模型训练细节<ul>
 <li>目的是生成pins的embedding表示，数据是一个无向图数据，如果两个pin之间有board则认为是相关的。</li>
-<li>hinge损失函数，利用了相关向量内积与非相关向量内积的差，负样本通过负采样得到。</li>
+<li>hinge损失函数，使得相关向量内积与非相关向量内积的差尽可能大，负样本通过负采样得到。</li>
 <li>对mini-batch的计算结构进行了GPU分布式操作，训练时的batch size范围是512-4096。</li>
 <li>训练时每次只加载对应mini-batch的数据内存。</li>
 <li>负采样方面，每个mini-batch用一组负样本，并对每组相关的pins加入了"hard"负样本，这些样本和当前mini-batch节点不相关，但与改正样本组中另一个节点相关。</li>
@@ -53,7 +53,7 @@
       <span>
         <p>Copyright © 2021 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2021-02-09 11:24:10</p>
+        <p>Site Generated 2021-02-09 19:45:23</p>
       </span>
     </div>
 
