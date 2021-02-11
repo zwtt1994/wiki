@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2010-From RankNet to LambdaRank to LambdaMART: An Overview - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#02-Recommend System">02-Recommend System</a>&nbsp;&#187;&nbsp;2010-From RankNet to LambdaRank to LambdaMART: An Overview
+    <span class="updated">Page Updated&nbsp;
+      2021-02-11
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2010-From RankNet to LambdaRank to LambdaMART: An Overview</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li></li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>RankNet：pair-wise的基础思想</p>
+<ul>
+<li>在两个item通过排序模型计算出得分之后，通过sigmoid函数近似计算得这两个item排序的概率。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-01.png" style="max-width:300px"></div></li>
+<li>根据上述近似概率与真实概率，得到交叉熵损失函数；当个item分数相同时，损失函数为log2，这会使得模型计算得分趋向于分散。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-02.png" style="max-width:300px"></div></li>
+<li>对真实概率进行了重新定义，得到损失函数新的写法。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-03.png" style="max-width:300px"></div></li>
+<li>计算损失函数对得分的导数，并得到梯度下降中参数的更新计算。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-04.png" style="max-width:400px"></div><br />
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-05.png" style="max-width:400px"></div></li>
+<li>论文强调了学习率是正数，但这个应该是直观的，不然不就往反方向更新了。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-06.png" style="max-width:450px"></div></li>
+</ul>
+</li>
+<li>
+<p>加速RankNet的训练</p>
+<ul>
+<li>根据上文，可以得到损失函数对参数的导数。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-07.png" style="max-width:450px"></div><br />
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-08.png" style="max-width:400px"></div></li>
+<li>避免两个item重复计算，将n方次计算简化为一半；并将每个item的lambda聚合，其含义近似为文档的重要性。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-09.png" style="max-width:400px"></div><br />
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-10.png" style="max-width:400px"></div></li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2021 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2021-02-11 10:50:44</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
