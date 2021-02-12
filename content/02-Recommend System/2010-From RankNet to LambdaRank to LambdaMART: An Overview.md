@@ -27,6 +27,23 @@ date: 2021-02-11
     - 根据上文，可以得到损失函数对参数的导数。
     <div style="text-align: center"><img src="/wiki/attach/images/pairwise-07.png" style="max-width:450px"></div>
     <div style="text-align: center"><img src="/wiki/attach/images/pairwise-08.png" style="max-width:400px"></div>
-    - 避免两个item重复计算，将n方次计算简化为一半；并将每个item的lambda聚合，其含义近似为文档的重要性。
+    - 避免两个item重复计算，将n方次计算简化为一半；并将每个item的lambda聚合，其含义近似为文档排在前面的倾向系数。
     <div style="text-align: center"><img src="/wiki/attach/images/pairwise-09.png" style="max-width:400px"></div>
-    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-10.png" style="max-width:400px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-10.png" style="max-width:300px"></div>
+
+- 信息检索的评分标准
+    - MRR(Mean Reciprocal Rank)，平均倒数排名，其中Q是查询数量，ranki是相关结果所在位置，只能度量每次只有一个相关结果的情况。
+    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-11.png" style="max-width:300px"></div>
+    - MAP(Mean Average Precision)，平均正确率均值，计算所有相关结果的准确率之和。
+    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-12.png" style="max-width:300px"></div>
+    - NDCG(Normalized Discounted Cumulative Gain)，归一化折损累积增益，其中li为相关程度（文中举例取值范围为0～4），maxDCG即是最佳排序的DCG值。
+    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-13.png" style="max-width:300px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-14.png" style="max-width:300px"></div>
+    - ERR(Expected Reciprocal Rank)，预期倒数排名，目的是改善NDCG计算当前位置得分未考虑前面item的情况。
+    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-15.png" style="max-width:300px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-16.png" style="max-width:300px"></div>
+
+- LambdaRank
+    - 在排序中，我们在大部分情况下应该是更希望下图左边的情况，而下图两种情况只有NDCG和ERR才能区分出来，但这两种评分标准是不可导的，所以就有了LambdaRank。
+    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-17.png" style="max-width:300px"></div>
+    - 
