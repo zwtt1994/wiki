@@ -27,7 +27,7 @@
 
   <h2 id="_1">总结</h2>
 <ul>
-<li></li>
+<li>RankNet引入了pair-wise的排序思想，LambdaRank定义了pair-wise的梯度，LambdaMART利用GBDT来进行学习。</li>
 </ul>
 <h2 id="_2">主要内容</h2>
 <ul>
@@ -78,7 +78,16 @@
 <ul>
 <li>在排序中，我们在大部分情况下应该是更希望下图左边的情况，而下图两种情况只有NDCG和ERR才能区分出来，但这两种评分标准是不可导的，所以就有了LambdaRank。<br />
 <div style="text-align: center"><img src="/wiki/attach/images/pairwise-17.png" style="max-width:300px"></div></li>
-<li></li>
+<li>在RankNet中，损失函数是通过交叉熵计算所得，为了引入NDCG等指标，可以将两个item交换位置之后的指标差值作为系数引入，其中label为0项被省略了。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-18.png" style="max-width:300px"></div></li>
+<li>由于梯度代表着参数更新的方向与强度，将梯度乘以类似于NDCG的指标差，会使得更新过程中更重视指标差值更大的pair，拉开不同相关性item的预测值的差距。</li>
+</ul>
+</li>
+<li>
+<p>LambdaMART</p>
+<ul>
+<li>MART和GBDT基本是一个思路，多个弱学习器的组合，每次新增弱学习器学习的都是当前预测值和真实值的残差，常用的弱学习器是树模型。</li>
+<li>由于LambdaRank定义了梯度，所以LambdaMART就可以利用GBDT来学习，具体过程就不再赘述。</li>
 </ul>
 </li>
 </ul>
@@ -87,7 +96,7 @@
       <span>
         <p>Copyright © 2021 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2021-02-12 10:51:19</p>
+        <p>Site Generated 2021-02-12 11:56:13</p>
       </span>
     </div>
 
