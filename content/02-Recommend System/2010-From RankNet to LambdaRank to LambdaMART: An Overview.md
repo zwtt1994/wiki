@@ -6,7 +6,7 @@ date: 2021-02-11
 
 ## 总结
 
-- 
+- RankNet引入了pair-wise的排序思想，LambdaRank定义了pair-wise的梯度，LambdaMART利用GBDT来进行学习。
 
 ## 主要内容
 
@@ -46,4 +46,10 @@ date: 2021-02-11
 - LambdaRank
     - 在排序中，我们在大部分情况下应该是更希望下图左边的情况，而下图两种情况只有NDCG和ERR才能区分出来，但这两种评分标准是不可导的，所以就有了LambdaRank。
     <div style="text-align: center"><img src="/wiki/attach/images/pairwise-17.png" style="max-width:300px"></div>
-    - 
+    - 在RankNet中，损失函数是通过交叉熵计算所得，为了引入NDCG等指标，可以将两个item交换位置之后的指标差值作为系数引入，其中label为0项被省略了。
+    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-18.png" style="max-width:300px"></div>
+    - 由于梯度代表着参数更新的方向与强度，将梯度乘以类似于NDCG的指标差，会使得更新过程中更重视指标差值更大的pair，拉开不同相关性item的预测值的差距。
+    
+- LambdaMART
+    - MART和GBDT基本是一个思路，多个弱学习器的组合，每次新增弱学习器学习的都是当前预测值和真实值的残差，常用的弱学习器是树模型。
+    - 由于LambdaRank定义了梯度，所以LambdaMART就可以利用GBDT来学习，具体过程就不再赘述。
