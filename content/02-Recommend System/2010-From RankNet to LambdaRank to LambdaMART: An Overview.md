@@ -14,9 +14,9 @@ date: 2021-02-11
     - 在两个item通过排序模型计算出得分之后，通过sigmoid函数近似计算得这两个item排序的概率。
     <div style="text-align: center"><img src="/wiki/attach/images/pairwise-01.png" style="max-width:300px"></div>
     - 根据上述近似概率与真实概率，得到交叉熵损失函数；当个item分数相同时，损失函数为log2，这会使得模型计算得分趋向于分散。
-    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-02.png" style="max-width:300px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-02.png" style="max-width:330px"></div>
     - 对真实概率进行了重新定义，得到损失函数新的写法。
-    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-03.png" style="max-width:300px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-03.png" style="max-width:330px"></div>
     - 计算损失函数对得分的导数，并得到梯度下降中参数的更新计算。
     <div style="text-align: center"><img src="/wiki/attach/images/pairwise-04.png" style="max-width:400px"></div>
     <div style="text-align: center"><img src="/wiki/attach/images/pairwise-05.png" style="max-width:400px"></div>
@@ -25,7 +25,7 @@ date: 2021-02-11
 
 - 加速RankNet的训练
     - 根据上文，可以得到损失函数对参数的导数。
-    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-07.png" style="max-width:450px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-07.png" style="max-width:480px"></div>
     <div style="text-align: center"><img src="/wiki/attach/images/pairwise-08.png" style="max-width:400px"></div>
     - 避免两个item重复计算，将n方次计算简化为一半；并将每个item的lambda聚合，其含义近似为文档排在前面的倾向系数。
     <div style="text-align: center"><img src="/wiki/attach/images/pairwise-09.png" style="max-width:400px"></div>
@@ -41,7 +41,7 @@ date: 2021-02-11
     <div style="text-align: center"><img src="/wiki/attach/images/pairwise-14.png" style="max-width:280px"></div>
     - ERR(Expected Reciprocal Rank)，预期倒数排名，目的是改善NDCG计算当前位置得分未考虑前面item的情况。
     <div style="text-align: center"><img src="/wiki/attach/images/pairwise-15.png" style="max-width:200px"></div>
-    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-16.png" style="max-width:200px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/pairwise-16.png" style="max-width:170px"></div>
 
 - LambdaRank
     - 在排序中，我们在大部分情况下应该是更希望下图左边的情况，而下图两种情况只有NDCG和ERR才能区分出来，但这两种评分标准是不可导的，所以就有了LambdaRank。
