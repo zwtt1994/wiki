@@ -37,9 +37,9 @@
 <li>在两个item通过排序模型计算出得分之后，通过sigmoid函数近似计算得这两个item排序的概率。<br />
 <div style="text-align: center"><img src="/wiki/attach/images/pairwise-01.png" style="max-width:300px"></div></li>
 <li>根据上述近似概率与真实概率，得到交叉熵损失函数；当个item分数相同时，损失函数为log2，这会使得模型计算得分趋向于分散。<br />
-<div style="text-align: center"><img src="/wiki/attach/images/pairwise-02.png" style="max-width:300px"></div></li>
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-02.png" style="max-width:330px"></div></li>
 <li>对真实概率进行了重新定义，得到损失函数新的写法。<br />
-<div style="text-align: center"><img src="/wiki/attach/images/pairwise-03.png" style="max-width:300px"></div></li>
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-03.png" style="max-width:330px"></div></li>
 <li>计算损失函数对得分的导数，并得到梯度下降中参数的更新计算。<br />
 <div style="text-align: center"><img src="/wiki/attach/images/pairwise-04.png" style="max-width:400px"></div><br />
 <div style="text-align: center"><img src="/wiki/attach/images/pairwise-05.png" style="max-width:400px"></div></li>
@@ -51,7 +51,7 @@
 <p>加速RankNet的训练</p>
 <ul>
 <li>根据上文，可以得到损失函数对参数的导数。<br />
-<div style="text-align: center"><img src="/wiki/attach/images/pairwise-07.png" style="max-width:450px"></div><br />
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-07.png" style="max-width:480px"></div><br />
 <div style="text-align: center"><img src="/wiki/attach/images/pairwise-08.png" style="max-width:400px"></div></li>
 <li>避免两个item重复计算，将n方次计算简化为一半；并将每个item的lambda聚合，其含义近似为文档排在前面的倾向系数。<br />
 <div style="text-align: center"><img src="/wiki/attach/images/pairwise-09.png" style="max-width:400px"></div><br />
@@ -70,7 +70,7 @@
 <div style="text-align: center"><img src="/wiki/attach/images/pairwise-14.png" style="max-width:280px"></div></li>
 <li>ERR(Expected Reciprocal Rank)，预期倒数排名，目的是改善NDCG计算当前位置得分未考虑前面item的情况。<br />
 <div style="text-align: center"><img src="/wiki/attach/images/pairwise-15.png" style="max-width:200px"></div><br />
-<div style="text-align: center"><img src="/wiki/attach/images/pairwise-16.png" style="max-width:200px"></div></li>
+<div style="text-align: center"><img src="/wiki/attach/images/pairwise-16.png" style="max-width:170px"></div></li>
 </ul>
 </li>
 <li>
@@ -96,7 +96,7 @@
       <span>
         <p>Copyright © 2021 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2021-02-13 10:12:18</p>
+        <p>Site Generated 2021-02-13 10:13:58</p>
       </span>
     </div>
 
