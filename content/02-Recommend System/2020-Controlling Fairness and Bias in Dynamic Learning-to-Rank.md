@@ -53,7 +53,7 @@ date: 2021-02-16
     <div style="text-align: center"><img src="/wiki/attach/images/fair-08.png" style="max-width:550px"></div>
     <div style="text-align: center"><img src="/wiki/attach/images/fair-09.png" style="max-width:350px"></div>
     - 所以可以通过下面这个损失函数来无偏估计用户和物料的相关度，实现无偏排序。
-    <div style="text-align: center"><img src="/wiki/attach/images/fair-10.png" style="max-width:350px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/fair-10.png" style="max-width:400px"></div>
     - 物料全局相关性的无偏估计如下，即用户反馈c/曝光概率p，其证明也是直觉的。
     <div style="text-align: center"><img src="/wiki/attach/images/fair-11.png" style="max-width:250px"></div>
 
