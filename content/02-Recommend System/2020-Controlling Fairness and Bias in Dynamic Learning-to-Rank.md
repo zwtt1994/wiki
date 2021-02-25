@@ -58,9 +58,9 @@ date: 2021-02-16
     <div style="text-align: center"><img src="/wiki/attach/images/fair-11.png" style="max-width:250px"></div>
 
 - 公平性动态控制
-    - 不公平性的平均度量
+    - 上文已经提到不公平性的平均度量为两个类目之间的不公平度，全局不公平度则是所有类目见不公平度的均值。
     <div style="text-align: center"><img src="/wiki/attach/images/fair-12.png" style="max-width:300px"></div>
-    - 定期计算误差，并利用误差对排序得分进行调整。
+    - 为了降低上述不公平度，本文提出计算如下误差，并利用误差对排序得分进行调整。同时，根据线上新的实验结果重新计算上述不公平度对误差进行更新，直到收敛为止。
     <div style="text-align: center"><img src="/wiki/attach/images/fair-13.png" style="max-width:400px"></div>
     <div style="text-align: center"><img src="/wiki/attach/images/fair-14.png" style="max-width:300px"></div>
     
