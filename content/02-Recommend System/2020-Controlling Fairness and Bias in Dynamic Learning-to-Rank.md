@@ -33,7 +33,7 @@ date: 2021-02-16
     - 由于在排序的时候无法直接获取物料是否曝光，所以可以利用排序得分来估计曝光概率。
     <div style="text-align: center"><img src="/wiki/attach/images/fair-02.png" style="max-width:150px"></div>
     - 排序逻辑如下，即利用利用用户特征x计算用户与文档d的相似度，并进行排序；对于动态排序，相似度R与用户反馈c随时间相关即可。
-    <div style="text-align: center"><img src="/wiki/attach/images/fair-03.png" style="max-width:280px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/fair-03.png" style="max-width:250px"></div>
     
 - 公平性
     - 公平性是指：如何公平合理地对物料进行曝光；本文对"判断是否曝光"与"衡量用户对物料的偏好"进行了建模。
