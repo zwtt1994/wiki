@@ -50,17 +50,17 @@ date: 2021-02-16
     - 无偏性是指用户偏好定义的准确性，文中共涉及到三个变量：位置偏差p，用户对物料的平均相关性R(d|x)，物料全局的期望相关性R(d)；
     - 作者认为位置偏差p的预估不是动态排序中存在的问题，最简单的做法是利用排序得分σ来确定，也可以加入其他更多的特征。
     - 对R(d|x)的预估类似于我们平常预估的ctr，但由于用户反馈对用户物料相关性的估计不是无偏的，所以需要进行调整，本质上是利用曝光概率p和用户反馈c来无偏估计相关度r。
-    <div style="text-align: center"><img src="/wiki/attach/images/fair-08.png" style="max-width:600px"></div>
-    <div style="text-align: center"><img src="/wiki/attach/images/fair-09.png" style="max-width:300px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/fair-08.png" style="max-width:550px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/fair-09.png" style="max-width:350px"></div>
     - 所以可以通过下面这个损失函数来无偏估计用户和物料的相关度，实现无偏排序。
-    <div style="text-align: center"><img src="/wiki/attach/images/fair-10.png" style="max-width:300px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/fair-10.png" style="max-width:350px"></div>
     - 物料全局相关性的无偏估计如下，即用户反馈c/曝光概率p，其证明也是直觉的。
-    <div style="text-align: center"><img src="/wiki/attach/images/fair-11.png" style="max-width:300px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/fair-11.png" style="max-width:250px"></div>
 
 - 公平性动态控制
     - 不公平性的平均度量
     <div style="text-align: center"><img src="/wiki/attach/images/fair-12.png" style="max-width:300px"></div>
     - 定期计算误差，并利用误差对排序得分进行调整。
-    <div style="text-align: center"><img src="/wiki/attach/images/fair-13.png" style="max-width:300px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/fair-13.png" style="max-width:400px"></div>
     <div style="text-align: center"><img src="/wiki/attach/images/fair-14.png" style="max-width:300px"></div>
     
