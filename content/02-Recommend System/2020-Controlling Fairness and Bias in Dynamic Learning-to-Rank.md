@@ -66,3 +66,30 @@ date: 2021-02-16
     <div style="text-align: center"><img src="/wiki/attach/images/fair-13.png" style="max-width:400px"></div>
     <div style="text-align: center"><img src="/wiki/attach/images/fair-14.png" style="max-width:300px"></div>
     
+- 实验验证
+    - Can FairCo reduce unfairness while maintaining good ranking quality?
+    <div style="text-align: center"><img src="/wiki/attach/images/fair-15.png" style="max-width:400px"></div>
+    - Do the unbiased estimates converge to the true relevances?
+    <div style="text-align: center"><img src="/wiki/attach/images/fair-16.png" style="max-width:400px"></div>
+    - Does FairCo overcome the rich-get-richer dynamic? 
+    <div style="text-align: center"><img src="/wiki/attach/images/fair-17.png" style="max-width:400px"></div>
+    - How effective is the FairCo compared to a more expensive Linear-Programming Baseline?
+    <div style="text-align: center"><img src="/wiki/attach/images/fair-18.png" style="max-width:400px"></div>
+    - Is FairCo effective for different group sizes? 
+    <div style="text-align: center"><img src="/wiki/attach/images/fair-19.png" style="max-width:400px"></div>
+    - Is FairCo effective for different user distributions?
+     <div style="text-align: center"><img src="/wiki/attach/images/fair-20.png" style="max-width:400px"></div>
+    - Does personalization via unbiased objective improve NDCG?
+     <div style="text-align: center"><img src="/wiki/attach/images/fair-21.png" style="max-width:400px"></div>
+    - Can FairCo reduce unfairness?
+     <div style="text-align: center"><img src="/wiki/attach/images/fair-22.png" style="max-width:400px"></div>
+    - How different are exposure and impact fairness? 
+     <div style="text-align: center"><img src="/wiki/attach/images/fair-23.png" style="max-width:400px"></div>
+
+
+    
+
+    
+
+
+
