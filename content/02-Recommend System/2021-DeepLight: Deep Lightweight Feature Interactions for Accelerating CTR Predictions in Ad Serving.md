@@ -18,17 +18,17 @@ date: 2021-06-18
     - low consumption：提升embedding稀疏性并保留有效部分，提升网络的信噪比。
     
 - DeepFwFM和DeepFM的区别如下：
-<div style="text-align: center"><img src="/wiki/attach/images/DeepLight-01.png" style="max-width:500px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/DeepLight-01.png" style="max-width:800px"></div>
 
 - DeepLight的结构如下，在DeepFwFM上进行三种修剪；
     - DNN部分的网络参数修剪，使得计算复杂度大大减小；
     - FwFM中二阶交叉部分的修剪，一方面是减少计算，另一方面也减少交叉噪声，增强可解释性；
     - 修剪embedding中的参数，减少计算与缓存。
 
-<div style="text-align: center"><img src="/wiki/attach/images/DeepLight-02.png" style="max-width:300px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/DeepLight-02.png" style="max-width:500px"></div>
 
 - 修剪的伪代码如下：
 <div style="text-align: center"><img src="/wiki/attach/images/DeepLight-03.png" style="max-width:500px"></div>
 
 - 最终结果如下：
-<div style="text-align: center"><img src="/wiki/attach/images/DeepLight-04.png" style="max-width:700px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/DeepLight-04.png" style="max-width:800px"></div>
