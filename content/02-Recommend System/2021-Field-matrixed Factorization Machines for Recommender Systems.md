@@ -19,3 +19,5 @@ date: 2021-05-23
 - FmFM和FFM的区别是，FFM是对于不同的field生成不同的隐向量，FmFM则是将lookup隐向量映射得到不同field的隐向量。
 
 - 对于稀疏特征的交叉，FM可以理解为二阶的特征间的共现信息，但一个稀疏特征只有一组字典；FFM则是针对不同field设置了不同的字典，但参数太多；FmFM则通过映射的方式，在参数可接受的范围内有效提升了表达能力。
+
+<div style="text-align: center"><img src="/wiki/attach/images/FmFM-01.png" style="max-width:500px"></div>

@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="" />
+    <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/content/02-Recommend System/2020-Improving Deep Learning For Airbnb Search.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,19 +60,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content/01-Machine Learning" />
-      <recent name="$PROJECT_DIR$/content/Machine Learning" />
-      <recent name="$PROJECT_DIR$/content/Recommend System" />
-      <recent name="$PROJECT_DIR$/attach/images" />
-      <recent name="$PROJECT_DIR$/attach" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/02-Recommend System" />
       <recent name="$PROJECT_DIR$/content/09-Book" />
       <recent name="$PROJECT_DIR$/content/01-Machine Learning" />
       <recent name="$PROJECT_DIR$/content/recsys" />
       <recent name="$PROJECT_DIR$/content/math" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/01-Machine Learning" />
+      <recent name="$PROJECT_DIR$/content/Machine Learning" />
+      <recent name="$PROJECT_DIR$/content/Recommend System" />
+      <recent name="$PROJECT_DIR$/attach/images" />
+      <recent name="$PROJECT_DIR$/attach" />
     </key>
   </component>
   <component name="SshConsoleOptionsProvider">
