@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2021-DeepLight: Deep Lightweight Feature Interactions for Accelerating CTR Predictions in Ad Serving - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#02-Recommend System">02-Recommend System</a>&nbsp;&#187;&nbsp;2021-DeepLight: Deep Lightweight Feature Interactions for Accelerating CTR Predictions in Ad Serving
+    <span class="updated">Page Updated&nbsp;
+      2021-06-18
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2021-DeepLight: Deep Lightweight Feature Interactions for Accelerating CTR Predictions in Ad Serving</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>DeepFM、xDeepFM到本文的DeepLight。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>DeepFM，在FM的基础上加上了Deep部分，FM部分的sparse特征交叉可以理解为共现矩阵分解。</li>
+<li>xDeepFM，在向量哈达码积之后通过矩阵投影，而不是直接求和，理论上拟合能力更强，但与内积的物理含义有所偏离。</li>
+<li>
+<p>DeepLight，在FwFM的基础上加上了Deep部分，并进行了网络简化。</p>
+<ul>
+<li>high quality:FwFM结构在低复杂度下，具有媲美xDeepFM的效果，并且有优化空间，本文就加上了Deep部分。</li>
+<li>low latency：修剪网络使得预测时延降低，提升系统性能。</li>
+<li>low consumption：提升embedding稀疏性并保留有效部分，提升网络的信噪比。</li>
+</ul>
+</li>
+<li>
+<p>DeepFwFM和DeepFM的区别如下：<br />
+<div style="text-align: center"><img src="/wiki/attach/images/DeepLight-01.png" style="max-width:500px"></div></p>
+</li>
+<li>
+<p>DeepLight的结构如下，在DeepFwFM上进行三种修剪；</p>
+<ul>
+<li>DNN部分的网络参数修剪，使得计算复杂度大大减小；</li>
+<li>FwFM中二阶交叉部分的修剪，一方面是减少计算，另一方面也减少交叉噪声，增强可解释性；</li>
+<li>修剪embedding中的参数，减少计算与缓存。</li>
+</ul>
+</li>
+</ul>
+<div style="text-align: center"><img src="/wiki/attach/images/DeepLight-02.png" style="max-width:300px"></div>
+
+<ul>
+<li>
+<p>修剪的伪代码如下：<br />
+<div style="text-align: center"><img src="/wiki/attach/images/DeepLight-03.png" style="max-width:500px"></div></p>
+</li>
+<li>
+<p>最终结果如下：<br />
+<div style="text-align: center"><img src="/wiki/attach/images/DeepLight-04.png" style="max-width:700px"></div></p>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2021 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2021-06-19 15:13:14</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
