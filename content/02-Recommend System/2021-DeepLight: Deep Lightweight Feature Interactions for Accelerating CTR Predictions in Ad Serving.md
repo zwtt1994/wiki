@@ -13,7 +13,7 @@ date: 2021-06-18
 - DeepFM，在FM的基础上加上了Deep部分，FM部分的sparse特征交叉可以理解为共现矩阵分解。
 - xDeepFM，在向量哈达码积之后通过矩阵投影，而不是直接求和，理论上拟合能力更强，但与内积的物理含义有所偏离。
 - DeepLight，在FwFM的基础上加上了Deep部分，并进行了网络简化。
-    - high quality:FwFM结构在低复杂度下，具有媲美xDeepFM的效果，并且有优化空间，本文就加上了Deep部分。
+    - high quality：FwFM结构在低复杂度下，具有媲美xDeepFM的效果，并且有优化空间，本文就加上了Deep部分。
     - low latency：修剪网络使得预测时延降低，提升系统性能。
     - low consumption：提升embedding稀疏性并保留有效部分，提升网络的信噪比。
     
