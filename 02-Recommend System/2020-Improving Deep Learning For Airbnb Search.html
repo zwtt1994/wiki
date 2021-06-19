@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2021-Improving Deep Learning For Airbnb Search - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#02-Recommend System">02-Recommend System</a>&nbsp;&#187;&nbsp;2021-Improving Deep Learning For Airbnb Search
+    <span class="updated">Page Updated&nbsp;
+      2021-05-23
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2021-Improving Deep Learning For Airbnb Search</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>阐述了Airbnb房源预定场景在三个方向上的探索：网络结构、冷启动和位置偏置。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>网络结构</p>
+<ul>
+<li>通过统计被预定的房源价格，发现客人倾向于预定更低的价格，文章就想加强上述规律。</li>
+<li>在预测值和模型结构上，将价格特征分离开，并强行使得价格越低预测得分越高，最后效果下降。如果模型拟合较好，肯定已经学习到了价格的影响因素，强行加入人为限制肯定会导致效果下降。</li>
+<li>文章进一步根据数据分析负向的原因，发现不同城市价格的波动比较大，所以综合来看并不是简单的价格负相关。上述结论是很直观的，文章根据数据分析得出了结论，并且文章人为价格负相关+城市影响导致现在的模拟合不好。</li>
+<li>根据之前的一系列分析，文章又进行了一系列逻辑分析，我没看懂。但总之是提出双塔结构，用户+Query一个塔/房源一个塔，余弦相似度作为预测得分。</li>
+<li>从我自己角度理解迭代的思路可能是这样的：单拎出价格负相关是不起作用的，所以把所有房源相关特征都拎出来，包括之前提到的城市等位置信息。</li>
+<li>这部分的结尾，文章又对价格的影响做了分析，我又没看懂；最后还将房源embedding进行了可视化，再加了一顿分析，我还是没看懂。</li>
+<li>我自己的理解总结这部分工作：用了双塔模型拿到效果，可视化简单验证合理性。</li>
+<li>我自己对价格特征相关工作的理解：从价格特征角度做了数据分析，其实用其他特征分析也一样，结论就是需要综合考虑房源侧的特征，引出双塔。</li>
+</ul>
+</li>
+<li>
+<p>冷启动<br />
+    -</p>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2021 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2021-06-19 11:11:47</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
