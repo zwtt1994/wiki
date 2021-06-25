@@ -31,13 +31,16 @@
 </ul>
 <h2 id="_2">主要内容</h2>
 <ul>
-<li>Poly2，二阶多项式。</li>
-<li>FM，二阶多项式参数通过矩阵分解减少了参数数量，每个特征对应一个向量，并可以简化为O(n)的计算复杂度，详情见FM分析wiki。</li>
-<li>FFM，将特征分为多个field，特征和不同field交叉时采用不同的向量，共n*f个隐向量。</li>
-<li>FwFM，同样将特征分为多个field，在FM基础上不同field间特征交互时会有不同的系数，共f(f-1)/2个系数。</li>
-<li>
-<p>FmFM，每个field在与其他field交互时，向量用不同的矩阵做投影，这也可以使得之前的向量不是同一维度的。</p>
-</li>
+<li>Poly2，二阶多项式。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/FmFM-02.png" style="max-width:300px"></div></li>
+<li>FM，二阶多项式参数通过矩阵分解减少了参数数量，每个特征对应一个向量，并可以简化为O(n)的计算复杂度，详情见FM分析wiki。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/FmFM-03.png" style="max-width:300px"></div></li>
+<li>FFM，将特征分为多个field，特征和不同field交叉时采用不同的向量，共n*f个隐向量。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/FmFM-04.png" style="max-width:300px"></div></li>
+<li>FwFM，同样将特征分为多个field，在FM基础上不同field间特征交互时会有不同的系数，共f(f-1)/2个系数。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/FmFM-05.png" style="max-width:300px"></div></li>
+<li>FmFM，每个field在与其他field交互时，向量用不同的矩阵做投影，这也可以使得之前的向量不是同一维度的。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/FmFM-06.png" style="max-width:300px"></div></li>
 <li>
 <p>FmFM和FFM的区别是，FFM是对于不同的field生成不同的隐向量，FmFM则是将lookup隐向量映射得到不同field的隐向量。</p>
 </li>
@@ -51,7 +54,7 @@
       <span>
         <p>Copyright © 2021 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2021-06-19 16:21:34</p>
+        <p>Site Generated 2021-06-25 10:58:31</p>
       </span>
     </div>
 
