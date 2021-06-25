@@ -28,4 +28,5 @@ date: 2021-06-15
 - 位置偏差
     - 将偏好特征和位置偏置特征分开建模，在线预估时将位置特征统一设置。
     - 为了避免位置特征过于强势导致模型没能学好用户偏好，离线训练时在位置特征部分加入了dropout。
-    - 整体上和微软、华为的思路一致，不一样的是位置偏置的引入方式。
+    - 整体上和微软、华为的思路一致。
+ <div style="text-align: center"><img src="/wiki/attach/images/airbnb-bias-01.png" style="max-width:500px"></div>
