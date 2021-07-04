@@ -48,3 +48,10 @@ date: 2021-06-10
     - 在Meta训练中，由于Base部分网络参数相对较多，所以本文提出为了简化计算，在每一次训练中同时交替更新Base和Meta部分。
     <div style="text-align: center"><img src="/wiki/attach/images/auto-bias-06.png" style="max-width:500px"></div>
     
+- 实验验证
+    - 在公共数据集Yahoo!R3和Coat上做了实验验证，在整体效果上本文提出的去偏方法比其他方法的效果都要更好。
+    <div style="text-align: center"><img src="/wiki/attach/images/auto-bias-07.png" style="max-width:500px"></div>
+    - 在推荐结果上的分析结果如下，本文的模型降低了热门物品的权重，能够曝光更多的长尾物品，并且增益也来自于此。
+    <div style="text-align: center"><img src="/wiki/attach/images/auto-bias-08.png" style="max-width:800px"></div>
+    - 在曝光偏差、位置偏差和选择偏差场景下与其他SOTA方法做了对比，验证了本文方法的有效性。
+    <div style="text-align: center"><img src="/wiki/attach/images/auto-bias-09.png" style="max-width:800px"></div>
