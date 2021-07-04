@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2021-AutoDebias: Learning to Debias for Recommendation - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#02-Recommend System">02-Recommend System</a>&nbsp;&#187;&nbsp;2021-AutoDebias: Learning to Debias for Recommendation
+    <span class="updated">Page Updated&nbsp;
+      2021-06-10
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2021-AutoDebias: Learning to Debias for Recommendation</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li></li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>偏差种类可以分为</p>
+<ul>
+<li>选择偏差：用户倾向于和偏好相关的物品交互，而不是所有的物品。</li>
+<li>一致性偏差：用户对物品的评价受到群体意见的影响。</li>
+<li>曝光偏差：没有曝光的物品无法判断用户的交互结果。</li>
+<li>位置偏差：用户与物品的交互受物品位置的影响。</li>
+</ul>
+</li>
+<li>
+<p>去偏方法主要可以分为</p>
+<ul>
+<li>反倾向得分（inverse propensity score）：因果推断中倾向得分是指用户在"基线因素p(x)"下达到结果的概率，反倾向得分则是将这一影响归一化。</li>
+<li>数据填充：由于观测到的数据是有便的子集，所以可以对数据进行合理的填充。</li>
+<li>生成式模型：直接对P(y,x)进行建模，模型考虑了"基线因素p(x)"。</li>
+</ul>
+</li>
+<li>
+<p>当前去偏方法存在的问题</p>
+<ul>
+<li>不具备普适性，去偏方法一般只针对某一种偏差。</li>
+<li>不具备自适应能力：偏差类型的变化，偏差本身的变化。</li>
+</ul>
+</li>
+<li>
+<p>提出需要通用的去偏方法</p>
+<ul>
+<li>本文认为推荐系统中的偏差可以统一归因为经验风险的估计和理想风险函数之间的差异，换句话说是训练数据分布和真实数据分布之间存在差异。<br />
+   <div style="text-align: center"><img src="/wiki/attach/images/auto-debias-01.png" style="max-width:600px"></div></li>
+<li>所以损失函数能够分解如下<br />
+   <div style="text-align: center"><img src="/wiki/attach/images/auto-debias-02.png" style="max-width:400px"></div></li>
+<li>其中涉及的三个参数定义如下<br />
+   <div style="text-align: center"><img src="/wiki/attach/images/auto-debias-03.png" style="max-width:300px"></div></li>
+<li>最后经验风险函数可以表示如下<br />
+   <div style="text-align: center"><img src="/wiki/attach/images/auto-debias-04.png" style="max-width:400px"></div></li>
+<li>分析了上述损经验风险函数与各种去偏方法的关系，总结来说第一项的系数对应反倾向得分，第二项对应数据填充，具体见论文。</li>
+<li>定了无偏的损失函数之后，就需要学习其中的两个去偏参数。</li>
+</ul>
+</li>
+<li>
+<p>自动去偏算法</p>
+<ul>
+<li>由于当前训练数据存在有偏情况，所以不可能学习到无偏的参数，所以需要新增无偏的数据：随机流量。</li>
+<li>具体的训练流程（meta learning）如下，和EM思路很像<ul>
+<li>Base learner：将去偏参数视作超参数，进行模型训练。</li>
+<li>Meta learner：保持网络参数不变，用无偏的随机样本训练去偏参数。</li>
+</ul>
+</li>
+<li>由于随机流量样本数量一般情况下是不足的，所以就用简单建模的方式去定义上述超参数<br />
+<div style="text-align: center"><img src="/wiki/attach/images/auto-debias-05.png" style="max-width:400px"></div></li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2021 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2021-07-04 15:49:42</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
