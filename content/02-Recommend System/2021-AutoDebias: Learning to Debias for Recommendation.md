@@ -1,0 +1,46 @@
+---
+title: "2021-AutoDebias: Learning to Debias for Recommendation"
+layout: page
+date: 2021-06-10
+---
+
+## 总结
+
+- 
+
+## 主要内容
+
+- 偏差种类可以分为
+    - 选择偏差：用户倾向于和偏好相关的物品交互，而不是所有的物品。
+    - 一致性偏差：用户对物品的评价受到群体意见的影响。
+    - 曝光偏差：没有曝光的物品无法判断用户的交互结果。
+    - 位置偏差：用户与物品的交互受物品位置的影响。
+
+- 去偏方法主要可以分为
+    - 反倾向得分（inverse propensity score）：因果推断中倾向得分是指用户在"基线因素p(x)"下达到结果的概率，反倾向得分则是将这一影响归一化。
+    - 数据填充：由于观测到的数据是有便的子集，所以可以对数据进行合理的填充。
+    - 生成式模型：直接对P(y,x)进行建模，模型考虑了"基线因素p(x)"。
+    
+- 当前去偏方法存在的问题
+    - 不具备普适性，去偏方法一般只针对某一种偏差。
+    - 不具备自适应能力：偏差类型的变化，偏差本身的变化。
+    
+- 提出需要通用的去偏方法
+    - 本文认为推荐系统中的偏差可以统一归因为经验风险的估计和理想风险函数之间的差异，换句话说是训练数据分布和真实数据分布之间存在差异。
+   <div style="text-align: center"><img src="/wiki/attach/images/auto-debias-01.png" style="max-width:600px"></div>
+    - 所以损失函数能够分解如下
+   <div style="text-align: center"><img src="/wiki/attach/images/auto-debias-02.png" style="max-width:400px"></div>
+    - 其中涉及的三个参数定义如下
+   <div style="text-align: center"><img src="/wiki/attach/images/auto-debias-03.png" style="max-width:300px"></div>
+    - 最后经验风险函数可以表示如下
+   <div style="text-align: center"><img src="/wiki/attach/images/auto-debias-04.png" style="max-width:400px"></div>
+    - 分析了上述损经验风险函数与各种去偏方法的关系，总结来说第一项的系数对应反倾向得分，第二项对应数据填充，具体见论文。
+    - 定了无偏的损失函数之后，就需要学习其中的两个去偏参数。
+    
+- 自动去偏算法
+    - 由于当前训练数据存在有偏情况，所以不可能学习到无偏的参数，所以需要新增无偏的数据：随机流量。
+    - 具体的训练流程（meta learning）如下，和EM思路很像
+        - Base learner：将去偏参数视作超参数，进行模型训练。
+        - Meta learner：保持网络参数不变，用无偏的随机样本训练去偏参数。
+    - 由于随机流量样本数量一般情况下是不足的，所以就用简单建模的方式去定义上述超参数
+    <div style="text-align: center"><img src="/wiki/attach/images/auto-debias-05.png" style="max-width:400px"></div>
