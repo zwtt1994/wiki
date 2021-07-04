@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2019-AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#02-Recommend System">02-Recommend System</a>&nbsp;&#187;&nbsp;2019-AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks
+    <span class="updated">Page Updated&nbsp;
+      2020-11-07
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2019-AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks</div>
+
+  <h2 id="_1">主要内容</h2>
+<ul>
+<li>在线预估的两个重要的任务<ul>
+<li>
+<ol>
+<li>tabular input space</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>online data generation</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>GBDT和NN都有自己的弱点<ul>
+<li>GBDT弱点在于sparse特征</li>
+<li>NN弱点在于dense特征</li>
+</ul>
+</li>
+<li>DeepGBM两个模块<ul>
+<li>CatNN 处理sparse特征的NN</li>
+<li>GBDT2NN 处理dense特征, 将GBDT中学到的知识、特征重要性、特征分割点等知识蒸馏到NN中</li>
+</ul>
+</li>
+<li>GBDT的两个问题<ul>
+<li>不能做online learning, 也意味着难以处理极大规模的训练数据</li>
+<li>对(高度)稀疏特征难以拟合得很好。因为分裂是根据特征的统计信息,而稀疏特征onehot之后,分裂对单个特征的统计信息的变化很小,所以难以拟合的很好。一些解决的方法,将sparse特征通过一些编码方法变成连续特征。但每一种编码方法都有其局限性,无法充分表示原有特征中的信息量。<ul>
+<li>sklearn的一个编码库 https://github.com/scikit-learn-contrib/categorical-encoding</li>
+<li>onehot之后的统计信息还有偏? LightGBM</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>NN的问题</p>
+<ul>
+<li>dense特征拟合效果通常不如GBDT,原因是局部最优。我认为还有模型结构的限制也是一个原因,因为dense特征要拟合好需要高度非线性,那么需要很深的NN,而这导致优化更加困难</li>
+</ul>
+</li>
+<li>
+<p>GBDT在线学习方法</p>
+<ul>
+<li>XGBoost、LightGBM 固定树结构,改变叶子节点的权重</li>
+</ul>
+</li>
+<li>GBDT处理sparse特征<ul>
+<li>CatBoost, 通过target statistic信息将sparse特征编码成连续值特征</li>
+</ul>
+</li>
+<li>深度GBDT<ul>
+<li>周志华的两篇文章,DeepForest和mGBDT,将树模型多层堆叠起来</li>
+</ul>
+</li>
+<li>DNN处理连续特征<ul>
+<li>归一化、正则</li>
+<li>离散化: Supervised and unsupervised discretization of continuous features</li>
+</ul>
+</li>
+<li>DNN与GBDT结合的工作<ul>
+<li>Facebook将GBDT的叶子节点作为sparse特征</li>
+<li>Microsoft用GBDT学习NN的残差</li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2021 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2021-07-04 22:44:37</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>

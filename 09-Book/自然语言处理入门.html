@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>自然语言处理入门 - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#09-Book">09-Book</a>&nbsp;&#187;&nbsp;自然语言处理入门
+    <span class="updated">Page Updated&nbsp;
+      2021-04-01
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">自然语言处理入门</div>
+
+  <h2 id="_1">主要内容</h2>
+<ul>
+<li>2.1 词<ul>
+<li>词典中的字符串就是词</li>
+<li>词的性质--齐夫定律：一个单词的词频与它的词频排名成反比。</li>
+</ul>
+</li>
+<li>2.3 分词<ul>
+<li>完全切分</li>
+<li>正向最长匹配</li>
+<li>逆向最长匹配</li>
+<li>双向最长匹配</li>
+</ul>
+</li>
+<li>2.4 字典树<ul>
+<li>当词典大小为 n 时，虽然最坏情况下字典树的复杂度依然是O(logn)，全是叶子结点。</li>
+<li>但它的实际速度比二分查找快，很多词有相同的前缀</li>
+</ul>
+</li>
+<li>
+<p>2.5 hanlp对字典树的优化</p>
+<ul>
+<li>首字散列其余二分的字典树</li>
+<li>双数组字典树</li>
+<li>AC自动机(多模式匹配)</li>
+<li>基于双数组字典树的AC自动机</li>
+</ul>
+</li>
+<li>
+<p>3.1 语言模型</p>
+<ul>
+<li>建模句子出现的概率</li>
+<li>马尔可夫链 和 二元法</li>
+<li>数据稀疏 和 平滑策略<ul>
+<li>Add-one (Laplace) smoothing</li>
+<li>Add-k smoothing</li>
+<li>Backoff回退法</li>
+<li>Interpolation插值法</li>
+<li>Absolute discounting</li>
+<li>Kneser-Ney smoothing</li>
+<li>Modified Kneser-ney smoothing</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>3.2 中文分词语料库<ul>
+<li>《人民日报》语料库 PKU</li>
+<li>微软亚洲研究院语料库 MSR，首选</li>
+<li>香港城市大学 CITYU(繁体)</li>
+<li>台湾中央研究院 AS(繁体)</li>
+</ul>
+</li>
+<li>
+<p>3.3 训练与预测</p>
+<ul>
+<li>加载语料库进行词频统计</li>
+<li>对比词频文件生成词网</li>
+<li>在词网上进行维特比算法</li>
+<li>无法解决oov(out of vacabulary，未登陆词)问题</li>
+</ul>
+</li>
+<li>
+<p>4 隐马尔可夫模型与序列标注</p>
+</li>
+<li>4.1 序列标注问题<ul>
+<li>序列标注与中文分词</li>
+<li>序列标注与词性标注</li>
+<li>序列标注与命名实体识别</li>
+</ul>
+</li>
+<li>
+<p>4.2 隐马尔可夫模型</p>
+<ul>
+<li>参见PRML</li>
+</ul>
+</li>
+<li>
+<p>4.3 隐马尔可夫模型的训练</p>
+</li>
+<li>
+<p>4.4 隐马尔可夫模型的预测</p>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2021 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2021-07-04 22:44:37</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
