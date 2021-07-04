@@ -1,5 +1,5 @@
 ---
-title: "2000-Greedy function approximation: a gradient boosting machine"
+title: "2011-Product quantization for nearest neighbor search"
 layout: page
 date: 2020-05-13
 ---
