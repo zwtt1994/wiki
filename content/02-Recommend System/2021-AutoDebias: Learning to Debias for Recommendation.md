@@ -45,7 +45,7 @@ date: 2021-06-10
     - 由于随机流量样本数量一般情况下是不足的，所以就用简单建模的方式去定义上述超参数，其中Xu是用户特征，Xi是物料特征，r是label，O是用户对item的交互信息，concat一起之后经过计算得到去偏参数。
     <div style="text-align: center"><img src="/wiki/attach/images/auto-bias-05.png" style="max-width:360px"></div>
     - 但上述人为确定的建模方式也可能造成归纳偏差（inductively bias），导致去偏参数学不好，但本文通过理论推导分析认为这种建模方式已经比较鲁棒了。
-    - 在Meta训练中，由于Base部分网络参数相对较多，所以本文提出为了简化计算，在每一次训练中同时交替更新Base和Meta部分。
+    - 在Meta训练中，如果每次都更新都重新训练一次Base网络十分耗时，所以本文提出为了简化计算，在每一次训练中同时交替更新Base和Meta部分。
     <div style="text-align: center"><img src="/wiki/attach/images/auto-bias-06.png" style="max-width:500px"></div>
     
 - 实验验证
