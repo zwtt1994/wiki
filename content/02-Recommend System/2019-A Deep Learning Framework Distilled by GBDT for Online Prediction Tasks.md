@@ -7,8 +7,8 @@ date: 2020-11-07
 ## 主要内容
 
 - 在线预估的两个重要的任务
-    - 1. tabular input space
-    - 2. online data generation
+    - tabular input space
+    - online data generation
 - GBDT和NN都有自己的弱点
     - GBDT弱点在于sparse特征
     - NN弱点在于dense特征
