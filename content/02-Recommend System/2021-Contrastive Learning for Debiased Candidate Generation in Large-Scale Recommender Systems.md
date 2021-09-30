@@ -12,18 +12,18 @@ date: 2021-09-30
 
 - 海量候选集召回中的对比学习
     - 对比学习：关注正负样本特征的差异，而不是每次只关注单样本特征与label的关系。
-    <div style="text-align: center"><img src="/wiki/attach/images/CLR-02.png" style="max-width:300px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/CLR-02.png" style="max-width:350px"></div>
     - 所以对比学习的损失函数如下，和sample softmax很相似
-    <div style="text-align: center"><img src="/wiki/attach/images/CLR-04.png" style="max-width:300px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/CLR-04.png" style="max-width:450px"></div>
     - sample softmax的损失函数如下，他的含义是用q(y|x)来采样负样本，收敛得到的参数和常规的softmax最大似然估计是一样的。
-    <div style="text-align: center"><img src="/wiki/attach/images/CLR-06.png" style="max-width:300px"></div>
-    <div style="text-align: center"><img src="/wiki/attach/images/CLR-03.png" style="max-width:300px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/CLR-06.png" style="max-width:450px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/CLR-03.png" style="max-width:450px"></div>
 
 - 对比学习和反倾向得分去偏的关系
     - 反倾向得分去偏的损失函数如下
     <div style="text-align: center"><img src="/wiki/attach/images/CLR-05.png" style="max-width:300px"></div>
     - 文章得出的结论如下，证明见论文
-    <div style="text-align: center"><img src="/wiki/attach/images/CLR-08.png" style="max-width:300px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/CLR-08.png" style="max-width:700px"></div>
     - 因此对比学习的损失函数能够达到和反倾向得分去偏一样的效果，所以现在的问题就是确定q(y|x)。
     - 几个概率定义如下
         - q(y|x)：在给定条件下y物品给用户推荐的概率；
@@ -40,4 +40,4 @@ date: 2021-09-30
 
 - 实验结果
     - item的多样性提升了，并且效果也提升了。
-    <div style="text-align: center"><img src="/wiki/attach/images/CLR-01.png" style="max-width:600px"></div>
+    <div style="text-align: center"><img src="/wiki/attach/images/CLR-01.png" style="max-width:700px"></div>
