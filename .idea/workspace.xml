@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/02-Recommend System/2021-An Embedding Learning Framework for Numerical Features in CTR Prediction.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/03-GNN/0-综述汇总.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/02-Recommend System/2021-Contrastive Learning for Debiased Candidate Generation in Large-Scale Recommender Systems.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,19 +60,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content/01-Machine Learning" />
-      <recent name="$PROJECT_DIR$/content/Machine Learning" />
-      <recent name="$PROJECT_DIR$/content/Recommend System" />
-      <recent name="$PROJECT_DIR$/attach/images" />
-      <recent name="$PROJECT_DIR$/attach" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/02-Recommend System" />
       <recent name="$PROJECT_DIR$/content/01-Machine Learning" />
       <recent name="$PROJECT_DIR$/content/09-Book" />
       <recent name="$PROJECT_DIR$/content/recsys" />
       <recent name="$PROJECT_DIR$/content/math" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/01-Machine Learning" />
+      <recent name="$PROJECT_DIR$/content/Machine Learning" />
+      <recent name="$PROJECT_DIR$/content/Recommend System" />
+      <recent name="$PROJECT_DIR$/attach/images" />
+      <recent name="$PROJECT_DIR$/attach" />
     </key>
   </component>
   <component name="SshConsoleOptionsProvider">
@@ -161,14 +160,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="390" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619166187846">
+    <state x="421" y="205" width="808" height="522" key="find.popup" timestamp="1632915601821">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="390" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1619166187846" />
-    <state x="421" y="205" width="808" height="490" key="find.popup" timestamp="1625450947822">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="421" y="205" width="808" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1625450947822" />
+    <state x="421" y="205" width="808" height="522" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1632915601821" />
   </component>
   <component name="masterDetails">
     <states>
