@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2021-Contrastive Learning for Debiased Candidate Generation in Large-Scale Recommender Systems - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#02-Recommend System">02-Recommend System</a>&nbsp;&#187;&nbsp;2021-Contrastive Learning for Debiased Candidate Generation in Large-Scale Recommender Systems
+    <span class="updated">Page Updated&nbsp;
+      2021-09-30
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2021-Contrastive Learning for Debiased Candidate Generation in Large-Scale Recommender Systems</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>分析了对比学习和反倾向得分去偏之间的关系，并提出了一个去偏的对比学习框架。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>海量候选集召回中的对比学习</p>
+<ul>
+<li>对比学习：关注正负样本特征的差异，而不是每次只关注单样本特征与label的关系。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/CLR-02.png" style="max-width:300px"></div></li>
+<li>所以对比学习的损失函数如下，和sample softmax很相似<br />
+<div style="text-align: center"><img src="/wiki/attach/images/CLR-04.png" style="max-width:300px"></div></li>
+<li>sample softmax的损失函数如下，他的含义是用q(y|x)来采样负样本，收敛得到的参数和常规的softmax最大似然估计是一样的。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/CLR-06.png" style="max-width:300px"></div><br />
+<div style="text-align: center"><img src="/wiki/attach/images/CLR-03.png" style="max-width:300px"></div></li>
+</ul>
+</li>
+<li>
+<p>对比学习和反倾向得分去偏的关系</p>
+<ul>
+<li>反倾向得分去偏的损失函数如下<br />
+<div style="text-align: center"><img src="/wiki/attach/images/CLR-05.png" style="max-width:300px"></div></li>
+<li>文章得出的结论如下，证明见论文<br />
+<div style="text-align: center"><img src="/wiki/attach/images/CLR-08.png" style="max-width:300px"></div></li>
+<li>因此对比学习的损失函数能够达到和反倾向得分去偏一样的效果，所以现在的问题就是确定q(y|x)。</li>
+<li>几个概率定义如下<ul>
+<li>q(y|x)：在给定条件下y物品给用户推荐的概率；</li>
+<li>q(y)：y物品给用户推荐的概率；</li>
+<li>pdata(y):y物品给用户推荐并被点击的概率；</li>
+<li>q(y|x)难以预估，并且"高准确高方差"的系数并不一定好于"平滑低方差"的系数，所以可以使得q(y)近似表示q(y|x)，q(y)又和pdata(y)高度相关。</li>
+</ul>
+</li>
+<li>因此从点击样本中采样负样本就可以近似实现对比损失的效果。</li>
+</ul>
+</li>
+<li>
+<p>队列采样方法</p>
+<ul>
+<li>为了减少采样带来的计算以及分布式通信成本，提出在local缓存一个FIFO队列记录历史的正样本。</li>
+<li>当队列大小和batch大小一样时，bc方法和a方法一致，为提升泛化性则选择较大的队列长度=2560和较小的batch size=256。</li>
+<li>b和c的区别是缓存特征还是缓存计算好的embedding，c方法训练时因为梯度回传不到负样本所以收敛需要更多step，但由于他减少了计算量整体训练效率是提升的。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/CLR-07.png" style="max-width:600px"></div></li>
+</ul>
+</li>
+<li>
+<p>实验结果</p>
+<ul>
+<li>item的多样性提升了，并且效果也提升了。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/CLR-01.png" style="max-width:600px"></div></li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2021 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2021-09-30 17:33:44</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
