@@ -35,12 +35,12 @@
 <p>海量候选集召回中的对比学习</p>
 <ul>
 <li>对比学习：关注正负样本特征的差异，而不是每次只关注单样本特征与label的关系。<br />
-<div style="text-align: center"><img src="/wiki/attach/images/CLR-02.png" style="max-width:300px"></div></li>
+<div style="text-align: center"><img src="/wiki/attach/images/CLR-02.png" style="max-width:350px"></div></li>
 <li>所以对比学习的损失函数如下，和sample softmax很相似<br />
-<div style="text-align: center"><img src="/wiki/attach/images/CLR-04.png" style="max-width:300px"></div></li>
+<div style="text-align: center"><img src="/wiki/attach/images/CLR-04.png" style="max-width:450px"></div></li>
 <li>sample softmax的损失函数如下，他的含义是用q(y|x)来采样负样本，收敛得到的参数和常规的softmax最大似然估计是一样的。<br />
-<div style="text-align: center"><img src="/wiki/attach/images/CLR-06.png" style="max-width:300px"></div><br />
-<div style="text-align: center"><img src="/wiki/attach/images/CLR-03.png" style="max-width:300px"></div></li>
+<div style="text-align: center"><img src="/wiki/attach/images/CLR-06.png" style="max-width:450px"></div><br />
+<div style="text-align: center"><img src="/wiki/attach/images/CLR-03.png" style="max-width:450px"></div></li>
 </ul>
 </li>
 <li>
@@ -49,7 +49,7 @@
 <li>反倾向得分去偏的损失函数如下<br />
 <div style="text-align: center"><img src="/wiki/attach/images/CLR-05.png" style="max-width:300px"></div></li>
 <li>文章得出的结论如下，证明见论文<br />
-<div style="text-align: center"><img src="/wiki/attach/images/CLR-08.png" style="max-width:300px"></div></li>
+<div style="text-align: center"><img src="/wiki/attach/images/CLR-08.png" style="max-width:700px"></div></li>
 <li>因此对比学习的损失函数能够达到和反倾向得分去偏一样的效果，所以现在的问题就是确定q(y|x)。</li>
 <li>几个概率定义如下<ul>
 <li>q(y|x)：在给定条件下y物品给用户推荐的概率；</li>
@@ -74,7 +74,7 @@
 <p>实验结果</p>
 <ul>
 <li>item的多样性提升了，并且效果也提升了。<br />
-<div style="text-align: center"><img src="/wiki/attach/images/CLR-01.png" style="max-width:600px"></div></li>
+<div style="text-align: center"><img src="/wiki/attach/images/CLR-01.png" style="max-width:700px"></div></li>
 </ul>
 </li>
 </ul>
@@ -83,7 +83,7 @@
       <span>
         <p>Copyright © 2021 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2021-09-30 17:41:49</p>
+        <p>Site Generated 2021-09-30 17:43:31</p>
       </span>
     </div>
 
