@@ -13,7 +13,7 @@ date: 2021-09-30
 - 海量候选集召回中的对比学习
     - 对比学习：关注正负样本特征的差异，而不是每次只关注单样本特征与label的关系。
     <div style="text-align: center"><img src="/wiki/attach/images/CLR-02.png" style="max-width:350px"></div>
-    - 所以对比学习的损失函数如下，和sample softmax很相似
+    - 所以对比学习的损失函数如下，和sample softmax很相似，和DSSM用的损失函数一样。
     <div style="text-align: center"><img src="/wiki/attach/images/CLR-04.png" style="max-width:450px"></div>
     - sample softmax的损失函数如下，他的含义是用q(y|x)来采样负样本，收敛得到的参数和常规的softmax最大似然估计是一样的。
     <div style="text-align: center"><img src="/wiki/attach/images/CLR-06.png" style="max-width:500px"></div>
