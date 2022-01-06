@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a8c850-e49f-4426-ab31-9a872d0d7859" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/content/02-Recommend System/2021-Modeling the Sequential Dependence among Audience Multi-step Conversions with Multi-task Learning in Targeted Display Advertising.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/09-Book/PRML.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/09-Book/PRML.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,19 +61,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content/02-Recommend System" />
-      <recent name="$PROJECT_DIR$/content/01-Machine Learning" />
-      <recent name="$PROJECT_DIR$/content/09-Book" />
-      <recent name="$PROJECT_DIR$/content/recsys" />
-      <recent name="$PROJECT_DIR$/content/math" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/01-Machine Learning" />
       <recent name="$PROJECT_DIR$/content/Machine Learning" />
       <recent name="$PROJECT_DIR$/content/Recommend System" />
       <recent name="$PROJECT_DIR$/attach/images" />
       <recent name="$PROJECT_DIR$/attach" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/02-Recommend System" />
+      <recent name="$PROJECT_DIR$/content/01-Machine Learning" />
+      <recent name="$PROJECT_DIR$/content/09-Book" />
+      <recent name="$PROJECT_DIR$/content/recsys" />
+      <recent name="$PROJECT_DIR$/content/math" />
     </key>
   </component>
   <component name="SshConsoleOptionsProvider">
@@ -159,10 +161,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="360" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1640744557315">
+    <state x="360" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641386217467">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="360" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1640744557315" />
+    <state x="360" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1641386217467" />
     <state x="421" y="205" width="808" height="522" key="find.popup" timestamp="1632915601821">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
