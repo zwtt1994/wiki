@@ -6,7 +6,7 @@ date: 2022-01-05
 
 ## 总结
 
-- 针对长链路强依赖的多任务场景，提出了label输出间添加关联结构，以及添加辅助loss提升效果。
+- 针对长链路强依赖的多任务场景，提出了在多任务输出间添加关联结构并添加辅助loss来提升效果。
 
 ## 主要内容
 
@@ -19,6 +19,6 @@ date: 2022-01-05
 <div style="text-align: center"><img src="/wiki/attach/images/MT-Multi-02.png" style="max-width:500px"></div>
 
 - 损失函数如下，添加了强依赖逻辑的辅助损失函数。
-<div style="text-align: center"><img src="/wiki/attach/images/MT-Multi-03.png" style="max-width:300px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/MT-Multi-03.png" style="max-width:450px"></div>
 <div style="text-align: center"><img src="/wiki/attach/images/MT-Multi-04.png" style="max-width:300px"></div>
 <div style="text-align: center"><img src="/wiki/attach/images/MT-Multi-05.png" style="max-width:300px"></div>
