@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>Modeling the Sequential Dependence among Audience Multi-step Conversions with Multi-task Learning in Targeted Display Advertising - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#02-Recommend System">02-Recommend System</a>&nbsp;&#187;&nbsp;Modeling the Sequential Dependence among Audience Multi-step Conversions with Multi-task Learning in Targeted Display Advertising
+    <span class="updated">Page Updated&nbsp;
+      2022-01-05
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">Modeling the Sequential Dependence among Audience Multi-step Conversions with Multi-task Learning in Targeted Display Advertising</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>针对长链路强依赖的多任务场景，提出了label输出间添加关联结构，以及添加辅助loss提升效果。</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>论文中的业务场景是信用卡激活，包含"曝光-点击-申请-通过-激活"五个状态，并且这些状态从左至右属于前置逻辑，越右侧的状态越稀疏；其中通过和激活是目标任务，点击与申请是辅助任务。</p>
+</li>
+<li>
+<p>多任务建模常用于多个目标场景的预估，为了更好地建模上述多目标情况，本文在传统目标结构上接近了优化，主要是新增了多目标输出之间的关联结构。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/MT-Multi-01.png" style="max-width:800px"></div></p>
+</li>
+<li>
+<p>其中AIT网络结构的计算方式如下，论文认为可以根据实际场景调整。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/MT-Multi-02.png" style="max-width:500px"></div></p>
+</li>
+<li>
+<p>损失函数如下，添加了强依赖逻辑的辅助损失函数。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/MT-Multi-03.png" style="max-width:300px"></div><br />
+<div style="text-align: center"><img src="/wiki/attach/images/MT-Multi-04.png" style="max-width:300px"></div><br />
+<div style="text-align: center"><img src="/wiki/attach/images/MT-Multi-05.png" style="max-width:300px"></div></p>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2022 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2022-01-06 11:34:15</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
