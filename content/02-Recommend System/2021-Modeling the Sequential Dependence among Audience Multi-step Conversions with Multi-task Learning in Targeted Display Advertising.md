@@ -20,5 +20,5 @@ date: 2022-01-05
 
 - 损失函数如下，添加了强依赖逻辑的辅助损失函数。
 <div style="text-align: center"><img src="/wiki/attach/images/MT-Multi-03.png" style="max-width:450px"></div>
-<div style="text-align: center"><img src="/wiki/attach/images/MT-Multi-04.png" style="max-width:300px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/MT-Multi-04.png" style="max-width:350px"></div>
 <div style="text-align: center"><img src="/wiki/attach/images/MT-Multi-05.png" style="max-width:300px"></div>
