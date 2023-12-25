@@ -21,8 +21,8 @@ date: 2020-07-25，update on 2023-12-24
 
 - multi-head attention
 <div style="text-align: center"><img src="/wiki/attach/images/Transformer-update-02.png" style="max-width:600px"></div>
-<div style="text-align: center"><img src="/wiki/attach/images/Transformer-update-03.png" style="max-width:200px"></div>
-<div style="text-align: center"><img src="/wiki/attach/images/Transformer-update-04.png" style="max-width:300px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/Transformer-update-03.png" style="max-width:500px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/Transformer-update-04.png" style="max-width:800px"></div>
 
 - FFN：两层全链接，relu+无激活函数
 
