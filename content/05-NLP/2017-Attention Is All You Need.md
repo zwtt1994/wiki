@@ -13,16 +13,16 @@ date: 2020-07-25，update on 2023-12-24
 ## 主要内容
 
 - 模型结构
-<div style="text-align: center"><img src="/wiki/attach/images/Transformer-01.png" style="max-width:400px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/Transformer-update-01.png" style="max-width:400px"></div>
     - 编码器由多个子层堆叠而成，每个子层包含两部分，一部分是multi-head attention，一部分是两层全链接FFN，两个部分都加入了残差链接和layer normalization，因此所有子层输出维度一致。
     - 为什么要用残差网络：网络很难学习到恒等映射，而容易学习残差，解决梯度消失问题
     - Layer normalization：层神经元维度的归一化；Batch normalization：样本维度的归一化
     - 解码器：Masked multi-head attention + multi-head attention +FFN，mask的目的是并行计算时不让时序前面的建模看到后面的信息
 
 - multi-head attention
-<div style="text-align: center"><img src="/wiki/attach/images/Transformer-02.png" style="max-width:600px"></div>
-<div style="text-align: center"><img src="/wiki/attach/images/Transformer-03.png" style="max-width:200px"></div>
-<div style="text-align: center"><img src="/wiki/attach/images/Transformer-04.png" style="max-width:300px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/Transformer-update-02.png" style="max-width:600px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/Transformer-update-03.png" style="max-width:200px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/Transformer-update-04.png" style="max-width:300px"></div>
 
 - FFN：两层全链接，relu+无激活函数
 
