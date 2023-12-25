@@ -1,30 +1,37 @@
 ---
 title: "2017-Attention Is All You Need"
 layout: page
-date: 2020-07-25
+date: 2020-07-25，update on 2023-12-24
 ---
 
 ## 总结
 
-- 
+- rnn的方法存在长度处理限制，时间顺序规则导致计算效率较低，同时注意力机制也被引入到各模型中来提升模型表达能力。
+- 一些工作利用cnn来并行计算不同位置间的相关信息，但往往计算复杂度和输入长度呈线性或者指数增长关系。
+- 本文提出transformer结构，利用self-attention来解决并行计算和长度限制的问题。
  
 ## 主要内容
 
-- Transformer结构如下，整体框架分为encode和decode两部分，整体结构。
-<div style="text-align: center"><img src="/wiki/attach/images/Transformer-03.png" style="max-width:400px"></div>
+- 模型结构
+<div style="text-align: center"><img src="/wiki/attach/images/Transformer-01.png" style="max-width:400px"></div>
+    - 编码器由多个子层堆叠而成，每个子层包含两部分，一部分是multi-head attention，一部分是两层全链接FFN，两个部分都加入了残差链接和layer normalization，因此所有子层输出维度一致。
+    - 为什么要用残差网络：网络很难学习到恒等映射，而容易学习残差，解决梯度消失问题
+    - Layer normalization：层神经元维度的归一化；Batch normalization：样本维度的归一化
+    - 解码器：Masked multi-head attention + multi-head attention +FFN，mask的目的是并行计算时不让时序前面的建模看到后面的信息
 
-- Attention的通用结构如下，他的本质是通过计算Query和Key之间的相似程度来对Value进行加权求和。文中提到的Self-attention是指上述Q=K=V（encode部分）或者是Q=K（decode部分），本质上都是attention的简化。
-<div style="text-align: center"><img src="/wiki/attach/images/Transformer-01.png" style="max-width:300px"></div>
+- multi-head attention
+<div style="text-align: center"><img src="/wiki/attach/images/Transformer-02.png" style="max-width:600px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/Transformer-03.png" style="max-width:200px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/Transformer-04.png" style="max-width:300px"></div>
 
-- Self-attention再具体分析下。。
+- FFN：两层全链接，relu+无激活函数
 
-- Multi-head attention，多个Attention结构可以得到多个输出结果，这些结果中的Attention分布往往是不同的，各有侧重。
-<div style="text-align: center"><img src="/wiki/attach/images/Transformer-02.png" style="max-width:300px"></div>
+- 输入和输出embedding和softmax用同一套，在embedding层对向量乘以维度的开方
 
-- Decode做Mask目的是防止label穿越，在计算Multi-head attention结构的时候，避免把还没decode出来的部分算上，实际测试的时候不需要mask。
+- Positional Encoding，位置编码：由于模型不含递归和卷积，需要加入额外标记让模型学习到位置信息；论文尝试了可学习的和三角函数，发现两者效果类似，因此选择了更鲁棒的三角函数
 
-- Positional Encoding，由于Transformer摒弃了序列信息，所以需要将这部分补充进来。文中提到了两种方法，三角函数映射和学出一份位置embedding，尝试之后发现效果差不多。
+- Transformer的优点：self-attention和rnn/cnn的对比，计算量更小，并行度更高
 
-- Transformer的优点：计算复杂度较小；摒弃了时间序列，在某些计算上可以并行，且可以用窗口来降低计算复杂度；由于使用了attention结构，可结实性更强。
+- 正则化：dropout（子层和embedding），label smothing
 
 - Transformer的缺点：有些rnn轻易可以解决的问题（如序列复制），transformer很难实现；Positional Encoding的存在会导致在处理训练中没碰到过的句子长度（特别长）时表现很差。
