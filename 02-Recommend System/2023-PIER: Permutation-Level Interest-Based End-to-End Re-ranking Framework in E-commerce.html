@@ -33,18 +33,18 @@
 <ul>
 <li>
 <p>整体流程：暴力生成序列、FPSM选择tok-k的序列、OCPM选择最优序列<br />
-<div style="text-align: center"><img src="/wiki/attach/images/PIER-01.png" style="max-width:700px"></div></p>
+<div style="text-align: center"><img src="/wiki/attach/images/PIER-01.png" style="max-width:600px"></div></p>
 </li>
 <li>
 <p>模型结构<br />
-<div style="text-align: center"><img src="/wiki/attach/images/PIER-02.png" style="max-width:900px"></div></p>
+<div style="text-align: center"><img src="/wiki/attach/images/PIER-02.png" style="max-width:800px"></div></p>
 </li>
 <li>
-<p>序列推荐中的sideinfo<br />
-<div style="text-align: center"><img src="/wiki/attach/images/PIER-03.png" style="max-width:900px"></div><br />
-<div style="text-align: center"><img src="/wiki/attach/images/PIER-04.png" style="max-width:900px"></div></p>
+<p>序列推荐中的sideinfo</p>
 </li>
-<li>side info+id直接融合+self-attention（信息侵入，id信息不再准确）</li>
+<li>
+<p>side info+id直接融合+self-attention（信息侵入，id信息不再准确）</p>
+</li>
 <li>id和side info分开self-attention建模最后合并（id和side info缺乏交互）</li>
 <li>id仅作为self-attention的value，特征和id作为q、k（解决信息侵入问题，但所有side info重要性一致）</li>
 <li>每个side info单独的k和q再融合（特征之间没有交互）</li>
@@ -66,12 +66,15 @@
 <li>(N+1)-tuplet loss，扩充为N个负样本</li>
 <li>N-pair loss，把其他正样本当成该正样本的负样本，batch内负采样，减少计算量</li>
 </ul>
+<div style="text-align: center"><img src="/wiki/attach/images/PIER-03.png" style="max-width:800px"></div>
+
+<div style="text-align: center"><img src="/wiki/attach/images/PIER-04.png" style="max-width:800px"></div>
     </div>
     <div id="footer">
       <span>
         <p>Copyright © 2024 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2024-01-08 16:24:02</p>
+        <p>Site Generated 2024-01-08 16:25:57</p>
       </span>
     </div>
 
