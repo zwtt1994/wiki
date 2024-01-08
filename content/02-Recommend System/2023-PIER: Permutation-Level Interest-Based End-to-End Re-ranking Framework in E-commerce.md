@@ -11,14 +11,13 @@ date: 2024-01-08
 ## 主要内容
 
 - 整体流程：暴力生成序列、FPSM选择tok-k的序列、OCPM选择最优序列
-<div style="text-align: center"><img src="/wiki/attach/images/PIER-01.png" style="max-width:700px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/PIER-01.png" style="max-width:600px"></div>
 
 - 模型结构
-<div style="text-align: center"><img src="/wiki/attach/images/PIER-02.png" style="max-width:900px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/PIER-02.png" style="max-width:800px"></div>
 
 - 序列推荐中的sideinfo
-<div style="text-align: center"><img src="/wiki/attach/images/PIER-03.png" style="max-width:900px"></div>
-<div style="text-align: center"><img src="/wiki/attach/images/PIER-04.png" style="max-width:900px"></div>
+
   - side info+id直接融合+self-attention（信息侵入，id信息不再准确）
   - id和side info分开self-attention建模最后合并（id和side info缺乏交互）
   - id仅作为self-attention的value，特征和id作为q、k（解决信息侵入问题，但所有side info重要性一致）
@@ -36,3 +35,6 @@ date: 2024-01-08
   - Triplet loss，query和正负样本
   - (N+1)-tuplet loss，扩充为N个负样本
   - N-pair loss，把其他正样本当成该正样本的负样本，batch内负采样，减少计算量
+
+<div style="text-align: center"><img src="/wiki/attach/images/PIER-03.png" style="max-width:800px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/PIER-04.png" style="max-width:800px"></div>
