@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>UL2: Unifying Language Learning Paradigms - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#07-Large Language Model">07-Large Language Model</a>&nbsp;&#187;&nbsp;UL2: Unifying Language Learning Paradigms
+    <span class="updated">Page Updated&nbsp;
+      2024-01-21
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">UL2: Unifying Language Learning Paradigms</div>
+
+  <h2 id="_1">主要内容</h2>
+<ul>
+<li>背景：预训练大模型存在各种各样的训练范式，需要根据下游任务选用特定的范式，已经潜移默化的把LM变成了task-specific的LM。统一的大模型范式有助于资源和精力</li>
+<li>Structure和Pre-train范式<ul>
+<li>bert（自编码，encode-only，双向文本建模，更擅长做判别/自然语言理解类任务）</li>
+<li>gpt（自回归，decode-only）</li>
+<li>UniLM（prefix LM，encode+decode共用参数，通过transfomer的mask矩阵来同时训练双向/单向/seq2seq）</li>
+</ul>
+</li>
+<li>learning范式：监督任务，in-context learning / few-shot，Zero-Shot </li>
+<li>目标任务：语言生成，语言理解，reasoning</li>
+</ul>
+<div style="text-align: center"><img src="/wiki/attach/images/UL2-01.png" style="max-width:500px"></div>
+
+<ul>
+<li>XLNet（MS2019）</li>
+<li>AE的问题（预训练和fine-tune存在mask的差异；假设mask相互独立）</li>
+<li>提出了Permutation Language Model，在预训练阶段采用了基于AR的双向编码机制，从而解决了BERT遇到的两个痛点</li>
+<li>XLNet实现AR和AE融合的主要思路为，对输入文本进行排列组合，然后对于每个排列组合使用AR的方式训练，不同排列组合使每个token都能和其他token进行信息交互，同时每次训练又都是AR的。</li>
+</ul>
+<div style="text-align: center"><img src="/wiki/attach/images/UL2-02.png" style="max-width:500px"></div>
+
+<ul>
+<li>MPNet（MS2022）</li>
+<li>MLM可以看到全句的位置信息，但不能对预测token之间的依赖关系进行建模，不能很好地学习复杂的语义关系</li>
+<li>PLM可以通过自回归预测对predicted tokens之间的依赖关系进行建模，但不能看到全句的位置信息，会造成预训练和微调的不匹配。</li>
+<li>MLM和PLM中的非预测部分是相同的，而预测部分是不同的，MLM的优势在于通过引入mask及其在非预测部分的位置信息，可以看到全句的位置信息，而PLM的优势在于可以在预测部分用自回归生成来模拟预测标记之间的依赖关系</li>
+</ul>
+<div style="text-align: center"><img src="/wiki/attach/images/UL2-03.png" style="max-width:500px"></div>
+
+<ul>
+<li>UniLM（2019）</li>
+<li>
+<p>模型结构的统一，Encoder-only，采用BERT的模型，使用三种特殊的Mask的预训练目标，双向、单向、seq2seq，交替训练<br />
+<div style="text-align: center"><img src="/wiki/attach/images/UL2-04.png" style="max-width:500px"></div></p>
+</li>
+<li>
+<p>T5</p>
+</li>
+<li>目标任务统一，encoder-decoder，把所有的NLP问题都可以定义成text-to-text问题，即输入text，输出text</li>
+<li>
+<p>使用同样的模型，同样的损失函数，同样的训练过程，同样的解码过程来完成所有 NLP 任务</p>
+</li>
+<li>
+<p>UL2</p>
+</li>
+<li>提出Mixture-of-Denoisers (MoD)融合了Prefix LM/span corruption/CLM不同的模型能力</li>
+<li>无论是CausalLM，span corruption或者PrefixLM，都可以视为span corruption<br />
+<div style="text-align: center"><img src="/wiki/attach/images/UL2-05.png" style="max-width:500px"></div></li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2024 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2024-01-22 18:16:44</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
