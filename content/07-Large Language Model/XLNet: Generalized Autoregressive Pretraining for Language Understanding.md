@@ -14,8 +14,8 @@ date: 2024-01-28
     - AR是BERT出现以前常用的语言模型，但缺点是不能进行双向编码，因此BERT采用了AE，但同时也引入了两个缺点
         - 预训练阶段和fine-tune阶段存在差异
         - 假设mask之间相互独立
-<div style="text-align: center"><img src="/wiki/attach/images/XLNet-01.png" style="max-width:400px"></div>
-<div style="text-align: center"><img src="/wiki/attach/images/XLNet-02.png" style="max-width:400px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/XLNet-01.png" style="max-width:600px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/XLNet-02.png" style="max-width:600px"></div>
 
 - Permutation Language Model
 <div style="text-align: center"><img src="/wiki/attach/images/XLNet-03.png" style="max-width:300px"></div>
@@ -39,6 +39,6 @@ date: 2024-01-28
     - 多个segments在训练时并没有上下文信息，因此导致了信息割裂
     - segment状态缓存
         - 在对当前segment进行处理的时候，缓存并利用上一个segment中所有layer的隐状态序列，并且上一个segment的隐状态序列不参与反向传播，建立了segments之间的依赖关系
-<div style="text-align: center"><img src="/wiki/attach/images/XLNet-05.png" style="max-width:600px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/XLNet-05.png" style="max-width:800px"></div>
     - 相对位置编码
         - 间隔位置大小为参数，在算attention的时候，只考虑query与key的相对位置关系
