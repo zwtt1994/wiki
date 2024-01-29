@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>XLNet: Generalized Autoregressive Pretraining for Language Understanding - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#07-Large Language Model">07-Large Language Model</a>&nbsp;&#187;&nbsp;XLNet: Generalized Autoregressive Pretraining for Language Understanding
+    <span class="updated">Page Updated&nbsp;
+      2024-01-28
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">XLNet: Generalized Autoregressive Pretraining for Language Understanding</div>
+
+  <h2 id="_1">主要内容</h2>
+<ul>
+<li>
+<p>XLNet是一种广义的AE方法</p>
+</li>
+<li>
+<p>无监督语言模型</p>
+<ul>
+<li>自回归语言模型（auto-regressive，AR）：根据上文内容预测下一个词，例如GPT和ELMo，ELMo做了两个方向但本质还是AR的思路</li>
+<li>自编码语言模型（auto-encoding，AE）：把输入序列mask一部分，通过模型进行还原，例如BERT（Mask language model）</li>
+<li>AR是BERT出现以前常用的语言模型，但缺点是不能进行双向编码，因此BERT采用了AE，但同时也引入了两个缺点<ul>
+<li>预训练阶段和fine-tune阶段存在差异</li>
+<li>假设mask之间相互独立<br />
+<div style="text-align: center"><img src="/wiki/attach/images/XLNet-01.png" style="max-width:400px"></div><br />
+<div style="text-align: center"><img src="/wiki/attach/images/XLNet-02.png" style="max-width:400px"></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Permutation Language Model<br />
+<div style="text-align: center"><img src="/wiki/attach/images/XLNet-03.png" style="max-width:300px"></div></p>
+<ul>
+<li>本文提出PLM来解决BERT遇到的两个问题，将输入顺序打乱位不同排列方式，再按照AR的方式去学习</li>
+<li>因为对于不同的排列方式，模型参数是共享的，所以模型最终可以学习到双向的信息</li>
+<li>由于计算复杂度的限制，每个序列输入一般只采样一个排列顺序</li>
+<li>在实际训练时不会真的打乱序列，而是通过mask矩阵实现permutation，保证不会存在pretrain和finetune之间的差异</li>
+</ul>
+</li>
+<li>
+<p>Two-Stream Self-Attention<br />
+<div style="text-align: center"><img src="/wiki/attach/images/XLNet-04.png" style="max-width:800px"></div></p>
+<ul>
+<li>具体实现中使用了双流注意力机制，来保证预估时考虑到目标的位置信息，同时能够包含双向的文本信息</li>
+<li>query stream在对需要预测的位置预测的同时不会泄露当前位置的内容 </li>
+<li>预训练阶段最终预测只使用query stream，因为content stream已经见过当前token了</li>
+<li>在精调阶段使用content stream，又回到了传统的self-attention结构</li>
+</ul>
+</li>
+<li>
+<p>Transformer-XL</p>
+<ul>
+<li>Transformer需要为输入序列设置一个固定长度length，来保证模型性能</li>
+<li>当输入文本序列短于length时可以进行填充，当输入序列长于length时，则将输入序列划分为多个segments</li>
+<li>多个segments在训练时并没有上下文信息，因此导致了信息割裂</li>
+<li>segment状态缓存<ul>
+<li>在对当前segment进行处理的时候，缓存并利用上一个segment中所有layer的隐状态序列，并且上一个segment的隐状态序列不参与反向传播，建立了segments之间的依赖关系<br />
+<div style="text-align: center"><img src="/wiki/attach/images/XLNet-05.png" style="max-width:600px"></div></li>
+</ul>
+</li>
+<li>相对位置编码<ul>
+<li>间隔位置大小为参数，在算attention的时候，只考虑query与key的相对位置关系</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2024 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2024-01-29 13:26:42</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
