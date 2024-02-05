@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2019-Multi-Interest Network with Dynamic Routing for Recommendation at Tmall - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#02-Recommend System">02-Recommend System</a>&nbsp;&#187;&nbsp;2019-Multi-Interest Network with Dynamic Routing for Recommendation at Tmall
+    <span class="updated">Page Updated&nbsp;
+      2024-02-04
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2019-Multi-Interest Network with Dynamic Routing for Recommendation at Tmall</div>
+
+  <h2 id="_1">总结</h2>
+<ul>
+<li>提出动态路由的多兴趣网络（MIND）来学习用户的多兴趣表示</li>
+</ul>
+<h2 id="_2">主要内容</h2>
+<ul>
+<li>
+<p>背景</p>
+<ul>
+<li>常用的用户兴趣表示方法<ul>
+<li>基于协同过滤，历史交互物品或隐藏因子来表示用户兴趣</li>
+<li>基于深度学习用低维emb向量表示用户兴趣</li>
+<li>基于预估目标的attention机制，需要user和item塔之间有交互，不适合用在双塔召回场景</li>
+</ul>
+</li>
+<li>胶囊网络<ul>
+<li>vector in vector out，具体计算公式如下<br />
+<div style="text-align: center"><img src="/wiki/attach/images/MIND-01.png" style="max-width:300px"></div></li>
+<li>输出层向量是输入层的加权求和，权重是输入向量和输出向量的内积相关性归一化，并额外做了一层squash归一化</li>
+<li>动态路由求解，输出的表达式包含输出，则类似EM的思路交替更新</li>
+<li>基于当前参数计算输出，并将计算结果作为下一次交替计算的输入</li>
+<li>squash操作可以理解为向量维护的激活函数，胶囊网络的输入向量和输出向量的相关性越强权重越高，旨在强化某个输出维度的刻画<br />
+<div style="text-align: center"><img src="/wiki/attach/images/MIND-02.png" style="max-width:600px"></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>MIND Net</p>
+</li>
+</ul>
+<div style="text-align: center"><img src="/wiki/attach/images/MIND-03.png" style="max-width:800px"></div>
+
+<ul>
+<li>Multi-Interest Extractor Layer</li>
+</ul>
+<div style="text-align: center"><img src="/wiki/attach/images/MIND-04.png" style="max-width:600px"></div>
+
+<ul>
+<li>训练和预估<ul>
+<li>离线训练：多个胶囊输出向量通过Label-aware Attention辅助训练</li>
+<li>在线使用：根据多个兴趣向量检索相似的item</li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2024 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2024-02-05 10:21:13</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
