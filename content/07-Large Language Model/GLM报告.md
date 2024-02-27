@@ -7,8 +7,8 @@ date: 2024-01-14
 ## 主要内容
 
 - 模型架构 
-    - 训练范式：单向、双向（词、句子、文档mask、混合去噪器UL2【todo】）
-    - layerNorm【todo】：post-LN、pre-LN、sandwich-LN、deepNet 
+    - 训练范式：单向、双向（词、句子、文档mask、混合去噪器UL2）
+    - layerNorm：post-LN、pre-LN、sandwich-LN、deepNet 
     - position embbeding：三角、可学习、相对位置编码【todo】(ALiBi、RoPE)
 
 - 模型训练 
