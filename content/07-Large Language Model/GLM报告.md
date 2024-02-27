@@ -9,7 +9,7 @@ date: 2024-01-14
 - 模型架构 
     - 训练范式：单向、双向（词、句子、文档mask、混合去噪器UL2）
     - layerNorm：post-LN、pre-LN、sandwich-LN、deepNet 
-    - position embbeding：三角、可学习、相对位置编码【todo】(ALiBi、RoPE)
+    - position embbeding：三角、可学习、相对位置编码(ALiBi、RoPE)
 
 - 模型训练 
     - 成本高：GPT3成本1200万美元，GPU 

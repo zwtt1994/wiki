@@ -35,5 +35,5 @@ date: 2024-01-14
 - ALiBi
     - 使用sinusoidal的transformer的外推能力较弱，虽然RoPE有所改进，但也没有达到预期。
     - 为了有效地实现外推，ALiBi不向单词embedding中添加位置embedding，而是根据token之间的距离给attention score加上一个预设好的偏置矩阵
-<div style="text-align: center"><img src="/wiki/attach/images/POS-010.png" style="max-width:600px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/POS-10.png" style="max-width:600px"></div>
     - ALiBi不需要对原始网络进行改动，允许在较短的输入序列上训练模型，同时在推理时能够有效地外推到较长的序列，从而实现了更高的效率和性能。
