@@ -17,7 +17,7 @@ date: 2024-01-14
     - 在attention计算的内积操作中加入相对位置信息，即实现下列表达式
 <div style="text-align: center"><img src="/wiki/attach/images/POS-02.png" style="max-width:400px"></div>
     - 论文找到一个表达式满足上述关系
-<div style="text-align: center"><img src="/wiki/attach/images/POS-03.png" style="max-width:200px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/POS-03.png" style="max-width:500px"></div>
     - 假设是2维的情况，f函数进行推导后可以得到
 <div style="text-align: center"><img src="/wiki/attach/images/POS-04.png" style="max-width:500px"></div>
     - 再进行推导就得到了如下表达式
