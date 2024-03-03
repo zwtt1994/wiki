@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>2024-对比学习 - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#01-Machine Learning">01-Machine Learning</a>&nbsp;&#187;&nbsp;2024-对比学习
+    <span class="updated">Page Updated&nbsp;
+      2024-02-29
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">2024-对比学习</div>
+
+  <h2 id="_1">基本概念</h2>
+<ul>
+<li>对比学习（Contrastive Learning）是一种自监督学习（Self-supervised Learning）方法，主要用于无监督或半监督的特征表示学习。</li>
+<li>对比学习的核心思想是通过比较样本之间的相似性和差异性，使得相似样本的特征表示更接近，不相似样本的特征表示更远离。</li>
+<li>对比学习的典型范式是"代理任务+目标函数"，代理任务和目标函数也是对比学习与有监督学习最大的区别，对比学习没有ground truth。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/Contrastive-01.png" style="max-width:600px"></div><ul>
+<li>代理任务一般是数据增强、多视角、多模态或者某些业务逻辑。</li>
+<li>特征提取和MLP其实就是模型网络结构输出预估目标，例如表征向量。</li>
+<li>损失函数一般是infoNCE（noise contrastive estimation）<ul>
+<li>NCE是将问题转化为二分类，但二分类信息量太小了<br />
+<div style="text-align: center"><img src="/wiki/attach/images/Contrastive-02.png" style="max-width:600px"></div></li>
+<li>infoNCE进一步优化为负采样的多分类，其中温度系数很重要，温度系数越大相当于都是弱负样本，温度系数越小则都是强负样本。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/Contrastive-03.png" style="max-width:400px"></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="_2">相关研究</h2>
+<ul>
+<li>
+<p>Representation Learning with Contrastive Predictive Coding(word2vec)<br />
+<div style="text-align: center"><img src="/wiki/attach/images/Contrastive-04.png" style="max-width:600px"></div></p>
+</li>
+<li>
+<p>Momentum Contrast for Unsupervised Visual Representation Learning</p>
+<ul>
+<li>给予对比学习，将模型学到的特征用于分类。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/Contrastive-05.png" style="max-width:600px"></div></li>
+</ul>
+</li>
+<li>
+<p>A Simple Framework for Contrastive Learning of Visual Representations</p>
+<ul>
+<li>视觉表征对于同一目标不同视角的输入都应具有不变性<br />
+<div style="text-align: center"><img src="/wiki/attach/images/Contrastive-06.png" style="max-width:600px"></div></li>
+</ul>
+</li>
+<li>
+<p>Supervised Contrastive Learning</p>
+<ul>
+<li>自监督只做自己的变换，可能会过拟合，因此提出有监督对比学习，Triplet Loss</li>
+<li>本质上还是InfoNCE Loss<br />
+<div style="text-align: center"><img src="/wiki/attach/images/Contrastive-07.png" style="max-width:400px"></div></li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2024 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2024-03-03 19:50:00</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
