@@ -1,5 +1,5 @@
 ---
-title: "2023-Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations"
+title: "2024-Actions Speak Louder than Words: Trillion-Parameter Sequential Transducers for Generative Recommendations"
 layout: page
 date: 2024-03-23
 ---
@@ -37,7 +37,7 @@ date: 2024-03-23
 
 - 从 DLRM 到 GR
     - 统一 DLRM 中的异构特征空间，将稀疏和稠密特征整合编码为一个统一的时间序列。
-<div style="text-align: center"><img src="/wiki/attach/images/GR-01.png" style="max-width:900px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/GR-01.png" style="max-width:700px"></div>
         - 在稀疏特征的处理中，通过合并代表用户参与的项目的特征作为主要时间序列，然后将变化不大的用户特征等信息集中到最早中出现的时间点进行添加。
         - 连续特征丢弃，论文认为稀疏特征序列已经包含相关信息 
     - 把召回和排序重新定义为序列transduction任务 
@@ -48,7 +48,7 @@ date: 2024-03-23
 
 - 用于生成推荐的高性能自注意力编码器
     - 新的GR编码器设计，称为分层顺序转换单元Hierarchical Sequential Transduction Unit（HSTU）。
-<div style="text-align: center"><img src="/wiki/attach/images/GR-02.png" style="max-width:600px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/GR-02.png" style="max-width:500px"></div>
     - HSTU 采用了一种新的逐点聚合注意力机制来代替原来的softmax，一个原因是softmax会弱化某些强特征，另一个原因是虽然softmax对噪声有鲁棒性但也不适合状态随时间变化的候选集。
     - HSTU的设计显著提高了计算效率，特别是在长序列处理上。去除Softmax函数后，HSTU避免了昂贵的指数运算和归一化步骤，使得自注意力机制的计算复杂度从二次降低到线性。
     - HSTU 采用简化且完全融合的设计，可显着减少激活内存的使用；HSTU 将注意力之外的线性层数量从 6 个减少到 2 个，并积极地将计算融合到单个算子中，比如融合两个激活函数，层归一化，可选的dropout
