@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>Leave No Context Behind:Efficient Infinite Context Transformers with Infini-attention - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#07-Large Language Model">07-Large Language Model</a>&nbsp;&#187;&nbsp;Leave No Context Behind:Efficient Infinite Context Transformers with Infini-attention
+    <span class="updated">Page Updated&nbsp;
+      2024-01-28
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">Leave No Context Behind:Efficient Infinite Context Transformers with Infini-attention</div>
+
+  <h2 id="_1">主要内容</h2>
+<ul>
+<li>
+<p>利用infini-attention机制，在限制内存和计算的情况下将Transformer的LLM扩展到无限长的输入。</p>
+</li>
+<li>
+<p>本文提出的方法和transformer-XL的对比，XL是在有限长segment基础上缓存上一个segment的状态，本文则是压缩缓存历史所有segments的状态。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/infini-01.png" style="max-width:600px"></div></p>
+</li>
+<li>
+<p>Infini-attention详情<br />
+<div style="text-align: center"><img src="/wiki/attach/images/infini-02.png" style="max-width:300px"></div></p>
+<ul>
+<li>状态压缩，本文不是计算新的状态模块，而是复用注意力中的QKV矩阵。</li>
+<li>状态检索<br />
+<div style="text-align: center"><img src="/wiki/attach/images/infini-03.png" style="max-width:700px"></div></li>
+<li>状态更新<br />
+<div style="text-align: center"><img src="/wiki/attach/images/infini-04.png" style="max-width:500px"></div></li>
+<li>增量更新优化<br />
+<div style="text-align: center"><img src="/wiki/attach/images/infini-05.png" style="max-width:500px"></div></li>
+<li>历史与当前状态合并：可学习的门控标量<br />
+<div style="text-align: center"><img src="/wiki/attach/images/infini-06.png" style="max-width:600px"></div></li>
+<li>多头attention，并行计算</li>
+</ul>
+</li>
+<li>
+<p>状态和有效窗口，复杂度对比<br />
+<div style="text-align: center"><img src="/wiki/attach/images/infini-07.png" style="max-width:700px"></div></p>
+</li>
+<li>
+<p>可视化分数，attention权重分布有0有1也有0.5，有长期有短期也有长短期结合。<br />
+<div style="text-align: center"><img src="/wiki/attach/images/infini-08.png" style="max-width:400px"></div></p>
+</li>
+<li>
+<p>实验效果，rouge-n是指n-gram的召回率<br />
+<div style="text-align: center"><img src="/wiki/attach/images/infini-09.png" style="max-width:600px"></div></p>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2024 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2024-04-22 16:25:34</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
