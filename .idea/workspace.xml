@@ -51,15 +51,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "/Users/zhangweite/Documents/wiki/wiki/content/02-Recommend System",
+    "last_opened_file_path": "/Users/zhangweite/Documents/wiki/wiki/content/07-Large Language Model",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/07-Large Language Model" />
       <recent name="$PROJECT_DIR$/content/02-Recommend System" />
       <recent name="$PROJECT_DIR$/content/01-Machine Learning" />
-      <recent name="$PROJECT_DIR$/content/07-Large Language Model" />
       <recent name="$PROJECT_DIR$/output/02-Recommend System" />
       <recent name="$PROJECT_DIR$/content/09-Book" />
     </key>
