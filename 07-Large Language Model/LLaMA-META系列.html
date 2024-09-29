@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>LLaMA-META系列 - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#07-Large Language Model">07-Large Language Model</a>&nbsp;&#187;&nbsp;LLaMA-META系列
+    <span class="updated">Page Updated&nbsp;
+      2024-09-28
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">LLaMA-META系列</div>
+
+  <h2 id="_1">主要内容</h2>
+<ul>
+<li>LLaMA1(2022)<ul>
+<li>摘要：用公开数据集就可以训练出优异的基础语言模型，特别的是LLaMA-13B与GPT3-175B表现相当</li>
+<li>数据集：1.4T个tokens（TB=10的12次方）</li>
+<li>参数范围：7B-65B（B=10的9次方），serving时小模型速度更快，LLaMA可在单GPU上运行</li>
+<li>训练成本：2048个A100/80GB/GPU上，开发和训练5个月，65B模型训练一次21天（380 tokens/second/GPU）</li>
+<li>训练数据源：使用了CommonCrawl（67%）、C4（15%）、Wikipedia（4.5%)、Books(4.5%)、ArXiv(2.5%)等，Wiki和Books质量高会训练2次<ul>
+<li>数据处理：行/书级别去重、ngram语言模型过滤低质内容</li>
+</ul>
+</li>
+<li>网络架构：基于Transformer做了一些改进  <ul>
+<li>pre-normalization：收敛更快但上限不如post-normalization，详见论文笔记Layer Normalization</li>
+<li>SwiGLU激活函数：GLU和Swish的结合，既能够具备gate的选择性，又使得全域都具备梯度，SwiGLU(x)=x1<em>sigmoid(x1)</em>sigmoid(x2)</li>
+<li>RoPE：旋转位置编码，在attention中加入位置参数，详见论文比例Position Embedding</li>
+<li>超参数数量：估算为12<em>Tranformer层数</em>隐藏层维度的平方，attention矩阵的维度=隐藏层维度/多头数<ul>
+<li>6.7B的模型参数配置为：隐藏层维度4096，multi-attention多头数32，Transformer层数32，学习率0.0003，batch size=4M</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Optimizer：AdamW优化器，并叠加10%的余弦式衰减，AdamW相比Adam解决的就是将衰减直接作用到最后的参数更新，而不参与动量的更新。</li>
+<li>优化训练速度：<ul>
+<li>利用causal multi-head attention的时序特性，减少对mask部分的计算和存储</li>
+<li>利用checkpoint存储了计算成本较高的结果，用空间换时间</li>
+<li>利用model and sequence parallelism进一步提升上述优化效率</li>
+<li>overlap 激活计算和 GPU 之间的网络通信，提升时分复用的效率</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><div style="text-align: center"><img src="/wiki/attach/images/infini-01.png" style="max-width:600px"></div></li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2024 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2024-09-29 20:09:58</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
