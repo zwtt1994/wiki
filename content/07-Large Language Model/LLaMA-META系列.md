@@ -58,11 +58,35 @@ date: 2024-09-28
         - 安全性数据收集：选中的回答是安全的，另一个回答不安全；两个回答都是安全的；两个回答都不安全
         - 交替更新：LLaMA2-Chat利用标注数据改进的同时，奖励模型需要随着同步更新，否则准确性会迅速下降
         - 奖励模型：
-            - 模型的response和prompt（包括前几轮上下文）作为输入，输出标量分数（有效性和安全性分别训练两个模型，因为会冲突）
-            - 用LLaMA2-Chat checkpoint初始化，模型架构和超参数一致
-        - 训练目标
-
-
+            - 模型样本：模型的response和prompt（包括前几轮上下文）作为输入，输出标量分数（有效性和安全性分别训练两个模型，因为会冲突）
+            - 模型初始化：用LLaMA2-Chat checkpoint初始化，模型架构和超参数一致
+            - 训练目标：binary ranking loss，利用了对比学习的思路。
+<div style="text-align: center"><img src="/wiki/attach/images/LLaMA-02.png" style="max-width:300px"></div>
+            - 训练细节：数据训练一个epoch，重复训练存在过拟合的情况，学习率70B模型5*10-6/其他1*10-5，学习率余弦衰减至10%，warm-up 3%数据（size=5），batch-size=512
+        - Iterative Fine-Tuning微调
+            - 真人反馈数据和奖励模型交替更新，因此奖励模型版本会随时间更新
+            - RLHF最关键的两个技术是PPO和Rejection Sampling fine-tuning
+        - 拒绝采样Rejection Sampling
+            - 仅对的70B LLaMA2-Chat模型上执行拒绝采样，所有较小的模型都在从大模型中拒绝采样的数据上进行微调
+            - 每个迭代周期，对于所有prompt从最新的模型中采样k个答案，并用最佳奖励模型评分选择最佳答案
+            - 早期只用上一版模型生成答案，但通过迭代发现利用历史所有版本的模型生成答案效果更佳，直观来看不同版本模型可能会随着样本产生能力倾斜
+        - PPO（Proximal Policy Optimization ）
+            - 详见强化学习笔记
+    - 多轮一致性的系统消息
+        - 定义系统消息，例如翻译、扮演某人或者赋予爱好，并将其合并到所有用户指令中，例如原始【你今天怎么样】，合成后【扮演拿破仑：你今天怎么样】
+        - 为了避免系统消息在每轮对话中重复出现导致的不匹配，我们可以在第一轮之后删除系统消息，并将前几轮的所有标记（包括助手消息）的损失设置为0
+    - 发现和认知
+        - 从SFT到RLHF
+            - 论文表示从怀疑到真香，RLHF在效果、成本和时间效率上远超预期
+            - 每个人的标注风格也存在显著差异，模型性能受限于最熟练的标注员的能力，RLHF成功的关键是它在标注过程中促进了人和LLM之间的协同，
+            - 随着模型的不断迭代，奖励分布逐渐朝着高分漂移
+<div style="text-align: center"><img src="/wiki/attach/images/LLaMA-03.png" style="max-width:800px"></div>
+            - 更直观点说，SFT需要给出最佳答案，但RLHF只需要判断哪个答案更好，显然后者更加容易，因此论文认为RLHF是LLM在某些任务中超越人类的关键。
+        - 上下文温度重缩放（In-Context Temperature Rescaling），RLHF 学会了根据 prompt 类型适应温度
+<div style="text-align: center"><img src="/wiki/attach/images/LLaMA-04.png" style="max-width:800px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/LLaMA-05.png" style="max-width:800px"></div>
+        - 时间感知能力（Temporal Perception）
+            - 收集了与特定日期相关的1,000个SFT示例，关键信息是（提问时的日期、事件日期），对时间的概念内化程度超出预期
 
 
 
