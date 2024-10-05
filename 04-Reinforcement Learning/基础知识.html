@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/wiki/static/css/tango.css">
+    <link rel="shortcut icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/wiki/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>强化学习基础知识 - zwt的个人wiki</title>
+    <meta name="keywords" content="Memory."/>
+    <meta name="description" content="Wiki."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+  <div id="container" style = "width: 65em">
+      
+<div id="header">
+  <div class="post-nav"><a href="/wiki/">Home</a>&nbsp;&#187;&nbsp;<a href="/wiki/#04-Reinforcement Learning">04-Reinforcement Learning</a>&nbsp;&#187;&nbsp;强化学习基础知识
+    <span class="updated">Page Updated&nbsp;
+      2024-10-04
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">强化学习基础知识</div>
+
+  <h2 id="_1">主要内容</h2>
+<ul>
+<li>
+<p>核心思想</p>
+<ul>
+<li>监督学习需要ground truth，但这个真理数据在很多情况下很难收集，然而判断哪个数据更好相对比较简单，强化学习就是基于该思路产生。</li>
+</ul>
+</li>
+<li>
+<p>基本概念</p>
+<ul>
+<li>主体（agent）、环境（environment）、状态（state）、奖励（reward）、动作（action）</li>
+<li>基本学习框架如下，Agent感知环境，确定当前的state，根据policy采取action，获取reward，目标输出policy<br />
+<div style="text-align: center"><img src="/wiki/attach/images/RL-01.png" style="max-width:600px"></div></li>
+<li>强化学习包括两大类方法，基于策略的(Policy-Based，建模输出action)方法和基于价值的(Value-Based，间接建模价值value)方法</li>
+</ul>
+</li>
+<li>
+<p>Policy-Based</p>
+<ul>
+<li>基于策略的方法，根据状态直接建模动作的分布</li>
+<li>Policy Gradient，假设策略是一个参数化的随机策略<br />
+<div style="text-align: center"><img src="/wiki/attach/images/RL-02.png" style="max-width:600px"></div></li>
+<li>策略梯度定理（Policy Gradient Theory）：目标函数对参数的梯度不包含环境信息<br />
+<div style="text-align: center"><img src="/wiki/attach/images/RL-03.png" style="max-width:400px"></div></li>
+<li>Reinfoce算法：一种MC更新方法，每完成一个episode（整个流程）才进行算法的更新，它存在较大的估计方差(variance)<br />
+<div style="text-align: center"><img src="/wiki/attach/images/RL-04.png" style="max-width:600px"></div></li>
+<li>Actor-Critic算法：TD更新方法，结合了策略梯度和基于价值的方法，解决了Reinfoce算法大方差的问题<br />
+<div style="text-align: center"><img src="/wiki/attach/images/RL-05.png" style="max-width:600px"></div><ul>
+<li>可以看到公式里把一个Episode的Reward替换为Critic的价值函数，价值估计更加准确<br />
+<div style="text-align: center"><img src="/wiki/attach/images/RL-06.png" style="max-width:600px"></div></li>
+</ul>
+</li>
+<li>Advantage Actor-Critic：引入优势（Advantage）函数来减少估计的方差，通常定义为Q(s,a)-V(s)的差，近似为V(s(t+1))-V(s(t))</li>
+<li>PPO（Proximal Policy Optimization ）：解决A2C算法不稳定的问题<ul>
+<li>基本思想：希望更新参数时不要引起策略的太大变化<br />
+<div style="text-align: center"><img src="/wiki/attach/images/RL-07.png" style="max-width:600px"></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Value-Based</p>
+<ul>
+<li>基于价值的方法，学习一个价值函数，包括状态价值函数 或者 状态-动作价值函数</li>
+<li>状态价值函数：Agent处于状态state，它期望可以获得的累计奖励</li>
+<li>状态-动作价值函数：Agent处于状态state，并且采取动作action之后可以获得的累计奖励</li>
+</ul>
+</li>
+</ul>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2024 zwt.
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2024-10-05 12:51:13</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
