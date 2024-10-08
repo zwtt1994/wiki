@@ -83,8 +83,8 @@ date: 2024-09-28
 <div style="text-align: center"><img src="/wiki/attach/images/LLaMA-03.png" style="max-width:800px"></div>
             - 更直观点说，SFT需要给出最佳答案，但RLHF只需要判断哪个答案更好，显然后者更加容易，因此论文认为RLHF是LLM在某些任务中超越人类的关键。
         - 上下文温度重缩放（In-Context Temperature Rescaling），RLHF 学会了根据 prompt 类型适应温度
-<div style="text-align: center"><img src="/wiki/attach/images/LLaMA-04.png" style="max-width:800px"></div>
-<div style="text-align: center"><img src="/wiki/attach/images/LLaMA-05.png" style="max-width:800px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/LLaMA-04.png" style="max-width:600px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/LLaMA-05.png" style="max-width:600px"></div>
         - 时间感知能力（Temporal Perception）
             - 收集了与特定日期相关的1,000个SFT示例，关键信息是（提问时的日期、事件日期），对时间的概念内化程度超出预期
 - LLaMA3(2024)，多模态
