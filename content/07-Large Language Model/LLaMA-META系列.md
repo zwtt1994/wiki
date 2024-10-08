@@ -13,9 +13,9 @@ date: 2024-09-28
         - 数据处理：行/书级别去重、ngram语言模型过滤低质内容
     - 网络架构：基于Transformer做了一些改进，上下文长度2k
         - pre-normalization：收敛更快但上限不如post-normalization，详见论文笔记Layer Normalization
-        - SwiGLU激活函数：GLU和Swish的结合，既能够具备gate的选择性，又使得全域都具备梯度，SwiGLU(x)=x1*sigmoid(x1)*sigmoid(x2)
+        - SwiGLU激活函数：GLU和Swish的结合，既能够具备gate的选择性，又使得全域都具备梯度，SwiGLU(x)=x1 * sigmoid(x1) * sigmoid(x2)
         - RoPE：旋转位置编码，在attention中加入位置参数，详见论文比例Position Embedding
-        - 超参数：估算为12*Tranformer层数*隐藏层维度的平方，attention矩阵的维度=隐藏层维度/多头数
+        - 超参数：估算为12 * Tranformer层数 * 隐藏层维度的平方，attention矩阵的维度=隐藏层维度/多头数
             - 6.7B的模型参数配置为：隐藏层维度4096，multi-attention多头数32，Transformer层数32，学习率0.0003，batch size=4M
     - Optimizer：AdamW优化器，并叠加10%的余弦式衰减，AdamW相比Adam解决的就是将衰减直接作用到最后的参数更新，而不参与动量的更新
         - 使用0.1的权重衰减和1.0的梯度裁剪
