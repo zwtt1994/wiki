@@ -111,16 +111,19 @@
 <li>Iterative Fine-Tuning微调<ul>
 <li>真人反馈数据和奖励模型交替更新，因此奖励模型版本会随时间更新</li>
 <li>RLHF最关键的两个技术是PPO和Rejection Sampling fine-tuning</li>
+<li>在RLHF（V4）之前仅使用拒绝采样微调，之后按顺序结合两者，在再次采样之前，基于最佳采样结果应用PPO进行微调</li>
 </ul>
 </li>
 <li>拒绝采样Rejection Sampling<ul>
 <li>仅对的70B LLaMA2-Chat模型上执行拒绝采样，所有较小的模型都在从大模型中拒绝采样的数据上进行微调</li>
 <li>每个迭代周期，对于所有prompt从最新的模型中采样k个答案，并用最佳奖励模型评分选择最佳答案</li>
 <li>早期只用上一版模型生成答案，但通过迭代发现利用历史所有版本的模型生成答案效果更佳，直观来看不同版本模型可能会随着样本产生能力倾斜</li>
+<li>训练流程：对于每一个prompt从模型中采样K个输出，并根据奖励模型选择最佳候选样本，然后使用这些选择的样本进行SFT更新</li>
 </ul>
 </li>
 <li>PPO（Proximal Policy Optimization ）<ul>
 <li>详见强化学习笔记</li>
+<li>更新流程：基于拒绝采样得到的最佳结果，和价值函数的预估得分，更新模型参数，价值模型预估得分越高，说明模型更应该输出当前结果</li>
 </ul>
 </li>
 </ul>
@@ -220,7 +223,7 @@
       <span>
         <p>Copyright © 2024 zwt.
         Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
-        <p>Site Generated 2024-10-08 16:42:26</p>
+        <p>Site Generated 2024-10-09 20:46:24</p>
       </span>
     </div>
 
