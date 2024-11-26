@@ -191,7 +191,7 @@ date: 2024-09-28
     - 推理效率：流水线并行、FP8量化
     - 视觉实验
         - 两个模型之间引入和训练一组交叉注意力层，将预训练的图像编码器和预训练的语言模型组合起来，用于大量图像-文本对
-<div style="text-align: center"><img src="/wiki/attach/images/LLaMA-10.png" style="max-width:900px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/LLaMA-10.png" style="max-width:700px"></div>
         - 五个阶段训练的多模态模型：语言模型预训练，多模态编码器预训练，视觉适配器训练，模型微调，语音适配器训练
         - 图像/视频数据：质量过滤，感知去重，重新采样，光学字符识别，安全措施
         - 模型架构：
@@ -220,7 +220,7 @@ date: 2024-09-28
             - 使用这些数据训练DPO模型以提高响应质量，将这个过程称为质量调整（QT）
     - 语音实验
         - 结合一个编码器和一个适配器来处理语音信号，并用系统提示模型正在处理语音信号，以改善使用体验。还支持Llama 3用于自动语音识别（ASR）和自动语音翻译（AST），同时尝试了流式文本到语音（TTS）系统
-<div style="text-align: center"><img src="/wiki/attach/images/LLaMA-11.png" style="max-width:900px"></div>
+<div style="text-align: center"><img src="/wiki/attach/images/LLaMA-11.png" style="max-width:700px"></div>
         - 数据
             - 语音理解：预训练数据（多种语言的大约1500万小时的语音录音数据集），语音识别和翻译数据（ASR用23万小时的手动转录语音录音，AST用9万小时的翻译数据），口语对话数据
             - 语音生成：用于训练文本规范化（TN）模型和韵律模型（PM）
